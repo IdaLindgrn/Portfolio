@@ -15,7 +15,7 @@ export const Section2 = () => {
           approach my work with an artist's eye.
         </p>
         <div id="contact">
-          <Link id="hej" to="/about">
+          <Link id="footerLink" to="/about">
             Learn More
           </Link>
         </div>

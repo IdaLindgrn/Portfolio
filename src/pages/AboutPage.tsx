@@ -1,10 +1,12 @@
-// import { NewNavbar } from "../components/NavBar/NewNavbar";
+import { Navbar } from "../components/NavBar/Navbar";
 import "../scss/aboutPage.scss";
 
 export const AboutPage = () => {
   return (
     <>
-      <header>{/* <NewNavbar></NewNavbar> */}</header>
+      <header>
+        <Navbar />
+      </header>
       <main></main>
       <footer></footer>
     </>
