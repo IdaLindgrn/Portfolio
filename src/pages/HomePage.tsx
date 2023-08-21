@@ -3,7 +3,6 @@ import { Contact } from "../components/Contact";
 import { AboutText } from "../components/AboutText";
 import { Section1 } from "../components/Section1";
 import "../scss/homePage.scss";
-import "../scss/header.scss";
 import "../scss/footer.scss";
 import { Section2 } from "../components/Section2";
 
