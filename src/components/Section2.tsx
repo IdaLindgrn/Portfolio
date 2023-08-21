@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../scss/newnavbar.scss";
+import "../scss/navbar.scss";
 import "../scss/section.scss";
 import dreamyCloudsImage from "../assets/dreamy-clouds.png";
 

@@ -1,31 +1,63 @@
-// li {
-//     list-style-type: none;
-// }
+@import '_mixins.scss';
 
-// #links {
-//     display: flex;
-//     justify-content: right;
-//     align-items: center;
-//     gap: 3vw;
-//     padding-right: 2vw;
 
-// }
+#links {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 3vw;
+    padding-right: 2vw;
+        
+    li {
+        list-style-type: none;
+    }
 
-// #contact {
-//     color: #FFFCF6;
-//     background-color: #76697B;
-//     font-size: 20px;
-//     padding: 5px;
-// }
+    .navLink {
+        text-decoration: none;
+        color: #76697B;
+        display: flex;
+        justify-content: center;
+    }
 
-// #hej {
-//     color: #FFFCF6;
-//     text-decoration: none;
-// }
+    #contact {
+        background-color: #76697B;
+        width: fit-content;
+        font-size: 20px;
+        padding: 5px;
+        color: #FFFCF6;
+        text-decoration: none;
 
-// .navLink {
-//     text-decoration: none;
-//     color: #76697B;
-//     display: flex;
-//     justify-content: center;
-// }
+    #footerLink {
+        color: #FFFCF6;
+        text-decoration: none;
+    }
+}
+
+    @include desktop {
+        #links {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+}
+
+.mobile-navigation {
+    display: none;
+}
+
+@include mobile {
+    .navigation {
+        display: none;
+    }
+    .mobile-navigation {
+        display: flex;
+        align-items: center;
+    }
+    .hamburger {
+        position: absolute;
+        right: 3%;
+        cursor: pointer;
+    }
+
+}
+

@@ -1,10 +1,20 @@
 // import { Link } from "react-router-dom";
-// import "../scss/navbar.scss";
+// import "../scss/newnavbar.scss";
+// import { useState } from "react";
+// import { FaBars } from "react-icons/fa";
 
-// export const Navbar = () => {
+// export const NewNavbar = () => {
+//   const [showMobileMenu, setShowMobileMenu] = useState(false);
+
+//   const toggleMobilwMenu = () => {
+//     setShowMobileMenu(!showMobileMenu);
+//   };
 //   return (
 //     <nav>
-//       <ul>
+//       <div id="mobile-icon" onClick={toggleMobilwMenu}>
+//         <FaBars></FaBars>
+//       </div>
+//       <ul className={showMobileMenu ? "mobile-menu" : "desktop-menu"}>
 //         <div id="links">
 //           <li>
 //             <Link className="navLink" to="/">

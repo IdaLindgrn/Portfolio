@@ -1,4 +1,4 @@
-import { NewNavbar } from "../components/NewNavbar";
+import { Navbar } from "../components/NavBar/Navbar";
 import { Contact } from "../components/Contact";
 import { AboutText } from "../components/AboutText";
 import { Section1 } from "../components/Section1";
@@ -11,7 +11,7 @@ export const HomePage = () => {
   return (
     <>
       <header>
-        <NewNavbar></NewNavbar>
+        <Navbar />
       </header>
       <main>
         <div id="banner">
