@@ -1,0 +1,52 @@
+@import '_mixins.scss';
+
+* {
+    margin: 0;
+    font-family: "League Spartan";
+}
+
+main {
+    #banner {
+        background-image: url("../assets/banner.gif");
+        background-size: cover;
+        height: 90vh;
+        color: #76697B;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .header-title {
+        font-weight: normal;
+        font-size: 5rem;
+        @include mobile {
+            font-size: 3rem;
+        }
+    }
+    
+article {
+    background-color: #FFFCF6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    color: #76697B;
+    .about-title {
+        font-weight: normal;
+    }
+    .about-text {
+        display: flex;
+        padding: 20px;
+        flex-direction: row;
+        .about-1, .about-2 {
+            padding: 20px;
+        }
+
+        
+        @include mobile {
+            flex-direction: column;
+        }
+    
+    }
+  }
+}

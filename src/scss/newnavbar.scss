@@ -1,0 +1,63 @@
+@import '_mixins.scss';
+
+li {
+    list-style-type: none;
+}
+
+#mobile-icon {
+    display: none;
+    cursor: pointer;
+}
+
+#mobile-icon svg {
+    font-size: 2rem;
+    color: #76697B;
+}
+
+.desktop-menu {
+    #links {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        gap: 3vw;
+        padding-right: 2vw;
+    }
+    @include desktop {
+        #links {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+}
+
+.mobile-menu {
+    #links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    @include mobile {
+        display: flex;
+      }
+
+}
+
+#contact {
+    color: #FFFCF6;
+    background-color: #76697B;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#hej {
+    color: #FFFCF6;
+    text-decoration: none;
+}
+
+.navLink {
+    text-decoration: none;
+    color: #76697B;
+    display: flex;
+    justify-content: center;
+}
