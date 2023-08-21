@@ -1,19 +1,14 @@
-import { Navbar } from "../components/Navbar"
-import "../scss/aboutPage.scss"
+import { NewNavbar } from "../components/NewNavbar";
+import "../scss/aboutPage.scss";
 
 export const AboutPage = () => {
-    return (
-        <>
-        <header>
-            <Navbar></Navbar>
-        </header>
-        <main>
-            
-        </main>
-        <footer>
-
-        </footer>
-        
-        </>
-    )
-}
+  return (
+    <>
+      <header>
+        <NewNavbar></NewNavbar>
+      </header>
+      <main></main>
+      <footer></footer>
+    </>
+  );
+};

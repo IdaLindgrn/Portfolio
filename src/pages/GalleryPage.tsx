@@ -1,18 +1,13 @@
-import { Navbar } from "../components/Navbar"
+import { NewNavbar } from "../components/NewNavbar";
 
 export const GalleryPage = () => {
-    return (
-        <>
-        <header>
-            <Navbar></Navbar>
-        </header>
-        <main>
-            
-        </main>
-        <footer>
-
-        </footer>
-        
-        </>
-    )
-}
+  return (
+    <>
+      <header>
+        <NewNavbar></NewNavbar>
+      </header>
+      <main></main>
+      <footer></footer>
+    </>
+  );
+};

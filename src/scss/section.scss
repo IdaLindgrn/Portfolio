@@ -1,0 +1,55 @@
+// <section className="section-container">
+// <h3>CV</h3>
+// <p id="section-text">
+//   I'm a frontend developer with a passion for creating beautiful and
+//   functional web interfaces. I believe that the best web interfaces are
+//   not only functional but also aesthetically pleasing. That's why I
+//   approach my work with an artist's eye.
+// </p>
+// <div id="contact">
+//   <Link id="hej" to="/about">
+//     Learn More
+//   </Link>
+// </div>
+// </section>
+
+.container {
+    display: flex;
+
+
+.image-container {
+    img {
+        width: 40vw;
+        height: auto;
+    }
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60vw;
+    color: #76697B;
+    padding: 100px;
+
+    
+
+    h3 {
+        font-size: 3rem;
+        font-weight: normal;
+    }
+    #section-text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+}
+
+#section-container1 {
+    background-color: #E3DCEF;
+}
+
+#section-container2 {
+    background-color: #FFFCF6;
+}
+
+}

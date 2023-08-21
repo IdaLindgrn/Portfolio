@@ -1,4 +1,29 @@
 footer {
-    height: 20vh;
     background-color: #76697B;
+
+    .footer-socials {
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        a {
+            display: flex;
+            margin: 1vw;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            background-color: #FFFCF6;
+            border-radius: 50%;
+            color: #5C555F;
+            font-size: 1.7rem;
+        }
+       
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+        background-color: #5C555F;
+        padding: 15px;
+        color: #AFA7B2;
+    }
 }
