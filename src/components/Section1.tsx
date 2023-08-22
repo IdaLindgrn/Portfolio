@@ -12,10 +12,13 @@ export const Section1 = () => {
       <section id="section-container1">
         <h3>CV</h3>
         <p id="section-text">
-          I'm a frontend developer with a passion for creating beautiful and
-          functional web interfaces. I believe that the best web interfaces are
-          not only functional but also aesthetically pleasing. That's why I
-          approach my work with an artist's eye.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga natus
+          quisquam nemo dicta non? Quibusdam nulla et ullam illo at. Doloremque
+          beatae optio dignissimos eum quisquam temporibus ipsa cumque enim.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eos
+          delectus unde harum hic, excepturi, fuga explicabo illum eum quas
+          numquam architecto tenetur veritatis dolorum nesciunt nam praesentium
+          quibusdam? Exercitationem!
         </p>
         <div id="contact">
           <Link id="footerLink" to="/about">

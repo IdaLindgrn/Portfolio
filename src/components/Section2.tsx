@@ -9,10 +9,13 @@ export const Section2 = () => {
       <section id="section-container2">
         <h3>Gallery</h3>
         <p id="section-text">
-          I'm a frontend developer with a passion for creating beautiful and
-          functional web interfaces. I believe that the best web interfaces are
-          not only functional but also aesthetically pleasing. That's why I
-          approach my work with an artist's eye.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+          voluptatem cumque saepe culpa vero consequatur itaque, molestias vitae
+          doloremque ad autem hic, quaerat expedita architecto ex vel asperiores
+          temporibus quibusdam? Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Maiores ipsum exercitationem doloremque. Aliquam ex
+          quia, quis tempora velit, ad autem natus mollitia soluta, praesentium
+          inventore nihil assumenda sint ratione at.
         </p>
         <div id="contact">
           <Link id="footerLink" to="/about">
