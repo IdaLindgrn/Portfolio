@@ -16,7 +16,7 @@ npm install
 npm run dev
 ```
 
-## Screenshots
+## Figma
 
 ![Screenshot](src/assets/portfolio-figma.png)
 
