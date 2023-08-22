@@ -1,4 +1,8 @@
-## Portfolio
+## Portfolio (Work in progress)🚧
+
+## Description
+
+Welcome to my web portfolio, where design meets the soothing allure of pastel colors.🎨
 
 ## Project setup
 
