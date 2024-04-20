@@ -11,7 +11,7 @@ export const Contact = () => {
         <a href="https://www.linkedin.com/in/ida-lindgren-0b6099207/">
           <BsLinkedin></BsLinkedin>
         </a>
-        <a href="mailto:ida.lindgren@medieinstitutet.se">
+        <a href="mailto:ida-lindgren@hotmail.com">
           <GrMail></GrMail>
         </a>
       </div>

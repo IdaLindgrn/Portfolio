@@ -2,19 +2,20 @@
 
 .container {
     display: flex;
+    flex-direction: column;
 
-    @include mobile {
+    @include desktop {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        width: 100%;
     }
 
 
 .image-container {
     img {
-        width: 40vw;
-        height: 100%;
-        @include mobile {
-            width: 100vw;
+        width: 100vw;
+        @include tablet {
+            width: 40vw;
         }
     }
 }
@@ -23,16 +24,13 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60vw;
+    width: auto;
     color: #76697B;
-    padding: 100px;
+    padding: 10vw;
 
-    @include mobile {
-        width: auto;
+    @include tablet {
+        width: 60vw;
     }
-    
-
-    
 
     h3 {
         font-size: 3rem;

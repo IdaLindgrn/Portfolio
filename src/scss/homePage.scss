@@ -9,18 +9,29 @@ main {
     #banner {
         background-image: url("../assets/banner.gif");
         background-size: cover;
-        height: 90vh;
+        height: 90vw;
         color: #76697B;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        @include tablet {
+            height: 70vh;
+        }
+     
+        @include desktop {
+            height: 80vh;
+        }
     }
     .header-title {
-        font-weight: normal;
-        font-size: 5rem;
-        @include mobile {
-            font-size: 3rem;
+        font-size: 3rem;
+
+        @include desktop {
+            font-weight: normal;
+            font-size: 5rem;
         }
     }
     
@@ -38,14 +49,14 @@ article {
     .about-text {
         display: flex;
         padding: 20px;
-        flex-direction: row;
+        flex-direction: column;
         .about-1, .about-2 {
             padding: 20px;
         }
 
         
-        @include mobile {
-            flex-direction: column;
+        @include desktop {
+            flex-direction: row;
         }
     
     }

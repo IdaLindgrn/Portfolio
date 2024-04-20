@@ -9,13 +9,11 @@ export const Section2 = () => {
       <section id="section-container2">
         <h3>Gallery</h3>
         <p id="section-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-          voluptatem cumque saepe culpa vero consequatur itaque, molestias vitae
-          doloremque ad autem hic, quaerat expedita architecto ex vel asperiores
-          temporibus quibusdam? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Maiores ipsum exercitationem doloremque. Aliquam ex
-          quia, quis tempora velit, ad autem natus mollitia soluta, praesentium
-          inventore nihil assumenda sint ratione at.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga natus
+          quisquam nemo dicta non? Quibusdam nulla et ullam illo at. Doloremque
+          beatae optio dignissimos eum quisquam temporibus ipsa cumque enim.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eos
+          delectus unde harum hic.
         </p>
         <div id="contact">
           <Link id="footerLink" to="/about">

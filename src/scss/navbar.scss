@@ -2,35 +2,18 @@
 
 header {
     background-color: #E3DCEF;
-    padding: 30px;
-}
-
-#links {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    gap: 3vw;
-    padding-right: 2vw;
-        
-    li {
-        list-style-type: none;
-    }
-
-    .navLink {
-        text-decoration: none;
-        color: #76697B;
-        display: flex;
-        justify-content: center;
-    }
+    padding: 25px;
 }
 
 #contact {
     background-color: #76697B;
     width: fit-content;
-    font-size: 20px;
-    padding: 5px;
+    font-size: 18px;
+    padding: 7px 10px;
+    border-radius: 5px;
     color: #FFFCF6;
     text-decoration: none;
+    margin-left: auto;
 
 #footerLink {
     color: #FFFCF6;
@@ -38,40 +21,70 @@ header {
 }
 }
 
-.mobile-navigation {
+.navigation {
     display: none;
 }
 
-@include mobile {
-
-    .navigation {
-        display: none;
-    }
-    .mobile-navigation {
-        display: flex;
-        align-items: center;
-        padding: 2px;
-    }
-    .hamburger {
-        position: absolute;
-        right: 3%;
-        cursor: pointer;
-    }
+.mobile-navigation {
+    display: flex;
+    align-items: center;
+    padding: 2px;
 
     #links {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 64px;
-        border-top: 1.5px solid #FFFCF6;
-        border-bottom: 1.5px solid #FFFCF6;
-        padding-top: 15px;
+        top: 53px;
+        padding-top: 20px;
         padding-bottom: 15px;
         right: 0;
         width: 100%;
-        background: rgba(239, 220, 235, 0.5);
-
+        background: rgba(239, 220, 235, 0.708);
     }
 
+    .navLink {
+        padding: 7px;
+    }
+
+    #contact {
+        margin-top: 8px;
+        margin-left: 45%;
+    }
+}
+
+.hamburger {
+    position: absolute;
+    right: 3%;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+.navLink {
+    text-decoration: none;
+    color: #76697B;
+    display: flex;
+    justify-content: center;
+}
+
+
+@include tablet {
+    .mobile-navigation {
+        display: none;
+    }   
+    
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+   
+    #links {
+        display: flex;
+        align-items: center;
+        gap: 2vw;
+        padding-right: 2vw;
+    }
+}
 } 
 

@@ -16,9 +16,7 @@ export const Section1 = () => {
           quisquam nemo dicta non? Quibusdam nulla et ullam illo at. Doloremque
           beatae optio dignissimos eum quisquam temporibus ipsa cumque enim.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eos
-          delectus unde harum hic, excepturi, fuga explicabo illum eum quas
-          numquam architecto tenetur veritatis dolorum nesciunt nam praesentium
-          quibusdam? Exercitationem!
+          delectus unde harum hic.
         </p>
         <div id="contact">
           <Link id="footerLink" to="/about">
