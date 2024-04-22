@@ -9,17 +9,30 @@ export const NavLinks = () => {
     <ul>
       <div id="links">
         <li>
-          <Link className="navLink" to="/">
+          <Link
+            className={`navLink ${location.pathname === "/" ? "active" : ""}`}
+            to="/"
+          >
             {t("header.navHome")}
           </Link>
         </li>
         <li>
-          <Link className="navLink" to="/about">
+          <Link
+            className={`navLink ${
+              location.pathname === "/about" ? "active" : ""
+            }`}
+            to="/about"
+          >
             {t("header.navAbout")}
           </Link>
         </li>
         <li>
-          <Link className="navLink" to="/gallery">
+          <Link
+            className={`navLink ${
+              location.pathname === "/gallery" ? "active" : ""
+            }`}
+            to="/gallery"
+          >
             {t("header.navGallery")}
           </Link>
         </li>
