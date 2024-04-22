@@ -1,9 +1,9 @@
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
 
-export const Contact = () => {
+export const Footer = () => {
   return (
-    <>
+    <footer id="footer">
       <div className="footer-socials">
         <a href="https://github.com/IdaLindgrn">
           <BsGithub />
@@ -18,12 +18,6 @@ export const Contact = () => {
       <div className="copyright">
         <p>© Copyright 2023. All Rights Reserved</p>
       </div>
-    </>
+    </footer>
   );
 };
-
-{
-  /* <div id="mobile-icon" onClick={toggleMobilwMenu}>
-<FaBars></FaBars>
-</div> */
-}

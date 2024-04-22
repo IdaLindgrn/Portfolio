@@ -29,7 +29,11 @@ export const Header = () => {
               <p className="dropdown-text">
                 {i18n.language === "en" ? t("header.en") : t("header.sv")}
               </p>
-              {showDropdown ? <IoIosArrowUp /> : <IoIosArrowDown />}
+              {showDropdown ? (
+                <IoIosArrowUp style={{ color: "#76697B" }} />
+              ) : (
+                <IoIosArrowDown style={{ color: "#76697B" }} />
+              )}
             </div>
           </div>
           {showDropdown && (
