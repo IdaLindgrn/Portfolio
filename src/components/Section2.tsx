@@ -7,7 +7,7 @@ export const Section2 = () => {
   return (
     <div className="container">
       <section id="section-container2">
-        <h3>Gallery</h3>
+        <h3 className="heading">Gallery</h3>
         <p id="section-text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga natus
           quisquam nemo dicta non? Quibusdam nulla et ullam illo at. Doloremque

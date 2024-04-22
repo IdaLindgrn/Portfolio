@@ -5,11 +5,13 @@ import { Section1 } from "../components/Section1";
 import "../scss/homePage.scss";
 import "../scss/footer.scss";
 import { Section2 } from "../components/Section2";
+import { DailyQuotes } from "../components/DailyQuotes";
 
 export const HomePage = () => {
   return (
     <>
-      <header>
+      <header className="home-header">
+        <DailyQuotes />
         <Navbar />
       </header>
       <main>

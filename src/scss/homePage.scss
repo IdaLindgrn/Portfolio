@@ -5,21 +5,27 @@
     font-family: "League Spartan";
 }
 
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 main {
     #banner {
         background-image: url("../assets/banner.gif");
         background-size: cover;
-        height: 90vw;
+        height: 70vw;
         color: #76697B;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin: 30px 0;
 
         @include tablet {
-            height: 70vh;
+            margin: 15px 0;
+            height: 60vw;
         }
      
         @include desktop {
@@ -27,11 +33,16 @@ main {
         }
     }
     .header-title {
-        font-size: 3rem;
+        font-weight: normal;
+        font-size: 2.5em;
+        padding-bottom: 8px;
+
+        @include tablet {
+            font-size: 4em;
+        }
 
         @include desktop {
-            font-weight: normal;
-            font-size: 5rem;
+            font-size: 5em;
         }
     }
     
@@ -41,11 +52,14 @@ article {
     align-items: center;
     flex-direction: column;
     padding: 30px;
+    height: 80vw;
     color: #76697B;
-    .about-title {
-        font-weight: normal;
-        font-size: 3rem;
+    
+    @include desktop {
+        height: 50vh;
     }
+    }
+
     .about-text {
         display: flex;
         padding: 20px;
@@ -53,7 +67,6 @@ article {
         .about-1, .about-2 {
             padding: 20px;
         }
-
         
         @include desktop {
             flex-direction: row;
@@ -61,4 +74,28 @@ article {
     
     }
   }
-}
+
+
+  //default styling
+  .heading {
+    font-weight: normal;
+    font-size: 2em;
+ 
+    @include tablet {
+        font-size: 3em;
+    }
+
+  }
+
+  p, li {
+    font-size: 0.9em;
+
+    @include tablet {
+        font-size: 1.3em;
+    }
+
+    @include desktop {
+        font-size: 1.5em;
+    }
+  }
+

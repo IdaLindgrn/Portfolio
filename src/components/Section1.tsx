@@ -10,7 +10,7 @@ export const Section1 = () => {
         <img src={dreamyCloudsImage} alt="Dreamy clouds" />
       </figure>
       <section id="section-container1">
-        <h3>CV</h3>
+        <h3 className="heading">CV</h3>
         <p id="section-text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga natus
           quisquam nemo dicta non? Quibusdam nulla et ullam illo at. Doloremque

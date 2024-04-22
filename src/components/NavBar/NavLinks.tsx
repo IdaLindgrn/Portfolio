@@ -20,7 +20,7 @@ export const NavLinks = () => {
             Gallery
           </Link>
         </li>
-        <div id="contact">
+        <div id="contact" style={{ marginLeft: "auto", margin: "auto" }}>
           <li>
             <a id="footerLink" href="#footer">
               Contact

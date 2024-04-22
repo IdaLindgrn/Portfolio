@@ -13,7 +13,7 @@ header {
     border-radius: 5px;
     color: #FFFCF6;
     text-decoration: none;
-    margin-left: auto;
+ 
 
 #footerLink {
     color: #FFFCF6;
@@ -45,11 +45,6 @@ header {
     .navLink {
         padding: 7px;
     }
-
-    #contact {
-        margin-top: 8px;
-        margin-left: 45%;
-    }
 }
 
 .hamburger {
@@ -67,6 +62,7 @@ li {
     color: #76697B;
     display: flex;
     justify-content: center;
+    transition: color 0.3s ease;
 }
 
 
