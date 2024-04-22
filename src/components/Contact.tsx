@@ -6,13 +6,13 @@ export const Contact = () => {
     <>
       <div className="footer-socials">
         <a href="https://github.com/IdaLindgrn">
-          <BsGithub></BsGithub>
+          <BsGithub />
         </a>
         <a href="https://www.linkedin.com/in/ida-lindgren-0b6099207/">
-          <BsLinkedin></BsLinkedin>
+          <BsLinkedin />
         </a>
         <a href="mailto:ida-lindgren@hotmail.com">
-          <GrMail></GrMail>
+          <GrMail />
         </a>
       </div>
       <div className="copyright">

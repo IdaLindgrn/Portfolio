@@ -1,0 +1,20 @@
+{
+    "header": {
+        "navHome": "Hem",
+        "navAbout": "Om mig",
+        "navGallery": "Gallery",
+        "navContact": "Kontakt",
+        "en": "ENG",
+        "sv": "SV"
+    },
+    "headers": {
+        "homeTitle": "Ida Lindgren",
+        "homeSubheading": "Frontend Utvecklare",
+        "aboutTitle": "Om mig",
+        "galleryTitle": "Mina projekt",
+        "gallerySubheading": "Klicka på ett projekt för att öppna dens länk"
+    },
+    "homePage": {
+        "subtitle": "Education"
+    }
+}

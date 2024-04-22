@@ -1,29 +1,32 @@
 import { Link } from "react-router-dom";
 import "../../scss/navbar.scss";
+import { useTranslation } from "react-i18next";
 
 export const NavLinks = () => {
+  const [t] = useTranslation("global");
+
   return (
     <ul>
       <div id="links">
         <li>
           <Link className="navLink" to="/">
-            Home
+            {t("header.navHome")}
           </Link>
         </li>
         <li>
           <Link className="navLink" to="/about">
-            About
+            {t("header.navAbout")}
           </Link>
         </li>
         <li>
           <Link className="navLink" to="/gallery">
-            Gallery
+            {t("header.navGallery")}
           </Link>
         </li>
         <div id="contact" style={{ marginLeft: "auto", margin: "auto" }}>
           <li>
             <a id="footerLink" href="#footer">
-              Contact
+              {t("header.navContact")}
             </a>
           </li>
         </div>

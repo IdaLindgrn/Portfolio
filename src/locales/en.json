@@ -1,0 +1,20 @@
+{
+    "header": {
+        "navHome": "Home",
+        "navAbout": "About",
+        "navGallery": "Gallery",
+        "navContact": "Contact",
+        "en": "ENG",
+        "sv": "SV"
+    },
+    "headers": {
+        "homeTitle": "Ida Lindgren",
+        "homeSubheading": "Frontend Developer",
+        "aboutTitle": "About me",
+        "galleryTitle": "Projects",
+        "gallerySubheading": "Click on a project to open its link"
+    },
+    "homePage": {
+        "subtitle": "Education"
+    }
+}

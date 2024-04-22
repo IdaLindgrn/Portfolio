@@ -1,12 +1,10 @@
-import { Navbar } from "../components/NavBar/Navbar";
+import { Header } from "../components/Header";
 import "../scss/aboutPage.scss";
 
 export const AboutPage = () => {
   return (
     <>
-      <header>
-        <Navbar />
-      </header>
+      <Header />
       <main></main>
       <footer></footer>
     </>
