@@ -1,5 +1,5 @@
 import figure from "../assets/figure.gif";
-import "../scss/DailyQuotes.scss";
+import "../scss/dailyQuotes.scss";
 
 export const DailyQuotes = () => {
   return (

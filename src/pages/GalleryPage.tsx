@@ -1,12 +1,10 @@
-import { Navbar } from "../components/NavBar/Navbar";
+import { Header } from "../components/Header";
 import "../scss/galleryPage.scss";
 
 export const GalleryPage = () => {
   return (
     <>
-      <header>
-        <Navbar />
-      </header>
+      <Header />
       <main></main>
       <footer></footer>
     </>
