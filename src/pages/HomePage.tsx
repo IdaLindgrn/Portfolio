@@ -1,23 +1,21 @@
-import { Navbar } from "../components/NavBar/Navbar";
 import { Contact } from "../components/Contact";
 import { AboutText } from "../components/AboutText";
 import { Section1 } from "../components/Section1";
 import "../scss/homePage.scss";
 import "../scss/footer.scss";
 import { Section2 } from "../components/Section2";
-import { DailyQuotes } from "../components/DailyQuotes";
+import { useTranslation } from "react-i18next";
+import { Header } from "../components/Header";
 
 export const HomePage = () => {
+  const [t] = useTranslation("global");
   return (
     <>
-      <header className="home-header">
-        <DailyQuotes />
-        <Navbar />
-      </header>
+      <Header />
       <main>
         <div id="banner">
-          <h1 className="header-title">Ida Lindgren</h1>
-          <p>Frontend Developer</p>
+          <h1 className="header-title">{t("headers.homeTitle")}</h1>
+          <p>{t("headers.homeSubheading")}</p>
         </div>
         <AboutText></AboutText>
         <Section1></Section1>
