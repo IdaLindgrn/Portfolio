@@ -1,5 +1,15 @@
+@import '_mixins.scss';
+
 footer {
     background-color: #76697B;
+
+    .footer-content-container {
+        @include tablet {
+            display: flex;
+
+        }
+    }
+
 
     .footer-socials {
         padding: 40px;
@@ -10,13 +20,29 @@ footer {
             margin: 1vw;
             align-items: center;
             justify-content: center;
-            padding: 10px;
+            padding: 15px;
             background-color: #FFFCF6;
             border-radius: 50%;
             color: #5C555F;
             font-size: 1.7rem;
-        }
-       
+
+            .socials-icon {
+                width: 20px;
+                height: 20px;
+
+                @include tablet {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+            @include tablet {
+                padding: 20px;
+            }
+        } 
+        @include tablet {
+            justify-content: left;
+        }  
     }
 
     .copyright {
@@ -26,4 +52,90 @@ footer {
         padding: 15px;
         color: #AFA7B2;
     }
+
+    .tablet-and-above {
+        display: none;
+      }
+
+      @include tablet {
+        .tablet-and-above {
+          display: block;
+        }
+    }   
+
+    .figure-container {
+        position: absolute;
+        left: 80px;
+        bottom: -20px;
+ 
+      }
+
+.figure-img {
+    display: flex;
+    align-self: center;
+    width: 40px;
+    height: 40px;
+   
+   
+    @include tablet {
+        width: 60px;
+        height: 60px;
+     }
+
+     @include desktop {
+        width: 130px;
+        height: 130px;
+       
+     }
+    }
+
+     .quote-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .quote-title {
+        font-size: 27px;
+        margin-left: -2vw;
+        margin-top: 70px;
+        margin-bottom: 15px;
+        color: white;
+      }
+      
+      .quote {
+        position: relative;
+        background-color: white;
+        padding: 15px;
+        color: #76697B;
+        border-radius: 50px;
+        margin-left: 19vw; 
+        margin-right: 5vw; 
+
+      }
+
+      .footer-socials a {
+        @include tablet {
+        margin: 90px 10px;
+        }
+      }
+      
+      .quote-content {
+        padding: 10px;
+        font-size: 15px;
+
+      }
+      
+      .quote-triangle {
+        position: absolute;
+        width: 5px;
+        height: 20px;
+        border-left: 9px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid white;
+        bottom: 11px;
+        left: 3px;
+      }
+
 }
