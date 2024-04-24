@@ -98,10 +98,10 @@ article {
   }
 
   p, li {
-    font-size: 0.9em;
+    font-size: 20px;
 
     @include tablet {
-        font-size: 1.3em;
+        font-size: 35px;
     }
 
     @include desktop {

@@ -18,7 +18,7 @@ export const Section1 = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eos
           delectus unde harum hic.
         </p>
-        <div id="contact">
+        <div id="shortcuts">
           <Link id="footerLink" to="/about">
             Learn More
           </Link>

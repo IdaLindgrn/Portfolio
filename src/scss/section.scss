@@ -28,6 +28,8 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     width: auto;
     height: 80vw;
     color: #76697B;
@@ -35,14 +37,66 @@ section {
 
     @include desktop {
         width: 60vw;
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
         height: auto;
-        padding: 0 80px;
+        padding: 0 100px;
         flex-direction: column;
     }
 
     #section-text {
     padding:  30px 0;
     }
+
+    .dot-list {
+        list-style: none; 
+        padding: 0 20px; 
+        margin-bottom: 25px;
+      }
+      .dot-list li {
+        margin-bottom: 5px;
+      }
+      .dot {
+        width: 8px; 
+        height: 8px;
+        background-color: #76697B;
+        border-radius: 50%; 
+        display: inline-block;
+        margin-right: 10px; 
+        margin-bottom: 2px; 
+      }
+
+
+    }
+    #shortcuts {
+        background-color: #76697B;
+        border-radius: 5px;
+        width: 120px;
+        padding: 12px 22px;
+        font-size: 25px;
+        text-align: center;
+
+        @include tablet {
+            padding: 20px 20px;
+            font-size: 40px;
+            width: 200px;
+        }
+
+        @include desktop {
+            padding: 20px 30px;
+            font-size: 28px;
+            width: 140px;
+        }
+        
+       
+        
+
+  
+        #footerLink {
+            color: #ffffff;
+            text-decoration: none;
+        }
 }
 
 #section-container1 {
@@ -54,3 +108,4 @@ section {
 }
 
 }
+
