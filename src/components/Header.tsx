@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import { Navbar } from "./NavBar/Navbar";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { useState } from "react";
 import "../scss/selectLanguage.scss";
 import logo from "../assets/logo.png";
@@ -26,27 +25,18 @@ export const Header = () => {
             <div
               className={`dropdown-container ${showDropdown ? "active" : ""}`}
             >
-              <p className="dropdown-text">
-                {i18n.language === "en" ? t("header.en") : t("header.sv")}
-              </p>
-              {showDropdown ? (
-                <IoIosArrowUp style={{ color: "#76697B" }} />
-              ) : (
-                <IoIosArrowDown style={{ color: "#76697B" }} />
-              )}
-            </div>
-          </div>
-          {showDropdown && (
-            <div className="dropdown-menu">
               <select
                 value={i18n.language}
                 onChange={(e) => handleChangeLanguage(e.target.value)}
+                className="dropdown-text"
               >
-                <option value="en">English</option>
-                <option value="sv">Svenska</option>
+                <option value="en">ENG</option>
+                <option value="sv">
+                  <p>SV</p>
+                </option>
               </select>
             </div>
-          )}
+          </div>
         </div>
       </header>
     </>

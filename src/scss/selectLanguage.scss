@@ -13,6 +13,17 @@
     cursor: pointer;
   }
 
+  select {
+    border: none;
+    background-color: transparent;
+    padding: 6px 0px; 
+    border-radius: 5px;
+    font-size: 1.3em; 
+    color: inherit; 
+    cursor: pointer;
+    outline: none;
+  }
+
 
 .dropdown-container {
     display: flex;
@@ -25,10 +36,3 @@
     }
 
 }
-  
-  .dropdown-container.active {
-    background-color: white;
-    padding: 9px 15px;
-    border-radius: 5px;
-    margin: -9px -15px;
-  }

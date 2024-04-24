@@ -10,20 +10,20 @@ export const GalleryPage = () => {
     {
       id: 1,
       image: "image1.jpg",
-      title: "Title 1",
-      text: "Text 1",
+      title: "Restaurant",
+      text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga natus quisquam nemo dicta non? Quibusdam nulla et ullam illo at. Doloremque beatae optio dignissimos eum quisquam temporibus ipsa cumque enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eos delectus unde harum hic",
     },
     {
       id: 2,
       image: "image2.jpg",
-      title: "Title 2",
-      text: "Text 2",
+      title: "CatBox",
+      text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga natus quisquam nemo dicta non? Quibusdam nulla et ullam illo at. Doloremque beatae optio dignissimos eum quisquam temporibus ipsa cumque enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eos delectus unde harum hic",
     },
     {
       id: 3,
       image: "image3.jpg",
-      title: "Title 3",
-      text: "Text 3",
+      title: "TicTacToe",
+      text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga natus quisquam nemo dicta non? Quibusdam nulla et ullam illo at. Doloremque beatae optio dignissimos eum quisquam temporibus ipsa cumque enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eos delectus unde harum hic",
     },
   ];
 
@@ -33,16 +33,17 @@ export const GalleryPage = () => {
       <main className="gallery-container">
         <div className="gallery-header">
           <h1 className="header-title">{t("headers.galleryTitle")}</h1>
-          <p>{t("headers.gallerySubheading")}</p>
+          <p className="gallery-subheading">{t("headers.gallerySubheading")}</p>
         </div>
         <div className="projects-container">
           <div className="box-container">
             {boxes.map((box) => (
               <div key={box.id} className="box">
-                {" "}
-                <img src={box.image} alt={box.title} className="box-image" />
-                <h2 className="box-title">{box.title}</h2>
-                <p className="box-text">{box.text}</p>
+                <div className="box-container">
+                  <img src={box.image} alt={box.title} className="box-image" />
+                  <h2 className="box-title">{box.title}</h2>
+                  <p className="box-text">{box.text}</p>
+                </div>
               </div>
             ))}
           </div>
