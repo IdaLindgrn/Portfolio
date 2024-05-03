@@ -17,9 +17,11 @@
 .image-container {
     img {
         width: 100vw;
+        margin-bottom: -6px;
         @include desktop {
             width: 40vw;
             height: auto;
+         
         }
     }
 }
@@ -31,7 +33,7 @@ section {
     align-items: center;
     text-align: center;
     width: auto;
-    height: 80vw;
+    height: 90vw;
     color: #76697B;
     padding: 20px;
 
