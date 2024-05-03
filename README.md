@@ -20,4 +20,3 @@ npm run dev
 
 ![Screenshot](src/assets/portfolio-figma.png)
 
-## [Demo Link]()
