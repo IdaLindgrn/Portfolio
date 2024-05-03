@@ -3,6 +3,7 @@
 .about-container {
     background-color: #FFFCF6;
     height: 90vh;
+    padding-bottom: 50px;
 
     .header-title {
         display: flex;
@@ -30,6 +31,7 @@
             width: 30vh;
             height: 30vh;
             border-radius: 50%;  
+            overflow: hidden;
             
             @include tablet {
                 width: 30vh;
@@ -42,9 +44,12 @@
                 height: 50vh;
             }
 
-            // .portrait {
-            
-            // }
+            .portrait {
+                margin-top: 44%;
+                max-width: 100%;
+                max-height: 180%;
+          
+            }
 
         }
 

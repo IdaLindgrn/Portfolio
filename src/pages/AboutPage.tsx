@@ -3,6 +3,7 @@ import { Footer } from "../components/Footer";
 import "../scss/aboutPage.scss";
 import "../scss/section.scss";
 import { useTranslation } from "react-i18next";
+import portrait from "../assets/portrait.png";
 
 export const AboutPage = () => {
   const [t] = useTranslation("global");
@@ -14,16 +15,16 @@ export const AboutPage = () => {
         <h1 className="header-title">{t("headers.aboutTitle")}</h1>
         <div className="about-me">
           <div className="portrait-container">
-            <img className="portrait" src="" alt="hej" />
+            <img className="portrait" src={portrait} alt="A portrait of me" />
           </div>
           <div className="about-me-container">
             <h2 className="about-me-title">{t("headers.homeTitle")}</h2>
             <p className="about-me-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-              natus quisquam nemo dicta non? Quibusdam nulla et ullam illo at.
-              Doloremque beatae optio dignissimos eum quisquam temporibus ipsa
-              cumque enim. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Tempora eos delectus unde harum hic.
+              Passionerad frontend-utvecklare med ett brinnande intresse för
+              design och problemlösning. Med en mångsidig kompetens och flera
+              års studier inom olika programmeringsspråk och ramverk, strävar
+              jag efter att skapa användarvänliga och estetiskt tilltalande
+              digitala upplevelser.
             </p>
             <a
               href="path/to/your/file.pdf"
