@@ -20,7 +20,7 @@
         padding-top: 5px;
      
         @include desktop {
-            font-size: 2em;
+            font-size: 1.3em;
         }
     }
 }
@@ -77,13 +77,13 @@
     .box-title {
         color: #76697B;
         padding: 4vh 0 2vh 0; 
-        font-size: 3em;
+        font-size: 2em;
         font-weight: normal;
     }
 
     .box-text {
         color: #76697B;
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
   }
 }
