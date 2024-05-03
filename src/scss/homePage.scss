@@ -48,11 +48,11 @@ main {
         padding-bottom: 8px;
 
         @include tablet {
-            font-size: 4em;
+            font-size: 3em;
         }
 
-        @include desktop {
-            font-size: 5em;
+        @include desktop-large {
+            font-size: 3.5em;
         }
     }
     
@@ -95,16 +95,21 @@ article {
         font-size: 3em;
     }
 
+    @include desktop {
+        font-size: 30px;
+    }
+
   }
 
   p, li {
     font-size: 20px;
 
     @include tablet {
-        font-size: 35px;
+        font-size: 1.3em;
     }
 
-    @include desktop {
+
+    @include desktop-large {
         font-size: 1.5em;
     }
   }
