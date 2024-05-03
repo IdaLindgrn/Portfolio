@@ -18,6 +18,7 @@ export const MobileNavigation = () => {
   const closeIcon = (
     <IoIosClose
       className="hamburger"
+      id="close"
       size="60px"
       color="#76697B"
       onClick={() => setOpen(!open)}
