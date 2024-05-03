@@ -108,6 +108,14 @@ section {
 #section-container2 {
     background-color: #FFFCF6;
 }
+}
 
+#container2 {
+    flex-direction: column-reverse;
+
+    @include desktop {
+        flex-direction: row;
+
+    }
 }
 

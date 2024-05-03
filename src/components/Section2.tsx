@@ -5,7 +5,7 @@ import dreamyCloudsImage from "../assets/dreamy-clouds.png";
 
 export const Section2 = () => {
   return (
-    <div className="container">
+    <div className="container" id="container2">
       <section id="section-container2">
         <h3 className="heading">Gallery</h3>
         <p id="section-text">
