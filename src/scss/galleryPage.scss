@@ -38,10 +38,18 @@
         padding-bottom: 10vh; 
     }
 
+    .hovered {
+        transform: scale(1.05); 
+      }
+
+      .box:hover .box-container {
+        transform: scale(1.05);
+      }
 
 .box-container {
     display: flex;
     flex-direction: column;
+    transition: transform 0.3s ease-in-out;
 
     @include desktop {
         flex-direction: row;
@@ -67,6 +75,10 @@
         width: 400px;
         height: 550px;
         margin: 20px;
+    }
+
+    .box-a {
+        text-decoration: none;
     }
 
     .box-container {
