@@ -3,7 +3,11 @@
 .about-container {
     background-color: #FFFCF6;
     height: 90vh;
-    padding-bottom: 50px;
+    padding-bottom: 15vh;
+
+    @include desktop {
+        padding-bottom: 20px;
+    }
 
     .header-title {
         display: flex;
@@ -104,8 +108,8 @@
                 @include desktop {
                 background-color: #76697B;
                 color: white;
-                font-size: 2em;
-                max-width: 15vw;  
+                font-size: 1.4em;
+                max-width: 10vw;  
                 margin: 0;   
                 }
 

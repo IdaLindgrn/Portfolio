@@ -76,18 +76,18 @@ section {
         border-radius: 5px;
         width: 120px;
         padding: 12px 22px;
-        font-size: 25px;
+        font-size: 1.2em;
         text-align: center;
 
         @include tablet {
             padding: 20px 20px;
-            font-size: 40px;
+            font-size: 1.4em;
             width: 200px;
         }
 
         @include desktop {
             padding: 20px 30px;
-            font-size: 28px;
+            font-size: 1.4em;
             width: 140px;
         }
         

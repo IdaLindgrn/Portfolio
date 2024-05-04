@@ -2,6 +2,9 @@ import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import "../scss/galleryPage.scss";
 import { useTranslation } from "react-i18next";
+import Catbox from "../assets/catbox.png";
+import TicTacToe from "../assets/tictactoe.png";
+import Webshop from "../assets/webshop.png";
 
 export const GalleryPage = () => {
   const [t] = useTranslation("global");
@@ -9,20 +12,20 @@ export const GalleryPage = () => {
   const boxes = [
     {
       id: 1,
-      image: "image1.jpg",
-      title: "Restaurant",
-      text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga natus quisquam nemo dicta non? Quibusdam nulla et ullam illo at. Doloremque beatae optio dignissimos eum quisquam temporibus ipsa cumque enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eos delectus unde harum hic",
-    },
-    {
-      id: 2,
-      image: "image2.jpg",
+      image: Catbox,
       title: "CatBox",
       text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga natus quisquam nemo dicta non? Quibusdam nulla et ullam illo at. Doloremque beatae optio dignissimos eum quisquam temporibus ipsa cumque enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eos delectus unde harum hic",
     },
     {
-      id: 3,
-      image: "image3.jpg",
+      id: 2,
+      image: TicTacToe,
       title: "TicTacToe",
+      text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga natus quisquam nemo dicta non? Quibusdam nulla et ullam illo at. Doloremque beatae optio dignissimos eum quisquam temporibus ipsa cumque enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eos delectus unde harum hic",
+    },
+    {
+      id: 3,
+      image: Webshop,
+      title: "Webshop",
       text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga natus quisquam nemo dicta non? Quibusdam nulla et ullam illo at. Doloremque beatae optio dignissimos eum quisquam temporibus ipsa cumque enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eos delectus unde harum hic",
     },
   ];
