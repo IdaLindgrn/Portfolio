@@ -1,0 +1,122 @@
+@import '_mixins.scss';
+
+.about-container {
+    background-color: #FFFCF6;
+    height: 90vh;
+    padding-bottom: 15vh;
+
+    @include desktop {
+        padding-bottom: 20px;
+    }
+
+    .header-title {
+        display: flex;
+        justify-content: center;
+        padding: 9vh 0 5vh 0;
+    }
+
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+
+        @include desktop{
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .portrait-container {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            align-items: center;
+            background-color: #dfdbd5;
+            width: 30vh;
+            height: 30vh;
+            border-radius: 50%;  
+            overflow: hidden;
+            
+            @include tablet {
+                width: 30vh;
+                height: 30vh;
+            }
+
+            @include desktop {
+                margin-left: 10vw;
+                width: 50vh;
+                height: 50vh;
+            }
+
+            .portrait {
+                margin-top: 44%;
+                max-width: 100%;
+                max-height: 180%;
+          
+            }
+
+        }
+
+
+        .about-me-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 80vw;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+
+            @include desktop {
+                max-width: 40vw;
+                margin-left: 10vw;
+                margin-right: 0;
+                text-align: left;
+            }
+
+            .about-me-title {
+                margin: 30px 0 20px;
+                font-weight: normal;
+                color: #76697B;
+                font-size: 1.7em;
+
+                @include desktop {
+                    margin: 30px 0 30px;
+                    font-size: 2.5em;
+                }
+            }
+
+            .about-me-text {
+                color: #76697B;
+                margin-bottom: 20px;
+
+                @include desktop {
+                    margin-bottom: 30px;
+                }
+            }
+
+            .download-link {
+                background-color: #76697B;
+                color: white;
+                font-size: 1em;
+                text-align: center;
+                text-decoration: none;
+                max-width: 50vw;
+                border-radius: 10px;
+                padding: 17px 60px;
+                margin: auto;
+
+                @include desktop {
+                background-color: #76697B;
+                color: white;
+                font-size: 1.4em;
+                max-width: 10vw;  
+                margin: 0;   
+                }
+
+            }
+
+
+
+        }
+    }
+}

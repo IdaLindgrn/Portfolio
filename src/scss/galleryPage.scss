@@ -1,0 +1,144 @@
+@import '_mixins.scss';
+
+
+.gallery-container {
+    background-color: #FFFCF6;
+    height: 100%;
+
+.gallery-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 9vh 0 5vh 0;
+
+    @include desktop {
+        padding: 9vh 0 5vh 0;
+    }
+
+    .gallery-subheading {
+        color: #76697B;
+        padding-top: 5px;
+     
+        @include desktop {
+            font-size: 1.3em;
+        }
+    }
+}
+
+
+
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4vh;
+
+    @include desktop {
+        justify-content: space-around;
+        padding-bottom: 10vh; 
+    }
+
+    .hovered {
+        transform: scale(1.05); 
+      }
+
+      .box:hover .box-container {
+        transform: scale(1.05);
+      }
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out;
+
+    @include desktop {
+        flex-direction: row;
+    }
+  }
+  
+  .box {
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+    height: 900px;
+    margin: 4vh 0 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+
+    @include desktop {
+        width: 350px;
+        height: 500px;
+        margin: 20px;
+    }
+   
+
+    @include desktop-large {
+        width: 400px;
+        height: 550px;
+        margin: 20px;
+    }
+
+    .box-a {
+        text-decoration: none;
+    }
+
+    .box-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .image-container {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+    
+
+    .box-image {
+        background-color: #76697B;
+        width: 100%;
+        height: 350px;
+
+        @include desktop {
+            height: 170px;
+        }
+       
+    
+        @include desktop-large {
+            height: 200px;
+        }
+    }
+
+    .left-arrow {
+        position: absolute;
+        top: 50%;
+        left: 1%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #ada9af;
+    }
+
+    .right-arrow {
+        position: absolute;
+        top: 50%;
+        right: 1%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #ada9af;
+    }
+
+    .box-title {
+        color: #76697B;
+        padding: 4vh 0 2vh 0; 
+        font-size: 2em;
+        font-weight: normal;
+    }
+
+    .box-text {
+        color: #76697B;
+        font-size: 1.2em;
+    }
+  }
+}
+}

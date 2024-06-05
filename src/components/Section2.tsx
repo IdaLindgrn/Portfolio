@@ -5,17 +5,24 @@ import dreamyCloudsImage from "../assets/dreamy-clouds.png";
 
 export const Section2 = () => {
   return (
-    <div className="container">
+    <div className="container" id="container2">
       <section id="section-container2">
         <h3 className="heading">Gallery</h3>
         <p id="section-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga natus
-          quisquam nemo dicta non? Quibusdam nulla et ullam illo at. Doloremque
-          beatae optio dignissimos eum quisquam temporibus ipsa cumque enim.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eos
-          delectus unde harum hic.
+          Get a deep dive into some of my previous projects:
         </p>
-        <div id="contact">
+        <ul className="dot-list">
+          <li>
+            <span className="dot"></span>The Restaurant
+          </li>
+          <li>
+            <span className="dot"></span>CatBox
+          </li>
+          <li>
+            <span className="dot"></span>TicTacToe
+          </li>
+        </ul>
+        <div id="shortcuts">
           <Link id="footerLink" to="/about">
             Learn More
           </Link>
