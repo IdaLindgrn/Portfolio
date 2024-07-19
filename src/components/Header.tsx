@@ -15,7 +15,7 @@ export const Header = () => {
   return (
     <>
       <header className="home-header">
-        <img src={logo} alt="My name as the logo" />
+        <img src={logo} alt={t("logoAlt", "My name as the logo")} />
         <Navbar />
         <div className="dropdown">
           <div
@@ -30,10 +30,8 @@ export const Header = () => {
                 onChange={(e) => handleChangeLanguage(e.target.value)}
                 className="dropdown-text"
               >
-                <option value="en">ENG</option>
-                <option value="sv">
-                  <p>SV</p>
-                </option>
+                <option value="en">{t("language.english", "ENG")}</option>
+                <option value="sv">{t("language.swedish", "SV")}</option>
               </select>
             </div>
           </div>
