@@ -1,4 +1,4 @@
-import { AboutText } from "../components/AboutText";
+import { MyExpertise } from "../components/MyExpertise";
 import { Section1 } from "../components/Section1";
 import "../scss/homePage.scss";
 import "../scss/footer.scss";
@@ -17,7 +17,7 @@ export const HomePage = () => {
           <h1 className="header-title">{t("headers.homeTitle")}</h1>
           <p>{t("headers.homeSubheading")}</p>
         </div>
-        <AboutText />
+        <MyExpertise />
         <Section1 />
         <Section2 />
       </main>
