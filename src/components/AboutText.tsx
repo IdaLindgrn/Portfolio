@@ -3,7 +3,7 @@ import "../scss/homePage.scss";
 export const AboutText = () => {
   return (
     <article>
-      <h2 className="heading">About Me</h2>
+      <h2 className="heading">My Expertise</h2>
       <div className="about-text">
         <div className="about-1">
           <p>
