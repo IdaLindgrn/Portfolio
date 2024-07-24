@@ -14,6 +14,11 @@ interface Quote {
 export const Footer = () => {
   const [quote, setQuote] = useState<Quote | null>(null);
 
+  // const handleScrollToTop = (e: any) => {
+  //   e.preventDefault();
+  //   document.getElementById("header")?.scrollIntoView({ behavior: "smooth" });
+  // };
+
   useEffect(() => {
     const fetchQuote = async () => {
       try {
