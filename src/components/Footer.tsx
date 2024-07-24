@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
+import { IoIosArrowUp } from "react-icons/io";
 import figure from "../assets/figure.gif";
 
 interface Quote {
@@ -54,17 +55,31 @@ export const Footer = () => {
 
   return (
     <footer id="footer">
+      <div className="to-top-container">
+        <a href="#header">
+          <IoIosArrowUp className="to-top-arrow" />
+        </a>
+      </div>
       <div className="footer-content-container">
         <div className="footer-socials">
-          <a href="https://github.com/IdaLindgrn">
-            <BsGithub className="socials-icon" />
-          </a>
-          <a href="https://www.linkedin.com/in/ida-lindgren-0b6099207/">
-            <BsLinkedin className="socials-icon" />
-          </a>
-          <a href="mailto:ida-lindgren@hotmail.com">
-            <GrMail className="socials-icon" />
-          </a>
+          <div className="div-links">
+            <a href="https://github.com/IdaLindgrn">
+              <BsGithub className="socials-icon" />
+            </a>
+            <p className="name-links">Github</p>
+          </div>
+          <div className="div-links">
+            <a href="https://www.linkedin.com/in/ida-lindgren-0b6099207/">
+              <BsLinkedin className="socials-icon" />
+            </a>
+            <p className="name-links">LinkedIn</p>
+          </div>
+          <div className="div-links">
+            <a href="mailto:ida-lindgren@hotmail.com">
+              <GrMail className="socials-icon" />
+            </a>
+            <p className="name-links">Mail</p>
+          </div>
         </div>
         <div className="tablet-and-above">
           <div className="quote-container">
