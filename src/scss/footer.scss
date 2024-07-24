@@ -1,6 +1,7 @@
 @import '_mixins.scss';
 
 footer {
+  
     background-color: #76697B;
     position: relative;
 
@@ -123,7 +124,7 @@ footer {
         color: #AFA7B2;
 
         @include desktop {
-          padding: 30px;
+          padding: 40px;
       } 
     }
 
@@ -139,7 +140,7 @@ footer {
 
     .figure-container {
         position: relative;
-        left: -21vw;
+        left: -400px;
         bottom: -160px;
 
  
@@ -163,9 +164,9 @@ footer {
 
       .quote-title {
         font-size: 27px;
-        margin-left: -5vw;
-        margin-top: 7vh;
-        margin-bottom: 2vh;
+        margin-left: -100px;
+        margin-top: 50px;
+        margin-bottom: 20px;
         color: white;
       }
       
@@ -175,8 +176,13 @@ footer {
         padding: 15px;
         color: #76697B;
         border-radius: 45px;
-        margin-left: 19vw; 
-        margin-right: 3vw; 
+        margin-left: 180px; 
+        margin-right: 50px; 
+
+        @include desktop-large {
+          margin-left: 350px;
+        }
+       
       }
 
       .footer-socials a {
@@ -187,11 +193,16 @@ footer {
       
       .quote-content {
         padding: 10px;
-        width: 36vw;
+        width: 500px;
         line-height: 24px;
         font-size: 15px;
 
+        @include desktop-large {
+          width: 700px;
+        }
       }
+
+
       
       .quote-triangle {
         position: absolute;

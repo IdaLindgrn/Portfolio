@@ -14,11 +14,6 @@ interface Quote {
 export const Footer = () => {
   const [quote, setQuote] = useState<Quote | null>(null);
 
-  // const handleScrollToTop = (e: any) => {
-  //   e.preventDefault();
-  //   document.getElementById("header")?.scrollIntoView({ behavior: "smooth" });
-  // };
-
   useEffect(() => {
     const fetchQuote = async () => {
       try {
@@ -37,26 +32,35 @@ export const Footer = () => {
         console.error("Error fetching quote:", error);
       }
     };
-    const lastAPIFetchDate = localStorage.getItem("lastAPIFetchDate");
-    if (lastAPIFetchDate) {
-      const lastFetchDate = new Date(lastAPIFetchDate);
-      const today = new Date();
-      if (
-        lastFetchDate.getFullYear() !== today.getFullYear() ||
-        lastFetchDate.getMonth() !== today.getMonth() ||
-        lastFetchDate.getDate() !== today.getDate()
-      ) {
-        fetchQuote();
-      } else {
-        const storedQuote = localStorage.getItem("quote");
-        if (storedQuote) {
-          setQuote(JSON.parse(storedQuote));
-        }
-      }
-    } else {
-      fetchQuote();
-    }
+    // const lastAPIFetchDate = localStorage.getItem("lastAPIFetchDate");
+    // if (lastAPIFetchDate) {
+    //   const lastFetchDate = new Date(lastAPIFetchDate);
+    //   const today = new Date();
+    //   if (
+    //     lastFetchDate.getFullYear() !== today.getFullYear() ||
+    //     lastFetchDate.getMonth() !== today.getMonth() ||
+    //     lastFetchDate.getDate() !== today.getDate()
+    //   ) {
+    fetchQuote();
+    //   } else {
+    //     const storedQuote = localStorage.getItem("quote");
+    //     if (storedQuote) {
+    //       setQuote(JSON.parse(storedQuote));
+    //     }
+    //   }
+    // } else {
+    //   fetchQuote();
+    // }
   }, []);
+
+  const MAX_QUOTE_LENGTH = 150;
+
+  const truncateQuote = (quote: any) => {
+    if (quote.length > MAX_QUOTE_LENGTH) {
+      return quote.substring(0, MAX_QUOTE_LENGTH) + "...";
+    }
+    return quote;
+  };
 
   return (
     <footer id="footer">
@@ -91,12 +95,13 @@ export const Footer = () => {
             <figure className="figure-container">
               <img className="figure-img" src={figure} alt="Figure" />
             </figure>
+
             <p className="quote-title">The Office quote of the day</p>
             <div className="quote">
               <div className="quote-content">
                 {quote && (
                   <>
-                    <p>{quote.quote}</p>
+                    <p>{truncateQuote(quote.quote)}</p>
                     <p>- {quote.character}</p>
                   </>
                 )}
