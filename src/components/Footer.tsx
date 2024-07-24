@@ -32,25 +32,25 @@ export const Footer = () => {
         console.error("Error fetching quote:", error);
       }
     };
-    // const lastAPIFetchDate = localStorage.getItem("lastAPIFetchDate");
-    // if (lastAPIFetchDate) {
-    //   const lastFetchDate = new Date(lastAPIFetchDate);
-    //   const today = new Date();
-    //   if (
-    //     lastFetchDate.getFullYear() !== today.getFullYear() ||
-    //     lastFetchDate.getMonth() !== today.getMonth() ||
-    //     lastFetchDate.getDate() !== today.getDate()
-    //   ) {
-    fetchQuote();
-    //   } else {
-    //     const storedQuote = localStorage.getItem("quote");
-    //     if (storedQuote) {
-    //       setQuote(JSON.parse(storedQuote));
-    //     }
-    //   }
-    // } else {
-    //   fetchQuote();
-    // }
+    const lastAPIFetchDate = localStorage.getItem("lastAPIFetchDate");
+    if (lastAPIFetchDate) {
+      const lastFetchDate = new Date(lastAPIFetchDate);
+      const today = new Date();
+      if (
+        lastFetchDate.getFullYear() !== today.getFullYear() ||
+        lastFetchDate.getMonth() !== today.getMonth() ||
+        lastFetchDate.getDate() !== today.getDate()
+      ) {
+        fetchQuote();
+      } else {
+        const storedQuote = localStorage.getItem("quote");
+        if (storedQuote) {
+          setQuote(JSON.parse(storedQuote));
+        }
+      }
+    } else {
+      fetchQuote();
+    }
   }, []);
 
   const MAX_QUOTE_LENGTH = 150;
@@ -64,11 +64,11 @@ export const Footer = () => {
 
   return (
     <footer id="footer">
-      <div className="to-top-container">
-        <a href="#header">
+      <a href="#header">
+        <div className="to-top-container">
           <IoIosArrowUp className="to-top-arrow" />
-        </a>
-      </div>
+        </div>
+      </a>
       <div className="footer-content-container">
         <div className="footer-socials">
           <div className="div-links">

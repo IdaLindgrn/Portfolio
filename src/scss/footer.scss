@@ -5,6 +5,10 @@ footer {
     background-color: #76697B;
     position: relative;
 
+    a:hover .to-top-container {
+      background-color: #c9bfd8;
+    }
+
     .to-top-container {
       position: absolute; 
       top: -34px; 
@@ -13,6 +17,8 @@ footer {
       background-color: #E3DCEF;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
+
+
 
       .to-top-arrow {
         color: #76697B;
@@ -51,13 +57,10 @@ footer {
 
     }
         @include desktop {
-          padding: 40px;
+          padding: 60px 40px;
             display: flex;
-
         }
     }
-
-
     .footer-socials {
         display: flex;
         justify-content: center;
@@ -114,8 +117,13 @@ footer {
           flex-direction: column;
           margin-left: 5px;
           margin-right: 5px;
-
         }
+
+        a:hover   {
+          background-color: rgb(229, 221, 221);
+          padding: 20px;
+        }
+    
     }
 
     .copyright {
@@ -143,7 +151,7 @@ footer {
     .figure-container {
         position: relative;
         left: -400px;
-        bottom: -160px;
+        bottom: -180px;
 
  
       }
