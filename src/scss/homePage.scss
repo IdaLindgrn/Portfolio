@@ -24,21 +24,20 @@ main {
     #banner {
         background-image: url("../assets/banner.gif");
         background-size: cover;
-        height: 70vw;
+        height: 60vh;
         color: #76697B;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin: 30px 0;
+
 
         @include tablet {
-            margin: 15px 0;
             height: 60vw;
         }
      
         @include desktop {
-            height: 80vh;
+            height: 90vh;
         }
     }
     .header-title {
