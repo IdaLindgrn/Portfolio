@@ -1,18 +1,67 @@
 @import '_mixins.scss';
 
 footer {
+  
     background-color: #76697B;
+    position: relative;
 
-    .footer-content-container {
-        @include desktop {
-            display: flex;
-
-        }
+    a:hover .to-top-container {
+      background-color: #c9bfd8;
     }
 
+    .to-top-container {
+      position: absolute; 
+      top: -34px; 
+      padding: 0px 25px; 
+      right: 60px; 
+      background-color: #E3DCEF;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
 
+
+
+      .to-top-arrow {
+        color: #76697B;
+        width: 40px;
+        height: 40px;
+        margin-top: -5px;
+        margin-bottom: -5px;
+
+        
+      @include tablet {
+        top: -59px;
+        width: 65px;
+        height: 65px;
+        margin-top: -5px;
+        margin-bottom: -5px;
+      }
+      }
+
+      @include tablet {
+        top: -59px; 
+        padding: 0px 45px;
+        right: 80px; 
+      }
+
+      @include desktop {
+        right: 100px; 
+      }
+
+    }
+
+    .footer-content-container {
+      padding: 60px;
+
+      @include tablet {
+        padding: 70px;
+
+    }
+        @include desktop {
+          padding: 60px 40px;
+            display: flex;
+        }
+    }
     .footer-socials {
-        padding: 40px;
         display: flex;
         justify-content: center;
  
@@ -22,7 +71,7 @@ footer {
             align-items: center;
             justify-content: center;
             padding: 15px;
-            background-color: #FFFCF6;
+            background-color: #ffffff;
             border-radius: 50%;
             color: #5C555F;
             font-size: 1.7rem;
@@ -35,17 +84,46 @@ footer {
                     width: 30px;
                     height: 30px;
                 }
+
+                @include desktop {
+                  width: 40px;
+                  height: 40px;         
+              }
             }
 
             @include tablet {
                 padding: 20px;  
             }
-        } 
+        }
+        
+        .name-links {
+          @include desktop {
+            margin-top: -70px;
+            margin-bottom: 70px;
+          }
+        }
+
+
 
         @include desktop {
             justify-content: left;
             margin-left: 10vw;
         }  
+
+        .div-links {
+          display: flex;
+          align-items: center;
+          color: #ffffff;
+          flex-direction: column;
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+
+        a:hover   {
+          background-color: rgb(229, 221, 221);
+          padding: 20px;
+        }
+    
     }
 
     .copyright {
@@ -56,7 +134,7 @@ footer {
         color: #AFA7B2;
 
         @include desktop {
-          padding: 30px;
+          padding: 40px;
       } 
     }
 
@@ -72,8 +150,8 @@ footer {
 
     .figure-container {
         position: relative;
-        left: -21vw;
-        bottom: -170px;
+        left: -400px;
+        bottom: -180px;
 
  
       }
@@ -96,9 +174,9 @@ footer {
 
       .quote-title {
         font-size: 27px;
-        margin-left: -5vw;
-        margin-top: 7vh;
-        margin-bottom: 2vh;
+        margin-left: -100px;
+        margin-top: 50px;
+        margin-bottom: 20px;
         color: white;
       }
       
@@ -108,8 +186,13 @@ footer {
         padding: 15px;
         color: #76697B;
         border-radius: 45px;
-        margin-left: 19vw; 
-        margin-right: 3vw; 
+        margin-left: 180px; 
+        margin-right: 50px; 
+
+        @include desktop-large {
+          margin-left: 350px;
+        }
+       
       }
 
       .footer-socials a {
@@ -120,11 +203,16 @@ footer {
       
       .quote-content {
         padding: 10px;
-        width: 36vw;
+        width: 500px;
         line-height: 24px;
         font-size: 15px;
 
+        @include desktop-large {
+          width: 700px;
+        }
       }
+
+
       
       .quote-triangle {
         position: absolute;

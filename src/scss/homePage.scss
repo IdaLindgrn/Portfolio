@@ -1,11 +1,15 @@
 @import '_mixins.scss';
 
+html {
+    scroll-behavior: smooth;
+  }
+
 * {
     margin: 0;
     font-family: "League Spartan";
 }
 
-.home-header {
+#header {
     display: flex;
     justify-content: space-between;
     align-items: center;

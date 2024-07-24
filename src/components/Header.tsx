@@ -14,7 +14,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className="home-header">
+      <header id="header">
         <img src={logo} alt={t("logoAlt", "My name as the logo")} />
         <Navbar />
         <div className="dropdown">
