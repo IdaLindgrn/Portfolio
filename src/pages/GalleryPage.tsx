@@ -10,6 +10,7 @@ import { useState } from "react";
 export const GalleryPage = () => {
   const [t] = useTranslation("global");
   const [hoveredBox, setHoveredBox] = useState(null);
+  const [selectedFilter, setSelectedFilter] = useState("all");
 
   const handleHover = (boxId: any) => {
     setHoveredBox(boxId);
@@ -19,29 +20,42 @@ export const GalleryPage = () => {
     setHoveredBox(null);
   };
 
+  const filters = ["all", "react", "vue", "typescript", "python"];
   const boxes = [
     {
       id: 1,
       image: Catbox,
       title: "CatBox",
-      text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga natus quisquam nemo dicta non? Quibusdam nulla et ullam illo at. Doloremque beatae optio dignissimos eum quisquam temporibus ipsa cumque enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eos delectus unde harum hic",
+      text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
       link: "https://cat-box.netlify.app/",
+      category: "react",
     },
     {
       id: 2,
       image: TicTacToe,
       title: "TicTacToe",
-      text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga natus quisquam nemo dicta non? Quibusdam nulla et ullam illo at. Doloremque beatae optio dignissimos eum quisquam temporibus ipsa cumque enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eos delectus unde harum hic",
+      text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
       link: "https://ida-lindgren-tictactoe.netlify.app/",
+      category: "vue",
     },
     {
       id: 3,
       image: Webshop,
       title: "Webshop",
-      text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga natus quisquam nemo dicta non? Quibusdam nulla et ullam illo at. Doloremque beatae optio dignissimos eum quisquam temporibus ipsa cumque enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eos delectus unde harum hic",
+      text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
       link: "",
+      category: "typescript",
     },
   ];
+
+  const handleFilterChange = (filter: string) => {
+    setSelectedFilter(filter);
+  };
+
+  const filteredBoxes =
+    selectedFilter === "all"
+      ? boxes
+      : boxes.filter((box) => box.category === selectedFilter);
 
   return (
     <>
@@ -50,10 +64,23 @@ export const GalleryPage = () => {
         <div className="gallery-header">
           <h1 className="header-title">{t("headers.galleryTitle")}</h1>
           <p className="gallery-subheading">{t("headers.gallerySubheading")}</p>
+          <div className="filter-container">
+            {filters.map((filter) => (
+              <button
+                key={filter}
+                className={`filter-button ${
+                  selectedFilter === filter ? "active" : ""
+                }`}
+                onClick={() => handleFilterChange(filter)}
+              >
+                {filter}
+              </button>
+            ))}
+          </div>
         </div>
         <div className="projects-container">
           <div className="box-container">
-            {boxes.map((box) => (
+            {filteredBoxes.map((box) => (
               <div
                 key={box.id}
                 className="box"
