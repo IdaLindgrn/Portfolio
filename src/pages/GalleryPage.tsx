@@ -9,10 +9,10 @@ import { useState } from "react";
 
 export const GalleryPage = () => {
   const [t] = useTranslation("global");
-  const [hoveredBox, setHoveredBox] = useState(null);
-  const [selectedFilter, setSelectedFilter] = useState("all");
+  const [hoveredBox, setHoveredBox] = useState<number | null>(null);
+  const [selectedFilter, setSelectedFilter] = useState("All");
 
-  const handleHover = (boxId: any) => {
+  const handleHover = (boxId: number) => {
     setHoveredBox(boxId);
   };
 
@@ -20,7 +20,7 @@ export const GalleryPage = () => {
     setHoveredBox(null);
   };
 
-  const filters = ["all", "react", "vue", "typescript", "python"];
+  const filters = ["All", "React", "Vue", "TypeScript", "JavaScript", "Python"];
   const boxes = [
     {
       id: 1,
@@ -28,7 +28,7 @@ export const GalleryPage = () => {
       title: "CatBox",
       text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
       link: "https://cat-box.netlify.app/",
-      category: "react",
+      category: "React",
     },
     {
       id: 2,
@@ -36,7 +36,7 @@ export const GalleryPage = () => {
       title: "TicTacToe",
       text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
       link: "https://ida-lindgren-tictactoe.netlify.app/",
-      category: "vue",
+      category: "Vue",
     },
     {
       id: 3,
@@ -44,7 +44,31 @@ export const GalleryPage = () => {
       title: "Webshop",
       text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
       link: "",
-      category: "typescript",
+      category: "TypeScript",
+    },
+    {
+      id: 4,
+      image: Catbox,
+      title: "CatBox",
+      text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
+      link: "https://cat-box.netlify.app/",
+      category: "React",
+    },
+    {
+      id: 5,
+      image: TicTacToe,
+      title: "TicTacToe",
+      text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
+      link: "https://ida-lindgren-tictactoe.netlify.app/",
+      category: "Vue",
+    },
+    {
+      id: 6,
+      image: Webshop,
+      title: "Webshop",
+      text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
+      link: "",
+      category: "TypeScript",
     },
   ];
 
@@ -53,65 +77,70 @@ export const GalleryPage = () => {
   };
 
   const filteredBoxes =
-    selectedFilter === "all"
+    selectedFilter === "All"
       ? boxes
       : boxes.filter((box) => box.category === selectedFilter);
 
   return (
     <>
       <Header />
-      <main className="gallery-container">
-        <div className="gallery-header">
-          <h1 className="header-title">{t("headers.galleryTitle")}</h1>
-          <p className="gallery-subheading">{t("headers.gallerySubheading")}</p>
-          <div className="filter-container">
-            {filters.map((filter) => (
-              <button
-                key={filter}
-                className={`filter-button ${
-                  selectedFilter === filter ? "active" : ""
-                }`}
-                onClick={() => handleFilterChange(filter)}
-              >
-                {filter}
-              </button>
-            ))}
-          </div>
-        </div>
-        <div className="projects-container">
-          <div className="box-container">
-            {filteredBoxes.map((box) => (
-              <div
-                key={box.id}
-                className="box"
-                onMouseEnter={() => handleHover(box.id)}
-                onMouseLeave={handleLeave}
-              >
-                <a
-                  href={box.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="box-a"
+      <div className="background-container"></div>
+      <div className="gallery-wrapper">
+        <main className="gallery-container">
+          <div className="gallery-header">
+            <h1 className="header-title">{t("headers.galleryTitle")}</h1>
+            <p className="gallery-subheading">
+              {t("headers.gallerySubheading")}
+            </p>
+            <div className="filter-container">
+              {filters.map((filter) => (
+                <button
+                  key={filter}
+                  className={`filter-button ${
+                    selectedFilter === filter ? "active" : ""
+                  }`}
+                  onClick={() => handleFilterChange(filter)}
                 >
-                  <div
-                    className={`box-container ${
-                      hoveredBox === box.id ? "hovered" : ""
-                    }`}
-                  >
-                    <img
-                      src={box.image}
-                      alt={box.title}
-                      className="box-image"
-                    />
-                    <h2 className="box-title">{box.title}</h2>
-                    <p className="box-text">{box.text}</p>
-                  </div>
-                </a>
-              </div>
-            ))}
+                  {filter}
+                </button>
+              ))}
+            </div>
           </div>
-        </div>
-      </main>
+          <div className="projects-container">
+            <div className="box-container">
+              {filteredBoxes.map((box) => (
+                <div
+                  key={box.id}
+                  className="box"
+                  onMouseEnter={() => handleHover(box.id)}
+                  onMouseLeave={handleLeave}
+                >
+                  <a
+                    href={box.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="box-a"
+                  >
+                    <div
+                      className={`box-content ${
+                        hoveredBox === box.id ? "hovered" : ""
+                      }`}
+                    >
+                      <img
+                        src={box.image}
+                        alt={box.title}
+                        className="box-image"
+                      />
+                      <h2 className="box-title">{box.title}</h2>
+                      <p className="box-text">{box.text}</p>
+                    </div>
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        </main>
+      </div>
       <Footer />
     </>
   );

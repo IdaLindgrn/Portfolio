@@ -1,144 +1,174 @@
 @import '_mixins.scss';
 
-
-.gallery-container {
-    background-color: #FFFCF6;
-    height: 100%;
-
-.gallery-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 9vh 0 5vh 0;
-
-    @include desktop {
-        padding: 9vh 0 5vh 0;
-    }
-
-    .gallery-subheading {
-        color: #76697B;
-        padding-top: 5px;
-     
-        @include desktop {
-            font-size: 1.3em;
-        }
-    }
+.background-container {
+  background-image: url("../assets/banner.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 110vh;
+  width: 100%;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: -1; 
 }
 
+.gallery-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0; 
+}
 
+.gallery-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 80px 0;
+  width: 85vw;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.gallery-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 9vh 0 5vh 0;
 
-.projects-container {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 4vh;
+  @include desktop {
+    padding: 9vh 0 5vh 0;
+  }
+
+  .filter-container {
+    margin: 30px 0;
+    background-color: #E3DCEF;
+    text-align: center;
+    padding: 15px;
+    border-radius: 40px;
+
+    .filter-button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      background-color: #E3DCEF;
+      border: none;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+      font-size: 1.5em;
+      color: #76697B;
+
+      &.active {
+        background-color: #76697B;
+        color: white;
+      }
+
+      &:hover {
+        background-color: #B9A5D5;
+      }
+    }
+  }
+
+  .gallery-subheading {
+    color: #76697B;
+    padding-top: 5px;
 
     @include desktop {
-        justify-content: space-around;
-        padding-bottom: 10vh; 
+      font-size: 1.3em;
     }
+  }
+}
 
-    .hovered {
-        transform: scale(1.05); 
-      }
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4vh;
 
-      .box:hover .box-container {
-        transform: scale(1.05);
-      }
+  @include desktop {
+    justify-content: space-around;
+    padding-bottom: 10vh;
+  }
 
-.box-container {
+  .hovered {
+    transform: scale(1.05);
+  }
+
+  .box:hover .box-container {
+    transform: scale(1.05);
+  }
+
+  .box-container {
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease-in-out;
 
     @include desktop {
         flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
     }
   }
-  
+
   .box {
     background-color: rgb(255, 255, 255);
     width: 700px;
-    height: 900px;
+    height: auto;
     margin: 4vh 0 0;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
-
     @include desktop {
-        width: 350px;
-        height: 500px;
-        margin: 20px;
+      width: 350px;
+      height: auto;
+      margin: 20px;
     }
-   
 
     @include desktop-large {
-        width: 400px;
-        height: 550px;
-        margin: 20px;
+      width: 400px;
+      height: auto;
+      margin: 20px;
     }
 
     .box-a {
-        text-decoration: none;
+      text-decoration: none;
     }
 
-    .box-container {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        padding: 25px;
+    .box-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding: 25px;
     }
 
     .image-container {
-        position: relative;
-        display: inline-block;
-        width: 100%;
+      position: relative;
+      display: inline-block;
+      width: 100%;
     }
-    
 
     .box-image {
-        background-color: #76697B;
-        width: 100%;
-        height: 350px;
+      background-color: #76697B;
+      width: 100%;
+      height: 350px;
 
-        @include desktop {
-            height: 170px;
-        }
-       
-    
-        @include desktop-large {
-            height: 200px;
-        }
-    }
+      @include desktop {
+        height: 170px;
+      }
 
-    .left-arrow {
-        position: absolute;
-        top: 50%;
-        left: 1%;
-        transform: translateY(-50%);
-        cursor: pointer;
-        color: #ada9af;
-    }
-
-    .right-arrow {
-        position: absolute;
-        top: 50%;
-        right: 1%;
-        transform: translateY(-50%);
-        cursor: pointer;
-        color: #ada9af;
+      @include desktop-large {
+        height: 200px;
+      }
     }
 
     .box-title {
-        color: #76697B;
-        padding: 4vh 0 2vh 0; 
-        font-size: 2em;
-        font-weight: normal;
+      color: #76697B;
+      padding: 4vh 0 2vh 0;
+      font-size: 2em;
+      font-weight: normal;
     }
 
     .box-text {
-        color: #76697B;
-        font-size: 1.2em;
+      color: #76697B;
+      font-size: 1.2em;
     }
   }
-}
 }
