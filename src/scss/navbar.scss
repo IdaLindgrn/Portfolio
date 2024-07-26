@@ -78,7 +78,6 @@ li {
     border-bottom: 2px solid #76697B; 
   }
 
-
 @include tablet {
 .navLink.active:after {
     content: ""; 
@@ -87,10 +86,9 @@ li {
     left: 0;
     transform: translateX(0%);
     width: 100%; 
-    border-bottom: 2px solid #76697B; 
+    border-bottom: 2px solid #76697B;
   }
 }
-
 
 @include tablet {
     .mobile-navigation {
@@ -114,7 +112,7 @@ li {
         @include desktop {
             margin-left: -50px;
         }
-    }
-}
+      }
+   }
 } 
 
