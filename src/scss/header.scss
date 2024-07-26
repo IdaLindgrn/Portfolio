@@ -1,3 +1,18 @@
+@import "_mixins.scss";
+
+.logo {
+  width: 70px;
+
+  @include tablet {
+    width: 80px;
+  }
+
+  @include desktop {
+    width: 100px;
+  }
+
+}
+
 .dropdown {
     position: relative;
   }
