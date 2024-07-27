@@ -1,0 +1,14 @@
+@use "mixins" as *;
+@use "variables" as *;
+@use "aboutPage" as *;
+@use "footer" as *;
+@use "galleryPage" as *;
+@use "homePage" as *;
+@use "navbar" as *;
+@use "section" as *;
+@use "selectLanguage" as *;
+
+* {
+    margin: 0;
+    font-family: "League Spartan";
+}
