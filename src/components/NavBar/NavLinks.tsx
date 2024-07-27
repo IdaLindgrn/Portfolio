@@ -13,7 +13,7 @@ export const NavLinks = () => {
             className={`navLink ${location.pathname === "/" ? "active" : ""}`}
             to="/"
           >
-            {t("header.navHome")}
+            <div className="navText">{t("header.navHome")}</div>
           </Link>
         </li>
         <li>
@@ -23,7 +23,7 @@ export const NavLinks = () => {
             }`}
             to="/about"
           >
-            {t("header.navAbout")}
+            <div className="navText">{t("header.navAbout")}</div>
           </Link>
         </li>
         <li>
@@ -33,7 +33,7 @@ export const NavLinks = () => {
             }`}
             to="/gallery"
           >
-            {t("header.navGallery")}
+            <div className="navText">{t("header.navGallery")}</div>
           </Link>
         </li>
         <div id="contact" style={{ marginLeft: "auto", margin: "auto" }}>
