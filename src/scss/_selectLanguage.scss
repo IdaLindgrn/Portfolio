@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .dropdown {
     position: relative;
   }
@@ -30,7 +32,7 @@
     align-items: center;
 
     .dropdown-text {
-      color: #76697B;
+        color: $tertiaryColor;
         padding-right: 5px;
         text-align: center;
     }

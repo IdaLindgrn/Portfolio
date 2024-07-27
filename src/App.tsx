@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { HomePage } from "./pages/HomePage";
 import { AboutPage } from "./pages/AboutPage";
 import { GalleryPage } from "./pages/GalleryPage";
+import "../src/scss/main.scss";
 
 const App: React.FC = () => {
   return (

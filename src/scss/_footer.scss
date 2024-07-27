@@ -1,12 +1,13 @@
-@import '_mixins.scss';
+@use 'mixins' as *;
+@use "variables" as *;
 
 footer {
   
-    background-color: #76697B;
+    background-color: $tertiaryColor;
     position: relative;
 
     a:hover .to-top-container {
-      background-color: #c9bfd8;
+      background-color: $primaryHoverColor;
     }
 
     .to-top-container {
@@ -14,14 +15,14 @@ footer {
       top: -34px; 
       padding: 0px 25px; 
       right: 60px; 
-      background-color: #E3DCEF;
+      background-color: $secondaryColor;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
 
 
 
       .to-top-arrow {
-        color: #76697B;
+        color: $tertiaryColor;
         width: 40px;
         height: 40px;
         margin-top: -5px;
@@ -71,9 +72,9 @@ footer {
             align-items: center;
             justify-content: center;
             padding: 15px;
-            background-color: #ffffff;
+            background-color: $primaryColor;
             border-radius: 50%;
-            color: #5C555F;
+            color: $quinaryColor;
             font-size: 1.7rem;
 
             .socials-icon {
@@ -113,14 +114,14 @@ footer {
         .div-links {
           display: flex;
           align-items: center;
-          color: #ffffff;
+          color: $primaryColor;
           flex-direction: column;
           margin-left: 5px;
           margin-right: 5px;
         }
 
         a:hover   {
-          background-color: rgb(229, 221, 221);
+          background-color: $secondaryHoverColor;
           padding: 20px;
         }
     
@@ -129,9 +130,9 @@ footer {
     .copyright {
         display: flex;
         justify-content: center;
-        background-color: #5C555F;
+        background-color: $quinaryColor;
         padding: 20px;
-        color: #AFA7B2;
+        color: $tertiaryColor;
 
         @include desktop {
           padding: 40px;
@@ -177,14 +178,14 @@ footer {
         margin-left: -100px;
         margin-top: 50px;
         margin-bottom: 20px;
-        color: white;
+        color: $primaryColor;
       }
       
       .quote {
         position: relative;
-        background-color: white;
+        background-color: $primaryColor;
         padding: 15px;
-        color: #76697B;
+        color: $tertiaryColor;
         border-radius: 45px;
         margin-left: 180px; 
         margin-right: 50px; 
@@ -220,7 +221,7 @@ footer {
         height: 30px;
         border-left: 9px solid transparent;
         border-right: 10px solid transparent;
-        border-bottom: 10px solid white;
+        border-bottom: 10px solid $primaryColor;
         bottom: 11px;
         left: 1px;
       }

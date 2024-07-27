@@ -1,14 +1,15 @@
-@import '_mixins.scss';
+@use 'mixins' as *;
+@use 'variables' as *;
 
 header {
-    background-color: #E3DCEF;
+    background-color: $secondaryColor;
     padding: 25px;
 }
 
 #contact {
   
 #footerLink {
-    color: #76697B;
+    color: $tertiaryColor;
     text-decoration: none;
 }
 }
@@ -30,7 +31,7 @@ header {
         padding: 20px 0;
         right: 0;
         width: 100%;
-        background:#EDE8F5;
+        background: $secondaryColor;
     }
 
     .navLink {
@@ -59,7 +60,7 @@ li {
 
 .navLink {
     text-decoration: none;
-    color: #76697B;
+    color: $tertiaryColor;
     display: flex;
     justify-content: center;
     transition: color 0.3s ease;
@@ -75,7 +76,7 @@ li {
     transform: translateX(-50%);
     width: 8%; 
     max-width: 100%;
-    border-bottom: 2px solid #76697B; 
+    border-bottom: 2px solid $tertiaryColor; 
   }
 
 
@@ -87,7 +88,7 @@ li {
     left: 0;
     transform: translateX(0%);
     width: 100%; 
-    border-bottom: 2px solid #76697B; 
+    border-bottom: 2px solid $tertiaryColor; 
   }
 }
 

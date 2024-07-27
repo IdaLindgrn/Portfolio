@@ -1,13 +1,9 @@
-@import '_mixins.scss';
+@use 'mixins' as *;
+@use "variables" as *;
 
 html {
     scroll-behavior: smooth;
   }
-
-* {
-    margin: 0;
-    font-family: "League Spartan";
-}
 
 #header {
     display: flex;
@@ -29,7 +25,7 @@ main {
         background-image: url("../assets/banner.gif");
         background-size: cover;
         height: 60vh;
-        color: #76697B;
+        color: $tertiaryColor;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -46,7 +42,7 @@ main {
     }
     .header-title {
         font-weight: normal;
-        color: #76697B;
+        color: $tertiaryColor;
         font-size: 2.5em;
         padding-bottom: 8px;
 
@@ -60,13 +56,13 @@ main {
     }
     
 article {
-    background-color: #FFFCF6;
+    background-color: $primaryColor;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 30px;
     height: 80vw;
-    color: #76697B;
+    color: $tertiaryColor;
     
     @include desktop {
         height: 50vh;
@@ -88,8 +84,6 @@ article {
     }
   }
 
-
-  //default styling
   .heading {
     font-weight: normal;
     font-size: 2em;
