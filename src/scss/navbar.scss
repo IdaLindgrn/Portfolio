@@ -11,6 +11,7 @@ header {
     color: #76697B;
     text-decoration: none;
   }
+
 }
 
 .navigation {
@@ -70,11 +71,10 @@ li {
 .navLink.active:after {
     content: ""; 
     position: absolute; 
-    bottom: 5px; 
+    bottom: 6px; 
     left: 50%;
     transform: translateX(-50%);
-    width: 8%; 
-    max-width: 100%;
+    width: 12vw;  
     border-bottom: 2px solid #76697B; 
   }
 
@@ -101,9 +101,8 @@ li {
   .navText {
     z-index: 1;
   }
-}
 
-@include tablet {
+
     .mobile-navigation {
         display: none;
     }   
@@ -117,6 +116,10 @@ li {
         align-items: center;
         gap: 2vw;
         padding-right: 2vw;
+
+        :hover {
+            color: #c6b3cf;
+        }
 
         @include tablet {
             margin-left: -30px;
