@@ -1,4 +1,4 @@
-@import '_mixins.scss';
+@use 'mixins';
 
 header {
     background-color: #E3DCEF;
@@ -79,7 +79,7 @@ li {
   }
 
 
-@include tablet {
+@include mixins.tablet {
 .navLink.active:after {
     content: ""; 
     position: absolute; 
@@ -92,7 +92,7 @@ li {
 }
 
 
-@include tablet {
+@include mixins.tablet {
     .mobile-navigation {
         display: none;
     }   

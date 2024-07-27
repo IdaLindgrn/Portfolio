@@ -1,4 +1,4 @@
-@import '_mixins.scss';
+@use 'mixins';
 
 
 .gallery-container {
@@ -11,7 +11,7 @@
     align-items: center;
     padding: 9vh 0 5vh 0;
 
-    @include desktop {
+    @include mixins.desktop {
         padding: 9vh 0 5vh 0;
     }
 
@@ -19,7 +19,7 @@
         color: #76697B;
         padding-top: 5px;
      
-        @include desktop {
+        @include mixins.desktop {
             font-size: 1.3em;
         }
     }
@@ -33,7 +33,7 @@
     justify-content: center;
     padding-bottom: 4vh;
 
-    @include desktop {
+    @include mixins.desktop {
         justify-content: space-around;
         padding-bottom: 10vh; 
     }
@@ -51,7 +51,7 @@
     flex-direction: column;
     transition: transform 0.3s ease-in-out;
 
-    @include desktop {
+    @include mixins.desktop {
         flex-direction: row;
     }
   }
@@ -64,14 +64,14 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
 
-    @include desktop {
+    @include mixins.desktop {
         width: 350px;
         height: 500px;
         margin: 20px;
     }
    
 
-    @include desktop-large {
+    @include mixins.desktop-large {
         width: 400px;
         height: 550px;
         margin: 20px;
@@ -100,12 +100,12 @@
         width: 100%;
         height: 350px;
 
-        @include desktop {
+        @include mixins.desktop {
             height: 170px;
         }
        
     
-        @include desktop-large {
+        @include mixins.desktop-large {
             height: 200px;
         }
     }

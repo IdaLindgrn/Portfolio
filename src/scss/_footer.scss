@@ -1,4 +1,4 @@
-@import '_mixins.scss';
+@use 'mixins';
 
 footer {
   
@@ -28,7 +28,7 @@ footer {
         margin-bottom: -5px;
 
         
-      @include tablet {
+      @include mixins.tablet {
         top: -59px;
         width: 65px;
         height: 65px;
@@ -37,13 +37,13 @@ footer {
       }
       }
 
-      @include tablet {
+      @include mixins.tablet {
         top: -59px; 
         padding: 0px 45px;
         right: 80px; 
       }
 
-      @include desktop {
+      @include mixins.desktop {
         right: 100px; 
       }
 
@@ -52,11 +52,11 @@ footer {
     .footer-content-container {
       padding: 60px;
 
-      @include tablet {
+      @include mixins.tablet {
         padding: 70px;
 
     }
-        @include desktop {
+        @include mixins.desktop {
           padding: 60px 40px;
             display: flex;
         }
@@ -80,24 +80,24 @@ footer {
                 width: 20px;
                 height: 20px;
 
-                @include tablet {
+                @include mixins.tablet {
                     width: 30px;
                     height: 30px;
                 }
 
-                @include desktop {
+                @include mixins.desktop {
                   width: 40px;
                   height: 40px;         
               }
             }
 
-            @include tablet {
+            @include mixins.tablet {
                 padding: 20px;  
             }
         }
         
         .name-links {
-          @include desktop {
+          @include mixins.desktop {
             margin-top: -70px;
             margin-bottom: 70px;
           }
@@ -105,7 +105,7 @@ footer {
 
 
 
-        @include desktop {
+        @include mixins.desktop {
             justify-content: left;
             margin-left: 10vw;
         }  
@@ -133,7 +133,7 @@ footer {
         padding: 20px;
         color: #AFA7B2;
 
-        @include desktop {
+        @include mixins.desktop {
           padding: 40px;
       } 
     }
@@ -142,7 +142,7 @@ footer {
         display: none;
       }
 
-      @include desktop {
+      @include mixins.desktop {
         .tablet-and-above {
           display: block;
         }
@@ -189,14 +189,14 @@ footer {
         margin-left: 180px; 
         margin-right: 50px; 
 
-        @include desktop-large {
+        @include mixins.desktop-large {
           margin-left: 350px;
         }
        
       }
 
       .footer-socials a {
-        @include desktop {
+        @include mixins.desktop {
         margin: 90px 10px;
         }
       }
@@ -207,7 +207,7 @@ footer {
         line-height: 24px;
         font-size: 15px;
 
-        @include desktop-large {
+        @include mixins.desktop-large {
           width: 700px;
         }
       }

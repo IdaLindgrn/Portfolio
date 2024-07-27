@@ -1,11 +1,11 @@
-@import '_mixins.scss';
+@use 'mixins';
 
 .about-container {
     background-color: #FFFCF6;
     height: 90vh;
     padding-bottom: 15vh;
 
-    @include desktop {
+    @include mixins.desktop {
         padding-bottom: 20px;
     }
 
@@ -20,7 +20,7 @@
         display: flex;
         flex-direction: column;
 
-        @include desktop{
+        @include mixins.desktop{
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
@@ -37,12 +37,12 @@
             border-radius: 50%;  
             overflow: hidden;
             
-            @include tablet {
+            @include mixins.tablet {
                 width: 30vh;
                 height: 30vh;
             }
 
-            @include desktop {
+            @include mixins.desktop {
                 margin-left: 10vw;
                 width: 50vh;
                 height: 50vh;
@@ -66,7 +66,7 @@
             margin-right: auto;
             text-align: center;
 
-            @include desktop {
+            @include mixins.desktop {
                 max-width: 40vw;
                 margin-left: 10vw;
                 margin-right: 0;
@@ -79,7 +79,7 @@
                 color: #76697B;
                 font-size: 1.7em;
 
-                @include desktop {
+                @include mixins.desktop {
                     margin: 30px 0 30px;
                     font-size: 2.5em;
                 }
@@ -89,7 +89,7 @@
                 color: #76697B;
                 margin-bottom: 20px;
 
-                @include desktop {
+                @include mixins.desktop {
                     margin-bottom: 30px;
                 }
             }
@@ -105,7 +105,7 @@
                 padding: 17px 60px;
                 margin: auto;
 
-                @include desktop {
+                @include mixins.desktop {
                 background-color: #76697B;
                 color: white;
                 font-size: 1.4em;

@@ -1,13 +1,8 @@
-@import '_mixins.scss';
+@use 'mixins';
 
 html {
     scroll-behavior: smooth;
   }
-
-* {
-    margin: 0;
-    font-family: "League Spartan";
-}
 
 #header {
     display: flex;
@@ -15,11 +10,11 @@ html {
     align-items: center;
     padding: 10px 70px 10px 30px; 
    
-    @include tablet {
+    @include mixins.tablet {
         padding: 15px 80px; 
     }
 
-    @include desktop {
+    @include mixins.desktop {
         padding: 20px 100px; 
     }
 }
@@ -36,11 +31,11 @@ main {
         flex-direction: column;
 
 
-        @include tablet {
+        @include mixins.tablet {
             height: 60vw;
         }
      
-        @include desktop {
+        @include mixins.desktop {
             height: 90vh;
         }
     }
@@ -50,11 +45,11 @@ main {
         font-size: 2.5em;
         padding-bottom: 8px;
 
-        @include tablet {
+        @include mixins.tablet {
             font-size: 3em;
         }
 
-        @include desktop-large {
+        @include mixins.desktop-large {
             font-size: 3.5em;
         }
     }
@@ -68,7 +63,7 @@ article {
     height: 80vw;
     color: #76697B;
     
-    @include desktop {
+    @include mixins.desktop {
         height: 50vh;
     }
     }
@@ -81,7 +76,7 @@ article {
             padding: 20px;
         }
         
-        @include desktop {
+        @include mixins.desktop {
             flex-direction: row;
         }
     
@@ -94,11 +89,11 @@ article {
     font-weight: normal;
     font-size: 2em;
  
-    @include tablet {
+    @include mixins.tablet {
         font-size: 3em;
     }
 
-    @include desktop {
+    @include mixins.desktop {
         font-size: 30px;
     }
 
@@ -107,12 +102,12 @@ article {
   p, li {
     font-size: 20px;
 
-    @include tablet {
+    @include mixins.tablet {
         font-size: 1.3em;
     }
 
 
-    @include desktop-large {
+    @include mixins.desktop-large {
         font-size: 1.5em;
     }
   }

@@ -1,11 +1,11 @@
-@import '_mixins.scss';
+@use 'mixins';
 
 .container {
     display: flex;
     flex-direction: column;
     overflow: hidden;
     
-    @include desktop {
+    @include mixins.desktop {
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -18,7 +18,7 @@
     img {
         width: 100vw;
         margin-bottom: -6px;
-        @include desktop {
+        @include mixins.desktop {
             width: 40vw;
             height: auto;
          
@@ -37,7 +37,7 @@ section {
     color: #76697B;
     padding: 20px;
 
-    @include desktop {
+    @include mixins.desktop {
         width: 60vw;
         display: flex;
         align-items: flex-start;
@@ -79,13 +79,13 @@ section {
         font-size: 1.2em;
         text-align: center;
 
-        @include tablet {
+        @include mixins.tablet {
             padding: 20px 20px;
             font-size: 1.4em;
             width: 200px;
         }
 
-        @include desktop {
+        @include mixins.desktop {
             padding: 20px 30px;
             font-size: 1.4em;
             width: 140px;
@@ -113,7 +113,7 @@ section {
 #container2 {
     flex-direction: column-reverse;
 
-    @include desktop {
+    @include mixins.desktop {
         flex-direction: row;
 
     }
