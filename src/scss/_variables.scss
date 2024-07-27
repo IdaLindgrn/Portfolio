@@ -7,7 +7,8 @@ $quinaryColor: #5C555F;
 $primaryHoverColor: darken($secondaryColor, 5%);
 $secondaryHoverColor: darken($primaryColor, 15%);
 $tertiaryHoverColor: lighten($tertiaryColor, 10%);
+$quaternaryHoverColor: lighten($secondaryColor, 3%);
 
 $primaryBoxShadowColor: rgba($quinaryColor, 0.2);
-$secondaryBoxShadowColor: rgba($secondaryColor, 0.2);
+$secondaryBoxShadowColor: rgba($secondaryColor, 0.6);
 
