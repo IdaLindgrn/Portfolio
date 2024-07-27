@@ -126,11 +126,16 @@ export const GalleryPage = () => {
                         hoveredBox === box.id ? "hovered" : ""
                       }`}
                     >
-                      <img
-                        src={box.image}
-                        alt={box.title}
-                        className="box-image"
-                      />
+                      <div className="image-container">
+                        <img
+                          src={box.image}
+                          alt={box.title}
+                          className="box-image"
+                        />
+                        <div className="box-text-overlay">
+                          <p className="box-text">{box.text}</p>
+                        </div>
+                      </div>
                       <div className="box-text-container">
                         <h2 className="box-title">{box.title}</h2>
                         <div className="box-categories">
