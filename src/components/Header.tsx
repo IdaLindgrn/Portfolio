@@ -14,7 +14,11 @@ export const Header = () => {
   return (
     <>
       <header id="header">
-        <img src={logo} alt={t("logoAlt", "My name as the logo")} />
+        <img
+          className="logo"
+          src={logo}
+          alt={t("logoAlt", "My name as the logo")}
+        />
         <Navbar />
         <div className="dropdown">
           <div
