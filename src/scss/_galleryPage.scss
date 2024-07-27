@@ -1,8 +1,9 @@
-@use 'mixins';
+@use 'mixins' as *;
+@use "variables" as *;
 
 
 .gallery-container {
-    background-color: #FFFCF6;
+    background-color: $primaryColor;
     height: 100%;
 
 .gallery-header {
@@ -11,15 +12,15 @@
     align-items: center;
     padding: 9vh 0 5vh 0;
 
-    @include mixins.desktop {
+    @include desktop {
         padding: 9vh 0 5vh 0;
     }
 
     .gallery-subheading {
-        color: #76697B;
+        color: $tertiaryColor;
         padding-top: 5px;
      
-        @include mixins.desktop {
+        @include desktop {
             font-size: 1.3em;
         }
     }
@@ -33,7 +34,7 @@
     justify-content: center;
     padding-bottom: 4vh;
 
-    @include mixins.desktop {
+    @include desktop {
         justify-content: space-around;
         padding-bottom: 10vh; 
     }
@@ -51,27 +52,27 @@
     flex-direction: column;
     transition: transform 0.3s ease-in-out;
 
-    @include mixins.desktop {
+    @include desktop {
         flex-direction: row;
     }
   }
   
   .box {
-    background-color: rgb(255, 255, 255);
+    background-color: $primaryColor;
     width: 700px;
     height: 900px;
     margin: 4vh 0 0;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: 0px 8px 24px $primaryBoxShadowColor;
 
 
-    @include mixins.desktop {
+    @include desktop {
         width: 350px;
         height: 500px;
         margin: 20px;
     }
    
 
-    @include mixins.desktop-large {
+    @include desktop-large {
         width: 400px;
         height: 550px;
         margin: 20px;
@@ -96,47 +97,29 @@
     
 
     .box-image {
-        background-color: #76697B;
+        background-color: $tertiaryColor;
         width: 100%;
         height: 350px;
 
-        @include mixins.desktop {
+        @include desktop {
             height: 170px;
         }
        
     
-        @include mixins.desktop-large {
+        @include desktop-large {
             height: 200px;
         }
     }
 
-    .left-arrow {
-        position: absolute;
-        top: 50%;
-        left: 1%;
-        transform: translateY(-50%);
-        cursor: pointer;
-        color: #ada9af;
-    }
-
-    .right-arrow {
-        position: absolute;
-        top: 50%;
-        right: 1%;
-        transform: translateY(-50%);
-        cursor: pointer;
-        color: #ada9af;
-    }
-
     .box-title {
-        color: #76697B;
+        color: $tertiaryColor;
         padding: 4vh 0 2vh 0; 
         font-size: 2em;
         font-weight: normal;
     }
 
     .box-text {
-        color: #76697B;
+        color: $tertiaryColor;
         font-size: 1.2em;
     }
   }

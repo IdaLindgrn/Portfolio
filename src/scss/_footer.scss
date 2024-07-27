@@ -1,12 +1,13 @@
-@use 'mixins';
+@use 'mixins' as *;
+@use "variables" as *;
 
 footer {
   
-    background-color: #76697B;
+    background-color: $tertiaryColor;
     position: relative;
 
     a:hover .to-top-container {
-      background-color: #c9bfd8;
+      background-color: $primaryHoverColor;
     }
 
     .to-top-container {
@@ -14,21 +15,21 @@ footer {
       top: -34px; 
       padding: 0px 25px; 
       right: 60px; 
-      background-color: #E3DCEF;
+      background-color: $secondaryColor;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
 
 
 
       .to-top-arrow {
-        color: #76697B;
+        color: $tertiaryColor;
         width: 40px;
         height: 40px;
         margin-top: -5px;
         margin-bottom: -5px;
 
         
-      @include mixins.tablet {
+      @include tablet {
         top: -59px;
         width: 65px;
         height: 65px;
@@ -37,13 +38,13 @@ footer {
       }
       }
 
-      @include mixins.tablet {
+      @include tablet {
         top: -59px; 
         padding: 0px 45px;
         right: 80px; 
       }
 
-      @include mixins.desktop {
+      @include desktop {
         right: 100px; 
       }
 
@@ -52,11 +53,11 @@ footer {
     .footer-content-container {
       padding: 60px;
 
-      @include mixins.tablet {
+      @include tablet {
         padding: 70px;
 
     }
-        @include mixins.desktop {
+        @include desktop {
           padding: 60px 40px;
             display: flex;
         }
@@ -71,33 +72,33 @@ footer {
             align-items: center;
             justify-content: center;
             padding: 15px;
-            background-color: #ffffff;
+            background-color: $primaryColor;
             border-radius: 50%;
-            color: #5C555F;
+            color: $quinaryColor;
             font-size: 1.7rem;
 
             .socials-icon {
                 width: 20px;
                 height: 20px;
 
-                @include mixins.tablet {
+                @include tablet {
                     width: 30px;
                     height: 30px;
                 }
 
-                @include mixins.desktop {
+                @include desktop {
                   width: 40px;
                   height: 40px;         
               }
             }
 
-            @include mixins.tablet {
+            @include tablet {
                 padding: 20px;  
             }
         }
         
         .name-links {
-          @include mixins.desktop {
+          @include desktop {
             margin-top: -70px;
             margin-bottom: 70px;
           }
@@ -105,7 +106,7 @@ footer {
 
 
 
-        @include mixins.desktop {
+        @include desktop {
             justify-content: left;
             margin-left: 10vw;
         }  
@@ -113,14 +114,14 @@ footer {
         .div-links {
           display: flex;
           align-items: center;
-          color: #ffffff;
+          color: $primaryColor;
           flex-direction: column;
           margin-left: 5px;
           margin-right: 5px;
         }
 
         a:hover   {
-          background-color: rgb(229, 221, 221);
+          background-color: $secondaryHoverColor;
           padding: 20px;
         }
     
@@ -129,11 +130,11 @@ footer {
     .copyright {
         display: flex;
         justify-content: center;
-        background-color: #5C555F;
+        background-color: $quinaryColor;
         padding: 20px;
-        color: #AFA7B2;
+        color: $tertiaryColor;
 
-        @include mixins.desktop {
+        @include desktop {
           padding: 40px;
       } 
     }
@@ -142,7 +143,7 @@ footer {
         display: none;
       }
 
-      @include mixins.desktop {
+      @include desktop {
         .tablet-and-above {
           display: block;
         }
@@ -177,26 +178,26 @@ footer {
         margin-left: -100px;
         margin-top: 50px;
         margin-bottom: 20px;
-        color: white;
+        color: $primaryColor;
       }
       
       .quote {
         position: relative;
-        background-color: white;
+        background-color: $primaryColor;
         padding: 15px;
-        color: #76697B;
+        color: $tertiaryColor;
         border-radius: 45px;
         margin-left: 180px; 
         margin-right: 50px; 
 
-        @include mixins.desktop-large {
+        @include desktop-large {
           margin-left: 350px;
         }
        
       }
 
       .footer-socials a {
-        @include mixins.desktop {
+        @include desktop {
         margin: 90px 10px;
         }
       }
@@ -207,7 +208,7 @@ footer {
         line-height: 24px;
         font-size: 15px;
 
-        @include mixins.desktop-large {
+        @include desktop-large {
           width: 700px;
         }
       }
@@ -220,7 +221,7 @@ footer {
         height: 30px;
         border-left: 9px solid transparent;
         border-right: 10px solid transparent;
-        border-bottom: 10px solid white;
+        border-bottom: 10px solid $primaryColor;
         bottom: 11px;
         left: 1px;
       }

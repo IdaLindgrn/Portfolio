@@ -1,4 +1,5 @@
-@use 'mixins';
+@use 'mixins' as *;
+@use "variables" as *;
 
 html {
     scroll-behavior: smooth;
@@ -10,11 +11,11 @@ html {
     align-items: center;
     padding: 10px 70px 10px 30px; 
    
-    @include mixins.tablet {
+    @include tablet {
         padding: 15px 80px; 
     }
 
-    @include mixins.desktop {
+    @include desktop {
         padding: 20px 100px; 
     }
 }
@@ -24,46 +25,46 @@ main {
         background-image: url("../assets/banner.gif");
         background-size: cover;
         height: 60vh;
-        color: #76697B;
+        color: $tertiaryColor;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
 
 
-        @include mixins.tablet {
+        @include tablet {
             height: 60vw;
         }
      
-        @include mixins.desktop {
+        @include desktop {
             height: 90vh;
         }
     }
     .header-title {
         font-weight: normal;
-        color: #76697B;
+        color: $tertiaryColor;
         font-size: 2.5em;
         padding-bottom: 8px;
 
-        @include mixins.tablet {
+        @include tablet {
             font-size: 3em;
         }
 
-        @include mixins.desktop-large {
+        @include desktop-large {
             font-size: 3.5em;
         }
     }
     
 article {
-    background-color: #FFFCF6;
+    background-color: $primaryColor;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 30px;
     height: 80vw;
-    color: #76697B;
+    color: $tertiaryColor;
     
-    @include mixins.desktop {
+    @include desktop {
         height: 50vh;
     }
     }
@@ -76,24 +77,22 @@ article {
             padding: 20px;
         }
         
-        @include mixins.desktop {
+        @include desktop {
             flex-direction: row;
         }
     
     }
   }
 
-
-  //default styling
   .heading {
     font-weight: normal;
     font-size: 2em;
  
-    @include mixins.tablet {
+    @include tablet {
         font-size: 3em;
     }
 
-    @include mixins.desktop {
+    @include desktop {
         font-size: 30px;
     }
 
@@ -102,12 +101,12 @@ article {
   p, li {
     font-size: 20px;
 
-    @include mixins.tablet {
+    @include tablet {
         font-size: 1.3em;
     }
 
 
-    @include mixins.desktop-large {
+    @include desktop-large {
         font-size: 1.5em;
     }
   }

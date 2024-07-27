@@ -1,11 +1,12 @@
-@use 'mixins';
+@use 'mixins' as *;
+@use "variables" as *;
 
 .container {
     display: flex;
     flex-direction: column;
     overflow: hidden;
     
-    @include mixins.desktop {
+    @include desktop {
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -18,7 +19,7 @@
     img {
         width: 100vw;
         margin-bottom: -6px;
-        @include mixins.desktop {
+        @include desktop {
             width: 40vw;
             height: auto;
          
@@ -34,10 +35,10 @@ section {
     text-align: center;
     width: auto;
     height: 90vw;
-    color: #76697B;
+    color: $tertiaryColor;
     padding: 20px;
 
-    @include mixins.desktop {
+    @include desktop {
         width: 60vw;
         display: flex;
         align-items: flex-start;
@@ -62,7 +63,7 @@ section {
       .dot {
         width: 8px; 
         height: 8px;
-        background-color: #76697B;
+        background-color: $tertiaryColor;
         border-radius: 50%; 
         display: inline-block;
         margin-right: 10px; 
@@ -72,48 +73,44 @@ section {
 
     }
     #shortcuts {
-        background-color: #76697B;
+        background-color: $tertiaryColor;
         border-radius: 5px;
         width: 120px;
         padding: 12px 22px;
         font-size: 1.2em;
         text-align: center;
 
-        @include mixins.tablet {
+        @include tablet {
             padding: 20px 20px;
             font-size: 1.4em;
             width: 200px;
         }
 
-        @include mixins.desktop {
+        @include desktop {
             padding: 20px 30px;
             font-size: 1.4em;
             width: 140px;
         }
-        
-       
-        
-
   
         #footerLink {
-            color: #ffffff;
+            color: $primaryColor;
             text-decoration: none;
         }
 }
 
 #section-container1 {
-    background-color: #E3DCEF;
+    background-color: $secondaryColor;
 }
 
 #section-container2 {
-    background-color: #FFFCF6;
+    background-color: $primaryColor;
 }
 }
 
 #container2 {
     flex-direction: column-reverse;
 
-    @include mixins.desktop {
+    @include desktop {
         flex-direction: row;
 
     }

@@ -1,11 +1,12 @@
-@use 'mixins';
+@use 'mixins' as *;
+@use "variables" as *;
 
 .about-container {
-    background-color: #FFFCF6;
+    background-color: $primaryColor;
     height: 90vh;
     padding-bottom: 15vh;
 
-    @include mixins.desktop {
+    @include desktop {
         padding-bottom: 20px;
     }
 
@@ -20,7 +21,7 @@
         display: flex;
         flex-direction: column;
 
-        @include mixins.desktop{
+        @include desktop{
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
@@ -31,18 +32,18 @@
             justify-content: center;
             align-self: center;
             align-items: center;
-            background-color: #dfdbd5;
+            background-color: $primaryColor;
             width: 30vh;
             height: 30vh;
             border-radius: 50%;  
             overflow: hidden;
             
-            @include mixins.tablet {
+            @include tablet {
                 width: 30vh;
                 height: 30vh;
             }
 
-            @include mixins.desktop {
+            @include desktop {
                 margin-left: 10vw;
                 width: 50vh;
                 height: 50vh;
@@ -66,7 +67,7 @@
             margin-right: auto;
             text-align: center;
 
-            @include mixins.desktop {
+            @include desktop {
                 max-width: 40vw;
                 margin-left: 10vw;
                 margin-right: 0;
@@ -76,27 +77,27 @@
             .about-me-title {
                 margin: 30px 0 20px;
                 font-weight: normal;
-                color: #76697B;
+                color: $tertiaryColor;
                 font-size: 1.7em;
 
-                @include mixins.desktop {
+                @include desktop {
                     margin: 30px 0 30px;
                     font-size: 2.5em;
                 }
             }
 
             .about-me-text {
-                color: #76697B;
+                color: $tertiaryColor;
                 margin-bottom: 20px;
 
-                @include mixins.desktop {
+                @include desktop {
                     margin-bottom: 30px;
                 }
             }
 
             .download-link {
-                background-color: #76697B;
-                color: white;
+                background-color: $tertiaryColor;
+                color: $primaryColor;
                 font-size: 1em;
                 text-align: center;
                 text-decoration: none;
@@ -105,18 +106,14 @@
                 padding: 17px 60px;
                 margin: auto;
 
-                @include mixins.desktop {
-                background-color: #76697B;
-                color: white;
+                @include desktop {
+                background-color: $tertiaryColor;
+                color: $primaryColor;
                 font-size: 1.4em;
                 max-width: 10vw;  
                 margin: 0;   
                 }
-
             }
-
-
-
         }
     }
 }
