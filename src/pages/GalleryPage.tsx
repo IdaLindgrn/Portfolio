@@ -28,7 +28,7 @@ export const GalleryPage = () => {
       title: "CatBox",
       text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
       link: "https://cat-box.netlify.app/",
-      category: "React",
+      categories: ["React", "TypeScript", "CSS3", "HTML"],
     },
     {
       id: 2,
@@ -36,7 +36,7 @@ export const GalleryPage = () => {
       title: "TicTacToe",
       text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
       link: "https://ida-lindgren-tictactoe.netlify.app/",
-      category: "Vue",
+      categories: ["Vue", "JavaScript", "CSS3", "HTML"],
     },
     {
       id: 3,
@@ -44,7 +44,7 @@ export const GalleryPage = () => {
       title: "Webshop",
       text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
       link: "",
-      category: "TypeScript",
+      categories: ["TypeScript", "JavaScript", "CSS3"],
     },
     {
       id: 4,
@@ -52,7 +52,7 @@ export const GalleryPage = () => {
       title: "CatBox",
       text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
       link: "https://cat-box.netlify.app/",
-      category: "React",
+      categories: ["React", "TypeScript", "CSS3", "HTML"],
     },
     {
       id: 5,
@@ -60,7 +60,7 @@ export const GalleryPage = () => {
       title: "TicTacToe",
       text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
       link: "https://ida-lindgren-tictactoe.netlify.app/",
-      category: "Vue",
+      categories: ["Vue", "JavaScript", "CSS3", "HTML"],
     },
     {
       id: 6,
@@ -68,7 +68,7 @@ export const GalleryPage = () => {
       title: "Webshop",
       text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
       link: "",
-      category: "TypeScript",
+      categories: ["TypeScript", "JavaScript", "HTML"],
     },
   ];
 
@@ -79,7 +79,7 @@ export const GalleryPage = () => {
   const filteredBoxes =
     selectedFilter === "All"
       ? boxes
-      : boxes.filter((box) => box.category === selectedFilter);
+      : boxes.filter((box) => box.categories.includes(selectedFilter));
 
   return (
     <>
@@ -131,8 +131,16 @@ export const GalleryPage = () => {
                         alt={box.title}
                         className="box-image"
                       />
-                      <h2 className="box-title">{box.title}</h2>
-                      <p className="box-text">{box.text}</p>
+                      <div className="box-text-container">
+                        <h2 className="box-title">{box.title}</h2>
+                        <div className="box-categories">
+                          {box.categories.map((category, index) => (
+                            <span key={index} className="category-bubble">
+                              {category}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
                     </div>
                   </a>
                 </div>

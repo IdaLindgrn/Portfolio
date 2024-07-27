@@ -88,13 +88,13 @@
     padding-bottom: 10vh;
   }
 
-  .hovered {
-    transform: scale(1.05);
-  }
+  // .hovered {
+  //   transform: scale(1.05);
+  // }
 
-  .box:hover .box-container {
-    transform: scale(1.05);
-  }
+  // .box:hover .box-container {
+  //   transform: scale(1.05);
+  // }
 
   .box-container {
     display: flex;
@@ -110,22 +110,21 @@
   }
 
   .box {
-    background-color: rgb(255, 255, 255);
-    width: 700px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 500px;
     height: auto;
-    margin: 4vh 0 0;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 20px;
+    box-shadow: rgba(61, 59, 59, 0.2) 0px 0px 10px;
 
     @include desktop {
       width: 350px;
       height: auto;
-      margin: 20px;
     }
 
     @include desktop-large {
       width: 400px;
       height: auto;
-      margin: 20px;
     }
 
     .box-a {
@@ -136,7 +135,6 @@
       position: relative;
       display: flex;
       flex-direction: column;
-      padding: 25px;
     }
 
     .image-container {
@@ -148,27 +146,50 @@
     .box-image {
       background-color: #76697B;
       width: 100%;
-      height: 350px;
+      height: 290px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
 
       @include desktop {
-        height: 170px;
+        height: 210px;
       }
 
       @include desktop-large {
-        height: 200px;
+        height: 230px;
       }
     }
 
+    .box-text-container {
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
     .box-title {
       color: #76697B;
-      padding: 4vh 0 2vh 0;
-      font-size: 2em;
-      font-weight: normal;
+      font-size: 1.5em;
+      font-weight: bold;
     }
 
-    .box-text {
-      color: #76697B;
+    .box-categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 3px;
+      gap: 10px;
       font-size: 1.2em;
-    }
-  }
+      padding: 20px;
+
+      .category-bubble {
+        background-color: #9E8BA6;
+        color: #ffffff;
+        padding: 10px 12px;
+        margin-bottom: -10px;
+        border-radius: 30px;
+        font-size: 0.8em;
+        display: inline-block;
+      }
+     }
+   }
+ }
 }
