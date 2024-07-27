@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import "../../scss/navbar.scss";
 import { useTranslation } from "react-i18next";
 
 export const NavLinks = () => {

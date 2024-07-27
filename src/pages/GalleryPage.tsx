@@ -1,6 +1,5 @@
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
-import "../scss/galleryPage.scss";
 import { useTranslation } from "react-i18next";
 import Catbox from "../assets/catbox.png";
 import TicTacToe from "../assets/tictactoe.png";

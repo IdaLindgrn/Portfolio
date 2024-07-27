@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Navbar } from "./NavBar/Navbar";
 import { useState } from "react";
-import "../scss/header.scss";
 import logo from "../assets/logo.png";
 
 export const Header = () => {

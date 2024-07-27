@@ -1,5 +1,3 @@
-import "../scss/homePage.scss";
-
 export const AboutText = () => {
   return (
     <article>
