@@ -1,4 +1,5 @@
-@import '_mixins.scss';
+@use 'mixins' as *;
+@use 'variables' as *;
 
 .background-container {
   background-image: url("../assets/banner.gif");
@@ -20,13 +21,12 @@
 }
 
 .gallery-container {
-  background-color: #ffffff;
+  background-color: $primaryColor;
   border-radius: 10px;
   margin: 30px 0 50px;
   width: 85vw;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
+  box-shadow: 0px 0px 20px $primaryBoxShadowColor;
   @include tablet {
     margin: 80px 0;
   }
@@ -44,7 +44,7 @@
 
   .filter-container {
     margin: 30px 5px;
-    background-color: #E3DCEF;
+    background-color: $secondaryColor;
     text-align: center;
     padding: 15px;
     border-radius: 40px;
@@ -53,13 +53,13 @@
     .filter-button {
       margin: 0 2px;
       padding: 7px 10px;
-      background-color: #E3DCEF;
+      background-color: $secondaryColor;
       border: none;
       cursor: pointer;
       border-radius: 10px;
       transition: background-color 0.3s;
       font-size: 1em;
-      color: #76697B;
+      color: $tertiaryColor;
 
       @include tablet {
         padding: 10px 20px;
@@ -67,18 +67,19 @@
       }
 
       &.active {
-        background-color: #76697B;
-        color: white;
+        background-color: $tertiaryColor;
+        color: $primaryColor;
       }
 
       &:hover {
-        background-color: #B9A5D5;
+        background-color: $quaternaryColor;
+        color: $primaryColor;
       }
     }
   }
 
   .gallery-subheading {
-    color: #9E8BA6;
+    color: $quaternaryColor;
     padding-top: 5px;
 
     @include desktop {
@@ -112,12 +113,12 @@
   }
 
   .box {
-    background-color: #ffffff;
+    background-color: $primaryColor;
     border-radius: 10px;
     width: 65vw;
     height: auto;
     margin: 30px;
-    box-shadow: rgba(61, 59, 59, 0.2) 0px 0px 10px;
+    box-shadow: 0px 0px 10px $primaryBoxShadowColor;
 
     @include desktop {
       width: 350px;
@@ -148,7 +149,7 @@
     }
 
     .box-image {
-      background-color: #76697B;
+      background-color: $tertiaryColor;
       width: 100%;
       height: auto;
       border-top-left-radius: 10px;
@@ -163,7 +164,7 @@
       flex-direction: column;
 
     .box-title {
-      color: #76697B;
+      color: $tertiaryColor;
       font-size: 1.5em;
       font-weight: bold;
     }
@@ -178,8 +179,8 @@
       padding: 20px;
 
       .category-bubble {
-        background-color: #9E8BA6;
-        color: #ffffff;
+        background-color: $quaternaryColor;
+        color: $primaryColor;
         padding: 10px 15px;
         margin-bottom: 5px;
         border-radius: 30px;
@@ -199,9 +200,9 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: rgba(189, 170, 220, 0.7);
+    background-color: $secondaryBoxShadowColor;
     transition: top 0.3s ease-in-out;
-    color: #fff;
+    color: $tertiaryColor;
     padding: 20px;
     box-sizing: border-box;
     border-top-left-radius: 10px;

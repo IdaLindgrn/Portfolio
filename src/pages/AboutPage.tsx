@@ -1,7 +1,5 @@
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
-import "../scss/aboutPage.scss";
-import "../scss/section.scss";
 import { useTranslation } from "react-i18next";
 import portrait from "../assets/portrait.png";
 

@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import "../scss/navbar.scss";
-import "../scss/section.scss";
 import dreamyCloudsImage from "../assets/dreamy-clouds.png";
 
 export const Section2 = () => {
