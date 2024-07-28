@@ -26,12 +26,23 @@ export const AboutPage = () => {
                   />
                 </div>
                 <div className="contact-text">
-                  <FaPhone />
-                  <p>070 982 10 50</p>
+                  <a className="contact-symbol" href="tel:0709821050">
+                    <FaPhone style={{ width: "40px", height: "40px" }} />
+                  </a>
+                  <a href="tel:0709821050" className="info">
+                    070 982 10 50
+                  </a>
                 </div>
                 <div className="contact-text">
-                  <GrMail />
-                  <p>ida-lindgren@hotmail.com</p>
+                  <a
+                    className="contact-symbol"
+                    href="mailto:ida-lindgren@hotmail.com"
+                  >
+                    <GrMail style={{ width: "40px", height: "40px" }} />
+                  </a>
+                  <a href="mailto:ida-lindgren@hotmail.com" className="info">
+                    ida-lindgren@hotmail.com
+                  </a>
                 </div>
               </div>
               <div className="about-me-container">

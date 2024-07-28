@@ -35,7 +35,6 @@
             flex-direction: column;
             justify-content: center;
             border-radius: 10px;
-            align-items: center;
   
 
         .img-container {
@@ -66,12 +65,39 @@
           
             }
         }
+           
 
-        .contact-text {
-            margin-top: 50px;
-            display: flex;
-            flex-direction: row;
-        }
+            .contact-text {
+                margin-left: 70px;
+                margin-top: 50px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                color: $tertiaryColor;
+                
+                &:hover {
+                    color: $tertiaryHoverColor;
+                
+                    .info {
+                      color: $tertiaryHoverColor;
+                    }
+
+                    svg {
+                        color: $tertiaryHoverColor;
+                      }
+                    }
+
+                    .contact-symbol {
+                        color: $tertiaryColor;
+                    }
+    
+                .info {
+                    margin-left: 20px;
+                    font-size: 2em;
+                    text-decoration: none;
+                    color: $tertiaryColor;     
+                }
+            }
     }
 
 
