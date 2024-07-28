@@ -95,24 +95,27 @@ export const AboutPage = () => {
               Wanna get in touch? Ask me anything
             </p>
             <form className="contact-form">
-              <div className="form-group">
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Name"
-                  required
-                />
+              <div className="contact-name-email">
+                <div className="form-group">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
               </div>
-              <div className="form-group">
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Email"
-                  required
-                />
-              </div>
+              <div style={{ marginTop: "-20px" }} className="form-group"></div>
               <div className="form-group">
                 <input
                   type="text"
@@ -126,11 +129,12 @@ export const AboutPage = () => {
                 <textarea
                   id="message"
                   name="message"
-                  rows={4}
+                  rows={15}
                   placeholder="Your Message"
                   required
                 ></textarea>
               </div>
+
               <button type="submit" className="send-button">
                 Send Message
               </button>

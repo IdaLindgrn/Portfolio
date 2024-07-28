@@ -206,28 +206,32 @@
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 20px; 
+    gap: 22px; 
     margin: 60px;
     padding: 40px;
     background-color: $secondaryColor; 
     border-radius: 10px;
+
+    .contact-name-email {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
   
     .form-group {
-  
       &:nth-of-type(1),
       &:nth-of-type(2) {
         input,
         textarea {
-          width: 400px;
+          width: 350px;
         }
-
       }
   
       &:nth-of-type(3),
       &:nth-of-type(4) {
         input,
         textarea {
-          width: 900px;
+          width: 780px;
         }
       }
   
@@ -237,7 +241,7 @@
         color: $tertiaryColor; 
         border: 1px solid $secondaryColor;
         border-radius: 5px;
-        padding: 30px;
+        padding: 25px;
         font-size: 1em;
 
         &::placeholder {
