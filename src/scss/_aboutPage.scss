@@ -13,7 +13,7 @@
     .header-title {
         display: flex;
         justify-content: center;
-        padding: 9vh 0 5vh 0;
+        padding: 30px 0 10px 0;
     }
 
 
@@ -28,12 +28,22 @@
         }
 
         .portrait-container {
+            background-color: $secondaryColor;   
+            width: 600px;
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 10px;
+            align-items: center;
+  
+
+        .img-container {
             display: flex;
             justify-content: center;
             align-self: center;
             align-items: center;
-            background-color: $primaryColor;
-            width: 30vh;
+            width: 30vw;
             height: 30vh;
             border-radius: 50%;  
             overflow: hidden;
@@ -44,19 +54,25 @@
             }
 
             @include desktop {
-                margin-left: 10vw;
-                width: 50vh;
-                height: 50vh;
+                margin-top: -10px;
+                width: 400px;
+                height: 400px;
             }
 
             .portrait {
-                margin-top: 44%;
+                margin-top: 43%;
                 max-width: 100%;
                 max-height: 180%;
           
             }
-
         }
+
+        .contact-text {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+        }
+    }
 
 
         .about-me-container {
@@ -69,7 +85,7 @@
 
             @include desktop {
                 max-width: 40vw;
-                margin-left: 10vw;
+                margin-left: 10px;
                 margin-right: 0;
                 text-align: left;
             }
