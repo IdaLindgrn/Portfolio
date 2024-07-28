@@ -14,7 +14,7 @@ export const AboutPage = () => {
       <Header />
       <div className="background-container"></div>
       <div className="gallery-wrapper">
-        <main className="gallery-container">
+        <div className="gallery-container">
           <div className="about-container">
             <h2 className="header-title"></h2>
             <div className="about-me">
@@ -85,10 +85,10 @@ export const AboutPage = () => {
               </div>
             </div>
           </div>
-        </main>
+        </div>
       </div>
       <div className="gallery-wrapper">
-        <main className="gallery-container">
+        <div className="gallery-container">
           <div className="gallery-header">
             <h2 className="header-title">Get in touch</h2>
             <p className="gallery-subheading">
@@ -140,7 +140,7 @@ export const AboutPage = () => {
               </button>
             </form>
           </div>
-        </main>
+        </div>
       </div>
       <Footer />
     </>

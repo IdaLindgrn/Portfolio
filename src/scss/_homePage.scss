@@ -1,9 +1,6 @@
 @use 'mixins' as *;
 @use "variables" as *;
 
-html {
-    scroll-behavior: smooth;
-  }
 
 #header {
     display: flex;
@@ -19,8 +16,6 @@ html {
         padding: 20px 100px; 
     }
 }
-
-main {
     #banner {
         background-image: url("../assets/banner.gif");
         background-size: cover;
@@ -40,6 +35,7 @@ main {
             height: 90vh;
         }
     }
+
     .header-title {
         font-weight: normal;
         color: $tertiaryColor;  
@@ -73,7 +69,7 @@ article {
         }
     
     }
-  }
+  
 
   .heading {
     font-weight: normal;
