@@ -12,3 +12,45 @@
     margin: 0;
     font-family: "League Spartan";
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+
+p, li {
+    font-size: 20px;
+
+    @include tablet {
+        font-size: 1.3em;
+    }
+
+
+    @include desktop-large {
+        font-size: 1.5em;
+    }
+  }
+
+  h1 {
+    font-size: 3em;
+
+    @include tablet {
+        font-size: 4em;
+    }
+
+    @include desktop-large {
+        font-size: 5em;
+    }
+}
+
+h2 {
+    font-size: 2.5em;
+ 
+    @include tablet {
+        font-size: 3em;
+    }
+    
+    @include desktop {
+        font-size: 3.5em;
+    } 
+}
+

@@ -1,9 +1,6 @@
 @use 'mixins' as *;
 @use "variables" as *;
 
-html {
-    scroll-behavior: smooth;
-  }
 
 #header {
     display: flex;
@@ -19,8 +16,6 @@ html {
         padding: 20px 100px; 
     }
 }
-
-main {
     #banner {
         background-image: url("../assets/banner.gif");
         background-size: cover;
@@ -40,19 +35,11 @@ main {
             height: 90vh;
         }
     }
+
     .header-title {
         font-weight: normal;
-        color: $tertiaryColor;
-        font-size: 2.5em;
+        color: $tertiaryColor;  
         padding-bottom: 8px;
-
-        @include tablet {
-            font-size: 3em;
-        }
-
-        @include desktop-large {
-            font-size: 3.5em;
-        }
     }
     
 article {
@@ -82,32 +69,9 @@ article {
         }
     
     }
-  }
+  
 
   .heading {
     font-weight: normal;
-    font-size: 2em;
- 
-    @include tablet {
-        font-size: 3em;
-    }
-
-    @include desktop {
-        font-size: 30px;
-    }
-
-  }
-
-  p, li {
-    font-size: 20px;
-
-    @include tablet {
-        font-size: 1.3em;
-    }
-
-
-    @include desktop-large {
-        font-size: 1.5em;
-    }
   }
 
