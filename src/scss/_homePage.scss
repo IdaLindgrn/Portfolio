@@ -42,17 +42,8 @@ main {
     }
     .header-title {
         font-weight: normal;
-        color: $tertiaryColor;
-        font-size: 2.5em;
+        color: $tertiaryColor;  
         padding-bottom: 8px;
-
-        @include tablet {
-            font-size: 3em;
-        }
-
-        @include desktop-large {
-            font-size: 3.5em;
-        }
     }
     
 article {
@@ -86,28 +77,5 @@ article {
 
   .heading {
     font-weight: normal;
-    font-size: 2em;
- 
-    @include tablet {
-        font-size: 3em;
-    }
-
-    @include desktop {
-        font-size: 30px;
-    }
-
-  }
-
-  p, li {
-    font-size: 20px;
-
-    @include tablet {
-        font-size: 1.3em;
-    }
-
-
-    @include desktop-large {
-        font-size: 1.5em;
-    }
   }
 

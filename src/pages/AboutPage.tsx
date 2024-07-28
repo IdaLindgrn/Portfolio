@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import portrait from "../assets/portrait.png";
 import { FaPhone } from "react-icons/fa6";
 import { GrMail } from "react-icons/gr";
+import ScrollDownArrow from "../assets/scroll-down-arrow.png";
 
 export const AboutPage = () => {
   const [t] = useTranslation("global");
@@ -15,7 +16,7 @@ export const AboutPage = () => {
       <div className="gallery-wrapper">
         <main className="gallery-container">
           <div className="about-container">
-            <h1 className="header-title"></h1>
+            <h2 className="header-title"></h2>
             <div className="about-me">
               <div className="portrait-container">
                 <div className="img-container">
@@ -46,7 +47,12 @@ export const AboutPage = () => {
                 </div>
               </div>
               <div className="about-me-container">
+                <p className="about-me-hello">Hello, I'm</p>
                 <h2 className="about-me-title">{t("headers.homeTitle")}</h2>
+                <p className="about-me-frontend">
+                  A <span className="highlight">Frontend Developer</span> from{" "}
+                  <span className="highlight">Stockholm</span>
+                </p>
                 <p className="about-me-text">
                   Passionerad frontend-utvecklare med ett brinnande intresse för
                   design och problemlösning. Med en mångsidig kompetens och
@@ -54,15 +60,81 @@ export const AboutPage = () => {
                   strävar jag efter att skapa användarvänliga och estetiskt
                   tilltalande digitala upplevelser.
                 </p>
-                <a
-                  href="path/to/your/file.pdf"
-                  download="filename.pdf"
-                  className="download-link"
-                >
-                  Download CV
-                </a>
+                <div>
+                  <a
+                    href="path/to/your/file.pdf"
+                    download="filename.pdf"
+                    className="download-link cv-link"
+                  >
+                    Download CV
+                  </a>
+                  <a
+                    href="path/to/your/file.pdf"
+                    download="filename.pdf"
+                    className="download-link contact-link"
+                  >
+                    Contact
+                  </a>
+                </div>
+                <img
+                  style={{ width: "150px" }}
+                  className="scroll-down-arrow"
+                  src={ScrollDownArrow}
+                  alt="An arrow indicating the user to scroll down."
+                />
               </div>
             </div>
+          </div>
+        </main>
+      </div>
+      <div className="gallery-wrapper">
+        <main className="gallery-container">
+          <div className="gallery-header">
+            <h2 className="header-title">Get in touch</h2>
+            <p className="gallery-subheading">
+              Wanna get in touch? Ask me anything
+            </p>
+            <form className="contact-form">
+              <div className="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows={4}
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" className="send-button">
+                Send Message
+              </button>
+            </form>
           </div>
         </main>
       </div>

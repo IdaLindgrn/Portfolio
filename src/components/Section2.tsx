@@ -5,7 +5,7 @@ export const Section2 = () => {
   return (
     <div className="container" id="container2">
       <section id="section-container2">
-        <h3 className="heading">Gallery</h3>
+        <h2 className="heading">Gallery</h2>
         <p id="section-text">
           Get a deep dive into some of my previous projects:
         </p>
