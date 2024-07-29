@@ -38,17 +38,13 @@
     }
     .header-title {
         font-weight: normal;
-        color: $tertiaryColor;
-        font-size: 2.5em;
-        padding-bottom: 8px;
+        margin-bottom: 25px;
+    }
 
-        @include tablet {
-            font-size: 3em;
-        }
+    .header-subtitle {
+        font-weight: normal;
+        font-size:xx-large;
 
-        @include desktop-large {
-            font-size: 3.5em;
-        }
     }
     
 article {
@@ -61,16 +57,41 @@ article {
     color: $tertiaryColor;
     
     @include desktop {
-        height: 50vh;
+        height: 70vh;
     }
     }
 
-    .about-text {
+    .heading {
+        margin-top: 30px;
+        margin-bottom: -20px;
+    }
+
+    .expertise-text {
         display: flex;
         padding: 20px;
         flex-direction: column;
-        .about-1, .about-2 {
+        .expertise-1, .expertise-2, .expertise-3 {
             padding: 20px;
+            width: 370px;
+            height: 440px;
+            margin: 40px;
+            background-color: $primaryColor;
+            box-shadow: 0px 0px 10px $primaryBoxShadowColor;
+            border-radius: 10px;
+            text-align: center;
+
+            .expertise-icon {
+                margin: 40px;
+                width: 200px;
+                height: auto;
+                margin-bottom: 30px;
+            }
+
+            .expertise-info {
+                margin: 20px;
+                color: $quaternaryColor;
+                line-height: 1.3;
+            }
         }
         
         @include desktop {

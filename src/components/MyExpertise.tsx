@@ -1,36 +1,35 @@
+import Software from "../assets/expertise/software-dev.png";
+import Frontend from "../assets/expertise/frontend-dev.png";
+import Native from "../assets/expertise/native-dev.png";
+
 export const MyExpertise = () => {
   return (
     <article>
       <h2 className="heading">My Expertise</h2>
       <div className="expertise-text">
         <div className="expertise-1">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
-            quibusdam. Vero voluptatibus inventore expedita quae cupiditate hic
-            voluptas, veniam possimus quia non, aliquid optio aut earum dolorum?
-            Fuga, asperiores illo. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Iusto earum harum consectetur similique dolores,
-            corporis qui.
+          <img className="expertise-icon" src={Software} alt="" />
+
+          <h3>Software Development</h3>
+          <p className="expertise-info">
+            Experiences in both functional and OOP: Python, JavaScript,
+            TypeScript
           </p>
         </div>
         <div className="expertise-2">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
-            quibusdam. Vero voluptatibus inventore expedita quae cupiditate hic
-            voluptas, veniam possimus quia non, aliquid optio aut earum dolorum?
-            Fuga, asperiores illo. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Iusto earum harum consectetur similique dolores,
-            corporis qui.
+          <img className="expertise-icon" src={Frontend} alt="" />
+          <h3>Frontend Dev</h3>
+          <p className="expertise-info">
+            Passionate about UI/UX. Over 3 years of development experience in
+            HTML, CSS, JS, React and NextJS frameworks.
           </p>
         </div>
         <div className="expertise-3">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
-            quibusdam. Vero voluptatibus inventore expedita quae cupiditate hic
-            voluptas, veniam possimus quia non, aliquid optio aut earum dolorum?
-            Fuga, asperiores illo. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Iusto earum harum consectetur similique dolores,
-            corporis qui.
+          <img className="expertise-icon" src={Native} alt="" />
+          <h3>Android/iOS Dev</h3>
+          <p className="expertise-info">
+            Skilled in developing hybrid mobile apps and cross–platform
+            solutions using the React Native framework.
           </p>
         </div>
       </div>

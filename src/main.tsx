@@ -20,6 +20,13 @@ i18next.init({
   },
 });
 
+let anims = [...document.querySelectorAll("[anim]")];
+console.log(anims);
+let click = (el: any, cb: any) => el.addEventListener("click", cb);
+let toggle = (el: any) => el.classList.toggle("toggled");
+let clickTog = (el: any) => click(el, () => toggle(el));
+anims.map(clickTog);
+
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <I18nextProvider i18n={i18next}>
