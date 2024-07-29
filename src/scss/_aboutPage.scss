@@ -1,0 +1,281 @@
+@use 'mixins' as *;
+@use "variables" as *;
+
+.about-container {
+    background-color: $primaryColor;
+    height: 90vh;
+    padding-bottom: 15vh;
+
+    @include desktop {
+        padding-bottom: 20px;
+    }
+
+    .header-title {
+        display: flex;
+        justify-content: center;
+        padding: 90px 0 10px 0;
+    }
+
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+
+        @include desktop{
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .portrait-container {
+            background-color: $secondaryColor;   
+            width: 550px;
+            height: 680px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 10px;
+  
+
+        .img-container {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            align-items: center;
+            width: 30vw;
+            height: 30vh;
+            border-radius: 50%;  
+            overflow: hidden;
+            
+            @include tablet {
+                width: 30vh;
+                height: 30vh;
+            }
+
+            @include desktop {
+                margin-top: -10px;
+                margin-bottom: 20px;
+                width: 400px;
+                height: 400px;
+            }
+
+            .portrait {
+                margin-top: 43%;
+                max-width: 100%;
+                max-height: 180%;
+          
+            }
+        }
+           
+
+            .contact-text {
+                margin-left: 70px;
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                color: $tertiaryColor;
+                
+                &:hover {
+                    color: $tertiaryHoverColor;
+                
+                    .info {
+                      color: $tertiaryHoverColor;
+                    }
+
+                    svg {
+                        color: $tertiaryHoverColor;
+                      }
+                    }
+
+                    .contact-symbol {
+                        color: $tertiaryColor;
+                    }
+    
+                .info {
+                    margin-left: 20px;
+                    font-size: 2em;
+                    text-decoration: none;
+                    color: $tertiaryColor;     
+                }
+            }
+    }
+
+
+        .about-me-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 80vw;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+
+            .about-me-hello {
+                color: $quaternaryColor;
+            }
+
+            .about-me-frontend {
+                color: $quaternaryColor;
+                margin-bottom: 30px;
+
+                .highlight {
+                    font-weight: 600;
+                    color: $tertiaryColor;
+                }
+            }
+
+            @include desktop {
+                max-width: 40vw;
+                margin-left: 10px;
+                margin-right: 0;
+                text-align: left;
+            }
+
+            .about-me-title {
+                margin: 30px 0 20px;
+                font-weight: normal;
+                color: $tertiaryColor;
+                @include desktop {
+                    margin: 30px 0 30px;
+                }
+            }
+
+            .about-me-text {
+                color: $quaternaryColor;
+                margin-bottom: 20px;
+
+                @include desktop {
+                    margin-bottom: 60px;
+                }
+            }
+
+            .download-link {
+                display: inline-flex; /* Use flexbox for centering text */
+                align-items: center;
+                justify-content: center;
+                font-size: 1em;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 10px;
+                padding: 17px;
+                width: 200px;
+                height: 60px;
+                margin-top: -30px;
+                transition: background-color 0.3s ease, color 0.3s ease;
+              
+                @include desktop {
+                  font-size: 1.4em;
+                  width: 180px;
+                  height: 25px; 
+                }
+              
+                &:hover {
+                  opacity: 0.8; 
+                }
+              }
+
+            .cv-link {
+                background-color: $tertiaryColor; 
+                color: $primaryColor;
+                
+                &:hover {
+                  background-color: $tertiaryHoverColor;
+                }
+              }
+
+              .contact-link {
+                margin-left: 30px;
+                background-color: $secondaryColor;      
+                color: $tertiaryColor;
+                
+                &:hover {
+                  background-color: $primaryHoverColor;
+                }
+            }
+
+
+            .scroll-down-arrow {
+                position: absolute;
+                bottom: -70px;
+                right: 250px;
+            }
+        }    
+    }
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px; 
+    margin: 60px;
+    padding: 40px;
+    background-color: $secondaryColor; 
+    border-radius: 10px;
+
+    .contact-name-email {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  
+    .form-group {
+      &:nth-of-type(1),
+      &:nth-of-type(2) {
+        input,
+        textarea {
+          width: 350px;
+        }
+      }
+  
+      &:nth-of-type(3),
+      &:nth-of-type(4) {
+        input,
+        textarea {
+          width: 780px;
+        }
+      }
+  
+      input,
+      textarea {
+        background-color: $primaryColor; 
+        color: $tertiaryColor; 
+        border: 1px solid $secondaryColor;
+        border-radius: 5px;
+        padding: 25px;
+        font-size: 1em;
+
+        &::placeholder {
+            color: $tertiaryColor; 
+            font-size: 1.2em;
+          }
+  
+        &:focus {
+          border-color: $tertiaryColor;
+          outline: none;
+        }
+      }
+  
+      textarea {
+        resize: none;
+        min-height: 100px; 
+      }
+    }
+  
+    .send-button {
+      background-color: $tertiaryColor;
+      color: $primaryColor; 
+      border: none;
+      border-radius: 50px;
+      height: 70px;
+      padding: 15px 20px;
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: $tertiaryHoverColor;
+      }
+    }
+  }
+  

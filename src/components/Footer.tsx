@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
+import { IoIosArrowUp } from "react-icons/io";
 import figure from "../assets/figure.gif";
 
 interface Quote {
@@ -52,31 +53,55 @@ export const Footer = () => {
     }
   }, []);
 
+  const MAX_QUOTE_LENGTH = 150;
+
+  const truncateQuote = (quote: any) => {
+    if (quote.length > MAX_QUOTE_LENGTH) {
+      return quote.substring(0, MAX_QUOTE_LENGTH) + "...";
+    }
+    return quote;
+  };
+
   return (
     <footer id="footer">
+      <a href="#header">
+        <div className="to-top-container">
+          <IoIosArrowUp className="to-top-arrow" />
+        </div>
+      </a>
       <div className="footer-content-container">
         <div className="footer-socials">
-          <a href="https://github.com/IdaLindgrn">
-            <BsGithub className="socials-icon" />
-          </a>
-          <a href="https://www.linkedin.com/in/ida-lindgren-0b6099207/">
-            <BsLinkedin className="socials-icon" />
-          </a>
-          <a href="mailto:ida-lindgren@hotmail.com">
-            <GrMail className="socials-icon" />
-          </a>
+          <div className="div-links">
+            <a href="https://github.com/IdaLindgrn">
+              <BsGithub className="socials-icon" />
+            </a>
+            <p className="name-links">Github</p>
+          </div>
+          <div className="div-links">
+            <a href="https://www.linkedin.com/in/ida-lindgren-0b6099207/">
+              <BsLinkedin className="socials-icon" />
+            </a>
+            <p className="name-links">LinkedIn</p>
+          </div>
+          <div className="div-links">
+            <a href="mailto:ida-lindgren@hotmail.com">
+              <GrMail className="socials-icon" />
+            </a>
+            <p className="name-links">Mail</p>
+          </div>
         </div>
         <div className="tablet-and-above">
           <div className="quote-container">
             <figure className="figure-container">
               <img className="figure-img" src={figure} alt="Figure" />
             </figure>
+
             <p className="quote-title">The Office quote of the day</p>
             <div className="quote">
               <div className="quote-content">
                 {quote && (
                   <>
-                    <p>{quote.quote}</p>
+                    <p>{truncateQuote(quote.quote)}</p>
                     <p>- {quote.character}</p>
                   </>
                 )}

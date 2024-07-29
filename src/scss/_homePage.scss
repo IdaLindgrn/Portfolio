@@ -1,11 +1,8 @@
-@import '_mixins.scss';
+@use 'mixins' as *;
+@use "variables" as *;
 
-* {
-    margin: 0;
-    font-family: "League Spartan";
-}
 
-.home-header {
+#header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,12 +17,11 @@
     }
 }
 
-main {
     #banner {
         background-image: url("../assets/banner.gif");
         background-size: cover;
         height: 60vh;
-        color: #76697B;
+        color: $tertiaryColor;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -42,7 +38,7 @@ main {
     }
     .header-title {
         font-weight: normal;
-        color: #76697B;
+        color: $tertiaryColor;
         font-size: 2.5em;
         padding-bottom: 8px;
 
@@ -56,24 +52,24 @@ main {
     }
     
 article {
-    background-color: #ffffff;
+    background-color: $primaryColor;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 30px;
     height: 80vw;
-    color: #76697B;
+    color: $tertiaryColor;
     
     @include desktop {
         height: 50vh;
     }
     }
 
-    .expertise-text {
+    .about-text {
         display: flex;
         padding: 20px;
         flex-direction: column;
-        .expertise-1, .expertise-2, .expertise-3 {
+        .about-1, .about-2 {
             padding: 20px;
         }
         
@@ -82,34 +78,8 @@ article {
         }
     
     }
-  }
-
-
-  //default styling
+  
   .heading {
     font-weight: normal;
-    font-size: 2em;
- 
-    @include tablet {
-        font-size: 3em;
-    }
-
-    @include desktop {
-        font-size: 30px;
-    }
-
-  }
-
-  p, li {
-    font-size: 20px;
-
-    @include tablet {
-        font-size: 1.3em;
-    }
-
-
-    @include desktop-large {
-        font-size: 1.5em;
-    }
   }
 

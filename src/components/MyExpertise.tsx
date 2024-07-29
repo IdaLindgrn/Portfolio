@@ -1,5 +1,3 @@
-import "../scss/homePage.scss";
-
 export const MyExpertise = () => {
   return (
     <article>

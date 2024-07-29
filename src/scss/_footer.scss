@@ -1,0 +1,228 @@
+@use 'mixins' as *;
+@use "variables" as *;
+
+footer {
+  
+    background-color: $tertiaryColor;
+    position: relative;
+
+    a:hover .to-top-container {
+      background-color: $primaryHoverColor;
+    }
+
+    .to-top-container {
+      position: absolute; 
+      top: -34px; 
+      padding: 0px 25px; 
+      right: 60px; 
+      background-color: $secondaryColor;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+
+
+
+      .to-top-arrow {
+        color: $tertiaryColor;
+        width: 40px;
+        height: 40px;
+        margin-top: -5px;
+        margin-bottom: -5px;
+
+        
+      @include tablet {
+        top: -59px;
+        width: 65px;
+        height: 65px;
+        margin-top: -5px;
+        margin-bottom: -5px;
+      }
+      }
+
+      @include tablet {
+        top: -59px; 
+        padding: 0px 45px;
+        right: 80px; 
+      }
+
+      @include desktop {
+        right: 100px; 
+      }
+
+    }
+
+    .footer-content-container {
+      padding: 60px;
+
+      @include tablet {
+        padding: 70px;
+
+    }
+        @include desktop {
+          padding: 60px 40px;
+            display: flex;
+        }
+    }
+    .footer-socials {
+        display: flex;
+        justify-content: center;
+ 
+        a {
+            display: flex;
+            margin: 1vw;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            background-color: $primaryColor;
+            border-radius: 50%;
+            color: $quinaryColor;
+            font-size: 1.7rem;
+
+            .socials-icon {
+                width: 20px;
+                height: 20px;
+
+                @include tablet {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                @include desktop {
+                  width: 40px;
+                  height: 40px;         
+              }
+            }
+
+            @include tablet {
+                padding: 20px;  
+            }
+        }
+        
+        .name-links {
+          @include desktop {
+            margin-top: -70px;
+            margin-bottom: 70px;
+          }
+        }
+
+
+
+        @include desktop {
+            justify-content: left;
+            margin-left: 10vw;
+        }  
+
+        .div-links {
+          display: flex;
+          align-items: center;
+          color: $primaryColor;
+          flex-direction: column;
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+
+        a:hover   {
+          background-color: $secondaryHoverColor;
+          padding: 20px;
+        }
+    
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+        background-color: $quinaryColor;
+        padding: 20px;
+        color: $quaternaryColor;
+
+        @include desktop {
+          padding: 40px;
+      } 
+    }
+
+    .tablet-and-above {
+        display: none;
+      }
+
+      @include desktop {
+        .tablet-and-above {
+          display: block;
+        }
+    }   
+
+    .figure-container {
+        position: relative;
+        left: -400px;
+        bottom: -180px;
+
+ 
+      }
+
+.figure-img {
+  position: absolute;
+    width: 200px;
+    height: 200px;
+
+   
+    }
+
+     .quote-container {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        right: 0;
+      }
+
+      .quote-title {
+        font-size: 27px;
+        margin-left: -100px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        color: $primaryColor;
+      }
+      
+      .quote {
+        position: relative;
+        background-color: $primaryColor;
+        padding: 15px;
+        color: $tertiaryColor;
+        border-radius: 45px;
+        margin-left: 180px; 
+        margin-right: 50px; 
+
+        @include desktop-large {
+          margin-left: 350px;
+        }
+       
+      }
+
+      .footer-socials a {
+        @include desktop {
+        margin: 90px 10px;
+        }
+      }
+      
+      .quote-content {
+        padding: 10px;
+        width: 500px;
+        line-height: 24px;
+        font-size: 15px;
+
+        @include desktop-large {
+          width: 700px;
+        }
+      }
+
+
+      
+      .quote-triangle {
+        position: absolute;
+        width: 5px;
+        height: 30px;
+        border-left: 9px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid $primaryColor;
+        bottom: 11px;
+        left: 1px;
+      }
+}

@@ -1,0 +1,54 @@
+@use 'mixins' as *;
+@use "variables" as *;
+
+.logo {
+  width: 70px;
+
+  @include tablet {
+    width: 80px;
+  }
+
+  @include desktop {
+    width: 100px;
+  }
+
+}
+
+.dropdown {
+    position: relative;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%; 
+    left: 0; 
+    z-index: 1; 
+  }
+  
+  .dropdown-toggle {
+    cursor: pointer;
+  }
+
+  select {
+    border: none;
+    background-color: transparent;
+    padding: 6px 0px; 
+    border-radius: 5px;
+    font-size: 1.3em; 
+    color: inherit; 
+    cursor: pointer;
+    outline: none;
+  }
+
+
+.dropdown-container {
+    display: flex;
+    align-items: center;
+
+    .dropdown-text {
+        color: $tertiaryColor;
+        padding-right: 5px;
+        text-align: center;
+    }
+
+}

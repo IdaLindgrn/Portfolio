@@ -1,7 +1,5 @@
 import { MyExpertise } from "../components/MyExpertise";
 import { Section1 } from "../components/Section1";
-import "../scss/homePage.scss";
-import "../scss/footer.scss";
 import { Section2 } from "../components/Section2";
 import { useTranslation } from "react-i18next";
 import { Header } from "../components/Header";

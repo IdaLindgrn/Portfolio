@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Navbar } from "./NavBar/Navbar";
 import { useState } from "react";
-import "../scss/selectLanguage.scss";
 import logo from "../assets/logo.png";
 
 export const Header = () => {
@@ -14,8 +13,12 @@ export const Header = () => {
 
   return (
     <>
-      <header className="home-header">
-        <img src={logo} alt={t("logoAlt", "My name as the logo")} />
+      <header id="header">
+        <img
+          className="logo"
+          src={logo}
+          alt={t("logoAlt", "My name as the logo")}
+        />
         <Navbar />
         <div className="dropdown">
           <div

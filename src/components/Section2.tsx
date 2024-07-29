@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import "../scss/navbar.scss";
-import "../scss/section.scss";
 import cats from "../assets/cats.png";
 
 export const Section2 = () => {

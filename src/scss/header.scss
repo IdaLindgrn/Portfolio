@@ -1,3 +1,20 @@
+
+@use "mixins" as *;
+@use "variables" as *;
+
+.logo {
+  width: 70px;
+
+  @include tablet {
+    width: 80px;
+  }
+
+  @include desktop {
+    width: 100px;
+  }
+
+}
+
 .dropdown {
     position: relative;
   }
@@ -30,7 +47,7 @@
     align-items: center;
 
     .dropdown-text {
-      color: #76697B;
+        color: $tertiaryColor;
         padding-right: 5px;
         text-align: center;
     }
