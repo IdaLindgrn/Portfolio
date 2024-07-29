@@ -3,7 +3,9 @@ $secondaryColor: #E3DCEF;
 $tertiaryColor: #76697B;
 $quaternaryColor: #9E8BA6;
 $quinaryColor: #5b505f;
-$senaryColor: #3f3c3c;
+$senaryColor: #000000;
+
+
 
 $primaryHoverColor: darken($secondaryColor, 5%);
 $secondaryHoverColor: darken($primaryColor, 15%);
@@ -12,4 +14,3 @@ $quaternaryHoverColor: lighten($secondaryColor, 3%);
 
 $primaryBoxShadowColor: rgba($senaryColor, 0.2);
 $secondaryBoxShadowColor: rgba($secondaryColor, 0.8);
-

@@ -1,4 +1,4 @@
-import { AboutText } from "../components/AboutText";
+import { MyExpertise } from "../components/MyExpertise";
 import { Section1 } from "../components/Section1";
 import { Section2 } from "../components/Section2";
 import { useTranslation } from "react-i18next";
@@ -13,9 +13,9 @@ export const HomePage = () => {
       <main>
         <div id="banner">
           <h1 className="header-title">{t("headers.homeTitle")}</h1>
-          <p>{t("headers.homeSubheading")}</p>
+          <p className="header-subtitle">{t("headers.homeSubheading")}</p>
         </div>
-        <AboutText />
+        <MyExpertise />
         <Section1 />
         <Section2 />
       </main>

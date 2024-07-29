@@ -16,6 +16,7 @@
         padding: 20px 100px; 
     }
 }
+
     #banner {
         background-image: url("../assets/banner.gif");
         background-size: cover;
@@ -38,8 +39,17 @@
 
     .header-title {
         font-weight: normal;
+        color: $tertiaryColor;
+        margin-bottom: 25px;
+    }
+
+    .header-subtitle {
+        font-weight: normal;
+        font-size:xx-large;
+
         color: $tertiaryColor;  
         padding-bottom: 8px;
+
     }
     
 article {
@@ -48,20 +58,70 @@ article {
     align-items: center;
     flex-direction: column;
     padding: 30px;
-    height: 80vw;
+    height: 90vh;
     color: $tertiaryColor;
     
     @include desktop {
-        height: 50vh;
+        height: 70vh;
     }
     }
 
-    .about-text {
+    .heading {
+        margin-top: 30px;
+        margin-bottom: -20px;
+    }
+
+    .expertise-text {
         display: flex;
         padding: 20px;
         flex-direction: column;
-        .about-1, .about-2 {
+
+        .expertise-1, .expertise-2, .expertise-3 {
             padding: 20px;
+            width: 500px;
+            height: 150px;
+            margin: 20px;
+            background-color: $primaryColor;
+            box-shadow: 0px 0px 10px $primaryBoxShadowColor;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+
+            @include desktop {
+                display:block;
+                margin: 40px;
+                width: 370px;
+                height: 440px;
+                text-align: center;
+            }
+
+            .expertise-icon {
+                margin: 0px;
+                width: 130px;
+                height: 80px;
+    
+
+                @include desktop {
+                    margin: 40px;
+                    width: 200px;
+                    height: auto;
+                    margin-bottom: 30px;
+                }
+            }
+
+            .expertise-title {
+                margin-left: 20px;
+
+                @include desktop {
+                    margin-left: 0px;
+                }
+            }
+
+            .expertise-info {
+                margin: 20px;
+                color: $quaternaryColor;
+             
+            }
         }
         
         @include desktop {

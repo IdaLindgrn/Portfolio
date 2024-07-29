@@ -1,5 +1,6 @@
-<<<<<<<< HEAD:src/scss/header.scss
-@import "_mixins.scss";
+
+@use "mixins" as *;
+@use "variables" as *;
 
 .logo {
   width: 70px;
@@ -13,9 +14,6 @@
   }
 
 }
-========
-@use "variables" as *;
->>>>>>>> main:src/scss/_selectLanguage.scss
 
 .dropdown {
     position: relative;

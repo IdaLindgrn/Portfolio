@@ -1,25 +1,17 @@
 import { Link } from "react-router-dom";
-import dreamyCloudsImage from "../assets/dreamy-clouds.png";
+import cats from "../assets/cats.png";
 
 export const Section2 = () => {
   return (
     <div className="container" id="container2">
       <section id="section-container2">
-        <h2 className="heading">Gallery</h2>
+        <p className="nav-text">Gallery</p>
+        <h2 className="heading">My Projects</h2>
         <p id="section-text">
-          Get a deep dive into some of my previous projects:
+          Want to see what I have made? Take a look at some of the projects I’ve
+          worked on. I have made counless personal projects and made huge
+          impacts for the companies I’ve helped update there applications.
         </p>
-        <ul className="dot-list">
-          <li>
-            <span className="dot"></span>The Restaurant
-          </li>
-          <li>
-            <span className="dot"></span>CatBox
-          </li>
-          <li>
-            <span className="dot"></span>TicTacToe
-          </li>
-        </ul>
         <div id="shortcuts">
           <Link id="footerLink" to="/about">
             Learn More
@@ -27,7 +19,7 @@ export const Section2 = () => {
         </div>
       </section>
       <figure className="image-container">
-        <img src={dreamyCloudsImage} alt="Dreamy clouds" />
+        <img src={cats} alt="Cats sitting on a hill looking over the horizon" />
       </figure>
     </div>
   );
