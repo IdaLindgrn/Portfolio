@@ -8,13 +8,14 @@ export const Section1 = () => {
         <img src={dreamyCloudsImage} alt="Dreamy clouds" />
       </figure>
       <section id="section-container1">
-        <h3 className="heading">CV</h3>
+        <p className="nav-text">About</p>
+        <h2 className="heading">Who am I?</h2>
         <p id="section-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga natus
-          quisquam nemo dicta non? Quibusdam nulla et ullam illo at. Doloremque
-          beatae optio dignissimos eum quisquam temporibus ipsa cumque enim.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eos
-          delectus unde harum hic.
+          Curious to delve deeper into my professional journey or establish a
+          connection? Explore my comprehensive CV for a detailed overview of my
+          experience and achievements. Feel free to reach out and drop me a
+          message if you'd like to discuss potential collaborations or simply
+          connect!
         </p>
         <div id="shortcuts">
           <Link id="footerLink" to="/about">
