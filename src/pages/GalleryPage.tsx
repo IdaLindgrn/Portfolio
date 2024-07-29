@@ -87,7 +87,9 @@ export const GalleryPage = () => {
       <div className="gallery-wrapper">
         <main className="gallery-container">
           <div className="gallery-header">
-            <h1 className="header-title">{t("headers.galleryTitle")}</h1>
+            <h2 className="header-title gallery-h">
+              {t("headers.galleryTitle")}
+            </h2>
             <p className="gallery-subheading">
               {t("headers.gallerySubheading")}
             </p>
