@@ -36,6 +36,7 @@
             height: 90vh;
         }
     }
+
     .header-title {
         font-weight: normal;
         color: $tertiaryColor;
@@ -45,6 +46,9 @@
     .header-subtitle {
         font-weight: normal;
         font-size:xx-large;
+
+        color: $tertiaryColor;  
+        padding-bottom: 8px;
 
     }
     
@@ -126,6 +130,7 @@ article {
     
     }
   
+
   .heading {
     font-weight: normal;
   }
