@@ -1,6 +1,8 @@
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { useTranslation } from "react-i18next";
+import MobileApplication from "../assets/mobile-application.png";
+import BrowserExtension from "../assets/browser-extension.png";
 import Catbox from "../assets/catbox.png";
 import TicTacToe from "../assets/tictactoe.png";
 import Webshop from "../assets/webshop.png";
@@ -23,19 +25,19 @@ export const GalleryPage = () => {
   const boxes = [
     {
       id: 1,
-      image: Catbox,
-      title: "CatBox",
-      text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
+      image: MobileApplication,
+      title: "Mobile Application",
+      text: "Med denna app kan du få pengar tillbaka när du handlar online från över 600 butiker. Pengarna delas mellan dig och en valfri förening. Du kan också ta del av kampanjer och presentkort för att tjäna mer.",
       link: "https://cat-box.netlify.app/",
-      categories: ["React", "TypeScript", "CSS3", "HTML"],
+      categories: ["React Native", "TypeScript", "Expo"],
     },
     {
       id: 2,
-      image: TicTacToe,
-      title: "TicTacToe",
+      image: BrowserExtension,
+      title: "Browser Extension",
       text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
       link: "https://ida-lindgren-tictactoe.netlify.app/",
-      categories: ["Vue", "JavaScript", "CSS3", "HTML"],
+      categories: ["React", "TypeScript", "CSS3", "HTML"],
     },
     {
       id: 3,

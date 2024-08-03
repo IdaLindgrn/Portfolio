@@ -155,14 +155,15 @@
     }
 
     .box-text-container {
-      padding: 30px;
+      padding: 17px;
       display: flex;
       align-items: center;
       flex-direction: column;
 
     .box-title {
+      margin-top: 7px;
       color: $tertiaryColor;
-      font-size: 1.5em;
+      font-size: 1.6em;
       font-weight: bold;
     }
 
@@ -178,8 +179,8 @@
       .category-bubble {
         background-color: $quaternaryColor;
         color: $primaryColor;
-        padding: 10px 15px;
-        margin-bottom: 5px;
+        padding: 11px 15px;
+        margin-bottom: 1px;
         border-radius: 30px;
         font-size: 0.7em;
         display: inline-block;
