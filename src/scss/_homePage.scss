@@ -66,6 +66,7 @@ article {
     padding: 30px;
     height: 90vh;
     color: $tertiaryColor;
+    max-width: 100vw;
 
     @include tablet {
         height: 70vh;
@@ -87,8 +88,9 @@ article {
 
     .expertise-text {
         display: flex;
-        padding: 20px;
+        padding: 15px 0px;
         flex-direction: column;
+        max-width: 100vw;
 
         .expertise-1, .expertise-2, .expertise-3 {
             padding: 20px;

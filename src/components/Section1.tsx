@@ -18,7 +18,7 @@ export const Section1 = () => {
           connect!
         </p>
         <div id="shortcuts">
-          <Link id="footerLink" to="/about">
+          <Link id="shortcutsLink" to="/about">
             Learn More
           </Link>
         </div>

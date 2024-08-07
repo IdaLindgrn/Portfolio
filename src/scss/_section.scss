@@ -72,6 +72,11 @@ section {
         font-size: 1.4em;
         text-align: center;
 
+        &:hover {
+            background-color: $tertiaryHoverColor;
+            cursor: pointer;
+          }
+
         @include tablet {
             padding: 15px 17px;
             font-size: 1.3em;
@@ -86,11 +91,8 @@ section {
             margin-top: 0px;
         }
         
-       
-        
-
   
-        #footerLink {
+        #shortcutsLink {
             color: $primaryColor;
             text-decoration: none;
         }
