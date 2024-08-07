@@ -13,7 +13,7 @@ export const Section2 = () => {
           impacts for the companies I’ve helped update there applications.
         </p>
         <div id="shortcuts">
-          <Link id="footerLink" to="/about">
+          <Link id="shortcutsLink" to="/gallery">
             Learn More
           </Link>
         </div>

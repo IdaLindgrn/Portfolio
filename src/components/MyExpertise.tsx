@@ -22,7 +22,7 @@ export const MyExpertise = () => {
           <div>
             <h3 className="expertise-title">Frontend Dev</h3>
             <p className="expertise-info">
-              Passionate about UI/UX. Over 3 years of development experience in
+              Passionate about UI/UX. Over 2 years of development experience in
               HTML, CSS, JS, React and NextJS frameworks.
             </p>
           </div>

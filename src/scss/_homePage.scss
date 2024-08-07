@@ -40,13 +40,19 @@
     .header-title {
         font-weight: normal;
         color: $tertiaryColor;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
+
+        @include tablet {
+            margin-bottom: 20px;
+        };
+
+        @include desktop {
+            margin-bottom: 25px;
+        };
     }
 
     .header-subtitle {
         font-weight: normal;
-        font-size:xx-large;
-
         color: $tertiaryColor;  
         padding-bottom: 8px;
 
@@ -58,12 +64,9 @@ article {
     align-items: center;
     flex-direction: column;
     padding: 30px;
-    height: 90vh;
     color: $tertiaryColor;
-    
-    @include desktop {
-        height: 70vh;
-    }
+    max-width: 100vw;
+    min-height: 40vh;
     }
 
     .heading {
@@ -73,12 +76,13 @@ article {
 
     .expertise-text {
         display: flex;
-        padding: 20px;
+        padding: 15px 0px;
         flex-direction: column;
+        max-width: 100vw;
 
         .expertise-1, .expertise-2, .expertise-3 {
             padding: 20px;
-            width: 500px;
+            width: 80vw;
             height: 150px;
             margin: 20px;
             background-color: $primaryColor;
@@ -87,20 +91,43 @@ article {
             display: flex;
             align-items: center;
 
+            @include tablet {
+                display:block;
+                margin: 20px;
+                width: 220px;
+                height: 300px;
+                text-align: center;
+            }
+
             @include desktop {
                 display:block;
                 margin: 40px;
+                width: 300px;
+                height: 370px;
+              
+            }
+
+            @include desktop-large {
+              
+                margin: 40px;
                 width: 370px;
                 height: 440px;
-                text-align: center;
+            
             }
 
             .expertise-icon {
                 margin: 0px;
-                width: 130px;
-                height: 80px;
+                width: 100px;
+                height: 70px;
     
 
+                @include tablet {
+                    margin: 20px;
+                    height: auto;
+                    margin-bottom: 20px;
+                }
+
+                
                 @include desktop {
                     margin: 40px;
                     width: 200px;
@@ -112,7 +139,7 @@ article {
             .expertise-title {
                 margin-left: 20px;
 
-                @include desktop {
+                @include tablet {
                     margin-left: 0px;
                 }
             }
@@ -124,7 +151,7 @@ article {
             }
         }
         
-        @include desktop {
+        @include tablet {
             flex-direction: row;
         }
     
