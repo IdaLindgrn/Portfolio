@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Navbar } from "./NavBar/Navbar";
 import { useState } from "react";
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   const [t, i18n] = useTranslation("global");
@@ -14,11 +15,13 @@ export const Header = () => {
   return (
     <>
       <header id="header">
-        <img
-          className="logo"
-          src={logo}
-          alt={t("logoAlt", "My name as the logo")}
-        />
+        <Link to="/" className="logo-link">
+          <img
+            className="logo"
+            src={logo}
+            alt={t("logoAlt", "My name as the logo")}
+          />
+        </Link>
         <Navbar />
         <div className="dropdown">
           <div
