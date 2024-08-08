@@ -77,11 +77,8 @@ li {
     width: 8%; 
     max-width: 100%;
     border-bottom: 2px solid $tertiaryColor; 
-  }
 
-
-@include tablet {
-.navLink.active:after {
+    @include tablet {
     content: "";
     position: absolute;
     display: flex;
@@ -95,11 +92,19 @@ li {
     border-radius: 30px; 
     border-bottom: 0px; 
 
-    @include desktop {
-    bottom: -1px; 
     }
+
+    @include desktop {
+        bottom: -6px; 
+        }
+    
+        @include desktop-large {
+            bottom: -1px; 
+            }
   }
 
+
+@include tablet {
   .navText {
     z-index: 1;
   }

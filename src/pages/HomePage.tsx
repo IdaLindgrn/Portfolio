@@ -13,7 +13,7 @@ export const HomePage = () => {
       <main>
         <div id="banner">
           <h1 className="header-title">{t("headers.homeTitle")}</h1>
-          <p className="header-subtitle">{t("headers.homeSubheading")}</p>
+          <h3 className="header-subtitle">{t("headers.homeSubheading")}</h3>
         </div>
         <MyExpertise />
         <Section1 />

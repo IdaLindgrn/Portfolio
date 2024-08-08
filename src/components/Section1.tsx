@@ -17,11 +17,9 @@ export const Section1 = () => {
           message if you'd like to discuss potential collaborations or simply
           connect!
         </p>
-        <div id="shortcuts">
-          <Link id="footerLink" to="/about">
-            Learn More
-          </Link>
-        </div>
+        <Link id="shortcuts" to="/about">
+          <div id="shortcutsLink">Learn More</div>
+        </Link>
       </section>
     </div>
   );
