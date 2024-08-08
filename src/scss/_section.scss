@@ -36,7 +36,11 @@ section {
     width: auto;
     height: 90vw;
     color: $tertiaryColor;
-    padding: 20px;
+    padding: 0px 70px;
+
+    @include tablet {
+        padding: 20px;
+    }
 
 
     .nav-text {

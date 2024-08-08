@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import portrait from "../assets/portrait.png";
 import { FaPhone } from "react-icons/fa6";
 import { GrMail } from "react-icons/gr";
-import ScrollDownArrow from "../assets/scroll-down-arrow.png";
+// import ScrollDownArrow from "../assets/scroll-down-arrow.png";
 
 export const AboutPage = () => {
   const [t] = useTranslation("global");
@@ -62,26 +62,22 @@ export const AboutPage = () => {
                 </p>
                 <div>
                   <a
-                    href="path/to/your/file.pdf"
-                    download="filename.pdf"
+                    href="../../CV_2024_ENG.pdf"
+                    download="CV_2024_ENG.pdf"
                     className="download-link cv-link"
                   >
                     Download CV
                   </a>
-                  <a
-                    href="path/to/your/file.pdf"
-                    download="filename.pdf"
-                    className="download-link contact-link"
-                  >
+                  <a href="#footer" className="download-link contact-link">
                     Contact
                   </a>
                 </div>
-                <img
+                {/* <img
                   style={{ width: "150px" }}
                   className="scroll-down-arrow"
                   src={ScrollDownArrow}
                   alt="An arrow indicating the user to scroll down."
-                />
+                /> */}
               </div>
             </div>
           </div>
