@@ -3,38 +3,77 @@
 
 .about-container {
     background-color: $primaryColor;
-    height: 90vh;
+    height: 800px;
     padding-bottom: 15vh;
 
+    @include tablet {
+      padding-bottom: 20px; 
+      height: 650px;
+  }
+
     @include desktop {
-        padding-bottom: 20px;
+        padding-bottom: 20px; 
+        height: 650px;
     }
+
+    @include  desktop-large {
+      padding-bottom: 20px;
+      height: 950px;
+  }
 
     .header-title {
         display: flex;
         justify-content: center;
         padding: 90px 0 10px 0;
+
+        @include tablet{
+          padding: 20px 0 10px 0;
+        }
+
+        @include desktop-large{
+        padding: 90px 0 10px 0;
+      }
     }
 
 
     .about-me {
         display: flex;
         flex-direction: column;
+        align-items: center;
 
-        @include desktop{
+        @include tablet{
             flex-direction: row;
             justify-content: space-around;
-            align-items: center;
         }
 
         .portrait-container {
             background-color: $secondaryColor;   
-            width: 550px;
-            height: 680px;
+            width: 70vw;
+            padding-top: 15px;
+            height: 370px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             border-radius: 10px;
+
+            @include tablet {
+              align-items: flex-start;
+              padding-top: 0px;
+              width: 350px;
+              height: 480px;
+            }
+
+
+            @include desktop {
+              width: 400px;
+              height: 530px;
+            }
+
+            @include desktop-large{
+              width: 550px;
+              height: 680px;
+          }
   
 
         .img-container {
@@ -42,22 +81,29 @@
             justify-content: center;
             align-self: center;
             align-items: center;
-            width: 30vw;
-            height: 30vh;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;  
             overflow: hidden;
             
             @include tablet {
-                width: 30vh;
-                height: 30vh;
+              width: 230px;
+              height: 230px;
             }
 
             @include desktop {
                 margin-top: -10px;
                 margin-bottom: 20px;
-                width: 400px;
-                height: 400px;
+                width: 300px;
+                height: 300px;
             }
+
+            @include desktop-large {
+              margin-top: -10px;
+              margin-bottom: 20px;
+              width: 400px;
+              height: 400px;
+          }
 
             .portrait {
                 margin-top: 43%;
@@ -69,12 +115,20 @@
            
 
             .contact-text {
-                margin-left: 70px;
+                margin-left: 20px;
                 margin-top: 20px;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 color: $tertiaryColor;
+
+                @include tablet {
+                  margin-left: 40px;
+                }
+
+                @include desktop {
+                  margin-left: 70px;
+                }
                 
                 &:hover {
                     color: $tertiaryHoverColor;
@@ -90,13 +144,36 @@
 
                     .contact-symbol {
                         color: $tertiaryColor;
+
+                        .contact-icon {
+                          background-color: $tertiaryColor;
+                        }
+                    }
+
+                    .phone-icon, .mail-icon {
+                      color: $tertiaryColor; 
+                        width: 25px;
+                        height: 25px;
+                      
+
+                       @include tablet {
+                            width: 25px;
+                            height: 25px;
+                          }
+                          @include desktop-large {
+                            width: 40px;
+                            height: 40px;
+                          }
+                    
+                      &:hover {
+                        color: $tertiaryHoverColor; 
+                      }
                     }
     
                 .info {
                     margin-left: 20px;
-                    font-size: 2em;
                     text-decoration: none;
-                    color: $tertiaryColor;     
+                    color: $tertiaryColor;  
                 }
             }
     }
@@ -112,6 +189,12 @@
 
             .about-me-hello {
                 color: $quaternaryColor;
+                margin-top: -480px;
+                margin-bottom: -25px;
+
+                @include tablet {
+                  margin: 0;
+                }
             }
 
             .about-me-frontend {
@@ -124,7 +207,7 @@
                 }
             }
 
-            @include desktop {
+            @include tablet {
                 max-width: 40vw;
                 margin-left: 10px;
                 margin-right: 0;
@@ -132,25 +215,29 @@
             }
 
             .about-me-title {
-                margin: 30px 0 20px;
+                margin: 30px 0 460px;
                 font-weight: normal;
                 color: $tertiaryColor;
-                @include desktop {
+                @include tablet {
                     margin: 30px 0 30px;
                 }
             }
 
             .about-me-text {
                 color: $quaternaryColor;
-                margin-bottom: 20px;
+                margin-bottom: 25px;
+                margin-left: 20px;
+                margin-right: 20px;
 
-                @include desktop {
+                @include tablet {
                     margin-bottom: 60px;
+                    margin-left: 0px;
+                    margin-right: 0px;
                 }
             }
 
             .download-link {
-                display: inline-flex; /* Use flexbox for centering text */
+                display: inline-flex; 
                 align-items: center;
                 justify-content: center;
                 font-size: 1em;
@@ -158,11 +245,18 @@
                 text-decoration: none;
                 border-radius: 10px;
                 padding: 17px;
-                width: 200px;
-                height: 60px;
-                margin-top: -30px;
+                width: 100px;
+                height: 17px;
+       
                 transition: background-color 0.3s ease, color 0.3s ease;
               
+                @include tablet {
+                  font-size: 1.2em;
+                  width: 110px;
+                  height: 22px; 
+                  margin-top: -30px;
+                }
+                
                 @include desktop {
                   font-size: 1.4em;
                   width: 180px;
@@ -207,10 +301,18 @@
     display: flex;
     flex-direction: column;
     gap: 22px; 
-    margin: 60px;
+    margin: 30px;
     padding: 40px;
     background-color: $secondaryColor; 
     border-radius: 10px;
+
+    @include tablet {
+      margin: 30px;
+    }
+
+    @include desktop {
+      margin: 40px;
+    }
 
     .contact-name-email {
         display: flex;
@@ -223,7 +325,11 @@
       &:nth-of-type(2) {
         input,
         textarea {
-          width: 350px;
+          width: 20vw;
+
+          @include tablet {
+            width: 24vw;
+          }
         }
       }
   
@@ -231,7 +337,7 @@
       &:nth-of-type(4) {
         input,
         textarea {
-          width: 780px;
+          width: 55vw;
         }
       }
   
@@ -266,12 +372,16 @@
       color: $primaryColor; 
       border: none;
       border-radius: 50px;
-      height: 70px;
       padding: 15px 20px;
       font-size: 1.2em;
+      height: 60px;
       font-weight: bold;
       cursor: pointer;
       transition: background-color 0.3s ease;
+
+      @include tablet {
+        height: 70px;
+      }
   
       &:hover {
         background-color: $tertiaryHoverColor;
