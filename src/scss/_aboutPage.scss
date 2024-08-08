@@ -130,10 +130,10 @@
                     }
 
                     .phone-icon, .mail-icon {
-                      color: $tertiaryColor; // Default color for the icons
+                      color: $tertiaryColor; 
                     
                       &:hover {
-                        color: $tertiaryHoverColor; // Hover color for the icons
+                        color: $tertiaryHoverColor; 
                       }
                     }
     
