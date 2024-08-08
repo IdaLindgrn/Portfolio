@@ -13,4 +13,4 @@ $tertiaryHoverColor: lighten($tertiaryColor, 10%);
 $quaternaryHoverColor: lighten($secondaryColor, 3%);
 
 $primaryBoxShadowColor: rgba($senaryColor, 0.2);
-$secondaryBoxShadowColor: rgba($secondaryColor, 0.8);
+$secondaryBoxShadowColor: rgba($primaryColor, 0.8);
