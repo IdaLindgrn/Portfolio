@@ -12,11 +12,9 @@ export const Section2 = () => {
           worked on. I have made counless personal projects and made huge
           impacts for the companies I’ve helped update there applications.
         </p>
-        <div id="shortcuts">
-          <Link id="shortcutsLink" to="/gallery">
-            Learn More
-          </Link>
-        </div>
+        <Link id="shortcuts" to="/gallery">
+          <div id="shortcutsLink">Learn More</div>
+        </Link>
       </section>
       <figure className="image-container">
         <img src={cats} alt="Cats sitting on a hill looking over the horizon" />

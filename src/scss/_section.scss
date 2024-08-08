@@ -71,6 +71,7 @@ section {
         padding: 16px 22px;
         font-size: 1.4em;
         text-align: center;
+        text-decoration: none;
 
         &:hover {
             background-color: $tertiaryHoverColor;
@@ -95,6 +96,7 @@ section {
         #shortcutsLink {
             color: $primaryColor;
             text-decoration: none;
+            
         }
 }
 
