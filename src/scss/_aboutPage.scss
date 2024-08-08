@@ -14,6 +14,14 @@
         display: flex;
         justify-content: center;
         padding: 90px 0 10px 0;
+
+        @include desktop{
+          padding: 50px 0 10px 0;
+        }
+
+        @include desktop-large{
+        padding: 90px 0 10px 0;
+      }
     }
 
 
@@ -35,6 +43,16 @@
             flex-direction: column;
             justify-content: center;
             border-radius: 10px;
+
+            @include desktop {
+              width: 400px;
+              height: 530px;
+            }
+
+            @include desktop-large{
+              width: 550px;
+              height: 680px;
+          }
   
 
         .img-container {
@@ -55,9 +73,16 @@
             @include desktop {
                 margin-top: -10px;
                 margin-bottom: 20px;
-                width: 400px;
-                height: 400px;
+                width: 300px;
+                height: 300px;
             }
+
+            @include desktop-large {
+              margin-top: -10px;
+              margin-bottom: 20px;
+              width: 400px;
+              height: 400px;
+          }
 
             .portrait {
                 margin-top: 43%;
@@ -90,11 +115,31 @@
 
                     .contact-symbol {
                         color: $tertiaryColor;
+
+                        .contact-icon {
+                          background-color: $tertiaryColor;
+
+                          @include desktop {
+                            
+                          }
+                          @include desktop-large {
+                            width: 40px;
+                            height: 40px;
+                          }
+                        }
+                    }
+
+                    .phone-icon, .mail-icon {
+                      color: $tertiaryColor; // Default color for the icons
+                    
+                      &:hover {
+                        color: $tertiaryHoverColor; // Hover color for the icons
+                      }
                     }
     
                 .info {
                     margin-left: 20px;
-                    font-size: 2em;
+                    font-size: 1.3em;
                     text-decoration: none;
                     color: $tertiaryColor;     
                 }
@@ -150,7 +195,7 @@
             }
 
             .download-link {
-                display: inline-flex; /* Use flexbox for centering text */
+                display: inline-flex; 
                 align-items: center;
                 justify-content: center;
                 font-size: 1em;
