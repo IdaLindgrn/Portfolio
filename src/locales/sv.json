@@ -2,7 +2,7 @@
     "header": {
         "navHome": "Hem",
         "navAbout": "Om mig",
-        "navGallery": "Gallery",
+        "navGallery": "Galleri",
         "navContact": "Kontakt",
         "en": "ENG",
         "sv": "SV"
@@ -11,6 +11,7 @@
         "github": "Github",
         "linkedIn": "LinkedIn",
         "mail": "Mail",
+        "quote": "Dagens 'The Office' citat",
         "copyright": "© Copyright 2023. All Rights Reserved"
     },
     "homePage": {

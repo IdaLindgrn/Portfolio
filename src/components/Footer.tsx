@@ -3,6 +3,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
 import { IoIosArrowUp } from "react-icons/io";
 import figure from "../assets/figure.gif";
+import { useTranslation } from "react-i18next";
 
 interface Quote {
   id: number;
@@ -12,6 +13,7 @@ interface Quote {
 }
 
 export const Footer = () => {
+  const [t] = useTranslation("global");
   const [quote, setQuote] = useState<Quote | null>(null);
 
   useEffect(() => {
@@ -75,19 +77,19 @@ export const Footer = () => {
             <a href="https://github.com/IdaLindgrn">
               <BsGithub className="socials-icon" />
             </a>
-            <p className="name-links">Github</p>
+            <p className="name-links">{t("footer.github")}</p>
           </div>
           <div className="div-links">
             <a href="https://www.linkedin.com/in/ida-lindgren-0b6099207/">
               <BsLinkedin className="socials-icon" />
             </a>
-            <p className="name-links">LinkedIn</p>
+            <p className="name-links">{t("footer.linkedIn")}</p>
           </div>
           <div className="div-links">
             <a href="mailto:ida-lindgren@hotmail.com">
               <GrMail className="socials-icon" />
             </a>
-            <p className="name-links">Mail</p>
+            <p className="name-links">{t("footer.mail")}</p>
           </div>
         </div>
         <div className="tablet-and-above">
@@ -96,7 +98,7 @@ export const Footer = () => {
               <img className="figure-img" src={figure} alt="Figure" />
             </figure>
 
-            <p className="quote-title">The Office quote of the day</p>
+            <p className="quote-title">{t("footer.quote")}</p>
             <div className="quote">
               <div className="quote-content">
                 {quote && (
@@ -112,7 +114,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="copyright">
-        <p>© Copyright 2023. All Rights Reserved</p>
+        <p>{t("footer.copyright")}</p>
       </div>
     </footer>
   );
