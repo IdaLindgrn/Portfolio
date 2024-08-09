@@ -80,11 +80,7 @@ export const GalleryPage = () => {
       title: t("galleryPage.webshop"),
       text: t("galleryPage.webshopText"),
       link: "",
-      categories: [
-        t("galleryPage.typeScript"),
-        t("galleryPage.javaScript"),
-        t("galleryPage.sass"),
-      ],
+      categories: [t("galleryPage.typeScript"), t("galleryPage.sass")],
     },
   ];
 
