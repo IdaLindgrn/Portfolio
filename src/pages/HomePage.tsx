@@ -12,8 +12,8 @@ export const HomePage = () => {
       <Header />
       <main>
         <div id="banner">
-          <h1 className="header-title">{t("headers.homeTitle")}</h1>
-          <h3 className="header-subtitle">{t("headers.homeSubheading")}</h3>
+          <h1 className="header-title">{t("homePage.homeTitle")}</h1>
+          <h3 className="header-subtitle">{t("homePage.homeSubheading")}</h3>
         </div>
         <MyExpertise />
         <Section1 />

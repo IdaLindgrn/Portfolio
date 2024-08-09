@@ -7,14 +7,66 @@
         "en": "ENG",
         "sv": "SV"
     },
-    "headers": {
-        "homeTitle": "Ida Lindgren",
-        "homeSubheading": "Frontend Developer",
-        "aboutTitle": "About me",
-        "galleryTitle": "Projects",
-        "gallerySubheading": "Click on a project to open its link"
+    "footer": {
+        "github": "Github",
+        "linkedIn": "LinkedIn",
+        "mail": "Mail",
+        "copyright": "© Copyright 2023. All Rights Reserved"
     },
     "homePage": {
-        "subtitle": "Education"
+        "homeTitle": "Ida Lindgren",
+        "homeSubheading": "Frontend Developer",
+        "subtitle": "My Expertise",
+        "softDev": "Software Development",
+        "softDevText": "Experiences in both functional and OOP: Python, JavaScript, TypeScript",
+        "frontDev": "Frontend Dev",
+        "frontDevText": "Passionate about UI/UX. Over 2 years of development experience in HTML, CSS, JS, React and NextJS frameworks.",
+        "androidDev": "Android/iOS Dev",
+        "androidDevText": "Skilled in developing hybrid mobile apps and cross–platform solutions using the React Native framework.",
+        "aboutMe": "Who am I?",
+        "aboutMeText": "Curious about my professional journey or establish a connection? Explore my comprehensive CV for a detailed overview of my experience and achievements. Feel free to reach out and drop me a message if you'd like to discuss potential collaborations or simply connect!",
+        "buttonText": "Learn More",
+        "myProjects": "My Projects",
+        "myProjectsText": "Want to see what I have made? Take a look at some of the projects I’ve worked on. I have made counless personal projects and made huge impacts for the companies I’ve helped update there applications."
+    },
+    "aboutPage": {
+        "hi": "Hello, I'm",
+        "myNumber": "070 982 10 50",
+        "myMail": "ida-lindgren@hotmail.com",
+        "a": "A",
+        "from": "from",
+        "stockholm": "Stockholm",
+        "frontendDeveloperText": "A creative and experienced Frontend developer with an Advanced Higher Vocational Education Diploma from Medieinstitutet - Stockholm. I have wide knowledge within applications, websites and extensions. Currently, I am seeking opportunities within a developing field.",
+        "downloadCV": "Download CV",
+        "getInTouch": "Get in touch",
+        "getInTouchText": "Wanna get in touch? Ask me anything.",
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "yourMessage": "Your Message",
+        "sendMessage": "Send Message"
+    },
+    "galleryPage": {
+        "projects": "Projects",
+        "openProject": "Click on a project to open its link",
+        "all": "All",
+        "react": "React",
+        "vue": "Vue",
+        "reactNative": "React Native",
+        "typeScript": "TypeScript",
+        "python": "Python",
+        "mobileApp": "Mobile Application",
+        "mobileAppText": "With this app you can get cash back when you shop online from over 600 stores. The money is shared between you and an association of your choice.",
+        "expo": "Expo",
+        "browserExtension": "Browser Extension",
+        "browserExtensionText": "A browser tool that simplifies shopping with Sponsorhuset online.",
+        "sass": "SASS",
+        "catBox": "CatBox",
+        "catBoxText": "An interactive game where the player learns flexbox attributes.",
+        "supabase": "Supabase",
+        "tictactoe": "TicTacToe",
+        "tictactoeText": "A simple TicTacToe game for two players where the goal is to get three in a row.",
+        "webshop": "Webshop [Link missing]",
+        "webshopText": "A group work that was done during my education at the media institute. A wallpaper webshop."
     }
 }

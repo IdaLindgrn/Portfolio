@@ -1,19 +1,18 @@
 import { Link } from "react-router-dom";
 import cats from "../assets/cats.png";
+import { useTranslation } from "react-i18next";
 
 export const Section2 = () => {
+  const [t] = useTranslation("global");
+
   return (
     <div className="container" id="container2">
       <section id="section-container2">
-        <p className="nav-text">Gallery</p>
-        <h2 className="heading">My Projects</h2>
-        <p id="section-text">
-          Want to see what I have made? Take a look at some of the projects I’ve
-          worked on. I have made counless personal projects and made huge
-          impacts for the companies I’ve helped update there applications.
-        </p>
+        <p className="nav-text">{t("header.navGallery")}</p>
+        <h2 className="heading">{t("homePage.myProjects")}</h2>
+        <p id="section-text">{t("homePage.myProjectsText")}</p>
         <Link id="shortcuts" to="/gallery">
-          <div id="shortcutsLink">Learn More</div>
+          <div id="shortcutsLink">{t("homePage.buttonText")}</div>
         </Link>
       </section>
       <figure className="image-container">

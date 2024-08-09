@@ -7,14 +7,66 @@
         "en": "ENG",
         "sv": "SV"
     },
-    "headers": {
-        "homeTitle": "Ida Lindgren",
-        "homeSubheading": "Frontend Utvecklare",
-        "aboutTitle": "Om mig",
-        "galleryTitle": "Mina projekt",
-        "gallerySubheading": "Klicka på ett projekt för att öppna dens länk"
+    "footer": {
+        "github": "Github",
+        "linkedIn": "LinkedIn",
+        "mail": "Mail",
+        "copyright": "© Copyright 2023. All Rights Reserved"
     },
     "homePage": {
-        "subtitle": "Education"
+        "homeTitle": "Ida Lindgren",
+        "homeSubheading": "Frontendutvecklare",
+        "subtitle": "Min Expertis",
+        "softDev": "Programvaruutveckling",
+        "softDevText": "Erfarenhet av både funktionell och objektorienterad programmering: Python, JavaScript, TypeScript",
+        "frontDev": "Frontendutveckling",
+        "frontDevText": "Passionerad för UI/UX. Över 2 års utvecklingserfarenhet i HTML, CSS, JS, React och NextJS-ramverk.",
+        "androidDev": "Android/iOS-utveckling",
+        "androidDevText": "Skicklig i att utveckla hybridmobilappar och plattformsoberoende lösningar med hjälp av React Native-ramverket.",
+        "aboutMe": "Vem är jag?",
+        "aboutMeText": "Nyfiken på min professionella resa eller att etablera en kontakt? Utforska mitt omfattande CV för en detaljerad översikt av min erfarenhet och mina prestationer. Tveka inte att höra av dig om du vill diskutera potentiella samarbeten eller bara vilja få kontakt!",
+        "buttonText": "Läs mer",
+        "myProjects": "Mina projekt",
+        "myProjectsText": "Vill du se vad jag har gjort? Ta en titt på några av de projekt jag har arbetat med. Jag har gjort många personliga projekt och gjort stora insatser för de företag jag har hjälpt att uppdatera deras applikationer."
+    },
+    "aboutPage": {
+        "hi": "Hej, jag heter",
+        "myNumber": "070 982 10 50",
+        "myMail": "ida-lindgren@hotmail.com",
+        "a": "En",
+        "from": "från",
+        "stockholm": "Stockholm",
+        "frontendDeveloperText": "En kreativ och erfaren Frontendutvecklare med en avancerad yrkeshögskoleexamen från Medieinstitutet - Stockholm. Jag har bred kunskap inom applikationer, webbplatser och tillägg. För närvarande söker jag möjligheter inom ett utvecklingsfält.",
+        "downloadCV": "Ladda ner CV",
+        "getInTouch": "Kontakt",
+        "getInTouchText": "Vill du komma i kontakt? Fråga mig vad som helst.",
+        "name": "Namn",
+        "email": "E-post",
+        "subject": "Ämne",
+        "yourMessage": "Ditt meddelande",
+        "sendMessage": "Skicka meddelande"
+    },
+    "galleryPage": {
+        "projects": "Projekt",
+        "openProject": "Klicka på ett projekt för att öppna dess länk",
+        "all": "Alla",
+        "react": "React",
+        "vue": "Vue",
+        "reactNative": "React Native",
+        "typeScript": "TypeScript",
+        "python": "Python",
+        "mobileApp": "Mobilapplikation",
+        "mobileAppText": "Med denna app kan du få återbäring när du handlar online från över 600 butiker. Pengarna delas mellan dig och en förening som du väljer.",
+        "expo": "Expo",
+        "browserExtension": "Webbläsartillägg",
+        "browserExtensionText": "Ett webbläsarverktyg som förenklar shopping med Sponsorhuset online.",
+        "sass": "SASS",
+        "catBox": "CatBox",
+        "catBoxText": "Ett interaktivt spel där spelaren lär sig flexbox-attribut.",
+        "supabase": "Supabase",
+        "tictactoe": "TicTacToe",
+        "tictactoeText": "Ett enkelt TicTacToe-spel för två spelare där målet är att få tre i rad.",
+        "webshop": "Webshop [Länk saknas]",
+        "webshopText": "Ett grupparbete som gjordes under min utbildning på Medieinstitutet. En tapetwebshop."
     }
 }
