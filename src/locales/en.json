@@ -62,7 +62,7 @@
         "browserExtensionText": "A browser tool that simplifies shopping with Sponsorhuset online.",
         "sass": "SASS",
         "catBox": "CatBox",
-        "catBoxText": "blah blah",
+        "catBoxText": "An interactive game where the player learns flexbox attributes.",
         "supabase": "Supabase",
         "tictactoe": "TicTacToe",
         "tictactoeText": "A simple TicTacToe game for two players where the goal is to get three in a row.",
