@@ -50,8 +50,12 @@ export const AboutPage = () => {
                 <p className="about-me-hello">{t("aboutPage.hi")}</p>
                 <h2 className="about-me-title">{t("homePage.homeTitle")}</h2>
                 <p className="about-me-frontend">
-                  A <span className="highlight">Frontend Developer</span> from{" "}
-                  <span className="highlight">Stockholm</span>
+                  {t("aboutPage.a")}{" "}
+                  <span className="highlight">
+                    {t("homePage.homeSubheading")}
+                  </span>{" "}
+                  {t("aboutPage.from")}{" "}
+                  <span className="highlight">{t("aboutPage.stockholm")}</span>
                 </p>
                 <p className="about-me-text">
                   {t("aboutPage.frontendDeveloperText")}

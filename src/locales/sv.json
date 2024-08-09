@@ -33,7 +33,9 @@
         "hi": "Hej, jag heter",
         "myNumber": "070 982 10 50",
         "myMail": "ida-lindgren@hotmail.com",
-        "frontendDeveloper": "En Frontendutvecklare från Stockholm",
+        "a": "En",
+        "from": "från",
+        "stockholm": "Stockholm",
         "frontendDeveloperText": "En kreativ och erfaren Frontendutvecklare med en avancerad yrkeshögskoleexamen från Medieinstitutet - Stockholm. Jag har bred kunskap inom applikationer, webbplatser och tillägg. För närvarande söker jag möjligheter inom ett utvecklingsfält.",
         "downloadCV": "Ladda ner CV",
         "getInTouch": "Kontakt",
@@ -45,7 +47,7 @@
         "sendMessage": "Skicka meddelande"
     },
     "galleryPage": {
-       "projects": "Projekt",
+        "projects": "Projekt",
         "openProject": "Klicka på ett projekt för att öppna dess länk",
         "all": "Alla",
         "react": "React",
