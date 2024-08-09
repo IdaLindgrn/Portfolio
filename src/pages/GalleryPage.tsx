@@ -21,47 +21,70 @@ export const GalleryPage = () => {
     setHoveredBox(null);
   };
 
-  const filters = ["All", "React", "Vue", "TypeScript", "JavaScript", "Python"];
+  const filters = [
+    t("galleryPage.all"),
+    t("galleryPage.react"),
+    t("galleryPage.vue"),
+    t("galleryPage.reactNative"),
+    t("galleryPage.typeScript"),
+    t("galleryPage.python"),
+  ];
   const boxes = [
     {
       id: 1,
       image: MobileApplication,
-      title: "Mobile Application",
-      text: "Med denna app kan du få pengar tillbaka när du handlar online från över 600 butiker. Pengarna delas mellan dig och en valfri förening.",
+      title: t("galleryPage.mobileApp"),
+      text: t("galleryPage.mobileAppText"),
       link: "https://play.google.com/store/apps/details?id=com.sponsorhuset&hl=sv",
-      categories: ["React Native", "TypeScript", "Expo"],
+      categories: [
+        t("galleryPage.reactNative"),
+        t("galleryPage.typeScript"),
+        t("galleryPage.expo"),
+      ],
     },
     {
       id: 2,
       image: BrowserExtension,
-      title: "Browser Extension",
-      text: "Ett webbläsarverktyg som förenklar när du handlar med Sponsorhuset online.",
+      title: t("galleryPage.browserExtension"),
+      text: t("galleryPage.browserExtensionText"),
       link: "https://www.sponsorhuset.se/start/tips-till-foreningen/handla-smart",
-      categories: ["React", "TypeScript", "SASS"],
+      categories: [
+        t("galleryPage.react"),
+        t("galleryPage.typeScript"),
+        t("galleryPage.sass"),
+      ],
     },
     {
       id: 3,
       image: Catbox,
-      title: "CatBox",
-      text: " Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
+      title: t("galleryPage.catBox"),
+      text: t("galleryPage.catBoxText"),
       link: "https://cat-box.netlify.app/",
-      categories: ["React", "TypeScript", "Supabase"],
+      categories: [
+        t("galleryPage.react"),
+        t("galleryPage.typeScript"),
+        t("galleryPage.supabase"),
+      ],
     },
     {
       id: 4,
       image: TicTacToe,
-      title: "TicTacToe",
-      text: "Ett enkelt TicTacToe-spel för två spelare där målet är att få tre i rad.",
+      title: t("galleryPage.tictactoe"),
+      text: t("galleryPage.tictactoeText"),
       link: "https://ida-lindgren-tictactoe.netlify.app/",
-      categories: ["Vue", "TypeScript"],
+      categories: [t("galleryPage.vue"), t("galleryPage.typeScript")],
     },
     {
       id: 5,
       image: Webshop,
-      title: "Webshop [Länk saknas]",
-      text: "Ett grupparbete som gjordes under min utbildning på medieinstiutet. En tapeter webshop.",
+      title: t("galleryPage.webshop"),
+      text: t("galleryPage.webshopText"),
       link: "",
-      categories: ["TypeScript", "JavaScript", "SASS"],
+      categories: [
+        t("galleryPage.typeScript"),
+        t("galleryPage.javaScript"),
+        t("galleryPage.sass"),
+      ],
     },
   ];
 
@@ -81,10 +104,8 @@ export const GalleryPage = () => {
       <div className="gallery-wrapper">
         <main className="gallery-container">
           <div className="gallery-header">
-            <h2 className="header-title">{t("headers.galleryTitle")}</h2>
-            <p className="gallery-subheading">
-              {t("headers.gallerySubheading")}
-            </p>
+            <h2 className="header-title">{t("galleryPage.projects")}</h2>
+            <p className="gallery-subheading">{t("galleryPage.openProject")}</p>
             <div className="filter-container">
               {filters.map((filter) => (
                 <button

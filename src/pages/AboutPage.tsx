@@ -31,7 +31,7 @@ export const AboutPage = () => {
                     <FaPhone className="contact-logo phone-icon" />
                   </a>
                   <a href="tel:0709821050" className="info">
-                    <p>070 982 10 50</p>
+                    <p>{t("aboutPage.myNumber")}</p>
                   </a>
                 </div>
                 <div className="contact-text">
@@ -42,23 +42,19 @@ export const AboutPage = () => {
                     <GrMail className="contact-logo mail-icon" />
                   </a>
                   <a href="mailto:ida-lindgren@hotmail.com" className="info">
-                    <p>ida-lindgren@hotmail.com</p>
+                    <p>{t("aboutPage.myMail")}</p>
                   </a>
                 </div>
               </div>
               <div className="about-me-container">
-                <p className="about-me-hello">Hello, I'm</p>
-                <h2 className="about-me-title">{t("headers.homeTitle")}</h2>
+                <p className="about-me-hello">{t("aboutPage.hi")}</p>
+                <h2 className="about-me-title">{t("homePage.homeTitle")}</h2>
                 <p className="about-me-frontend">
                   A <span className="highlight">Frontend Developer</span> from{" "}
                   <span className="highlight">Stockholm</span>
                 </p>
                 <p className="about-me-text">
-                  Passionerad frontend-utvecklare med ett brinnande intresse för
-                  design och problemlösning. Med en mångsidig kompetens och
-                  flera års studier inom olika programmeringsspråk och ramverk,
-                  strävar jag efter att skapa användarvänliga och estetiskt
-                  tilltalande digitala upplevelser.
+                  {t("aboutPage.frontendDeveloperText")}
                 </p>
                 <div>
                   <a
@@ -66,10 +62,10 @@ export const AboutPage = () => {
                     download="CV_2024_ENG.pdf"
                     className="download-link cv-link"
                   >
-                    Download CV
+                    {t("aboutPage.downloadCV")}
                   </a>
                   <a href="#footer" className="download-link contact-link">
-                    Contact
+                    {t("header.navContact")}
                   </a>
                 </div>
                 {/* <img
@@ -86,9 +82,9 @@ export const AboutPage = () => {
       <div className="gallery-wrapper">
         <div className="gallery-container">
           <div className="gallery-header">
-            <h2 className="header-title">Get in touch</h2>
+            <h2 className="header-title">{t("aboutPage.getInTouch")}</h2>
             <p className="gallery-subheading">
-              Wanna get in touch? Ask me anything
+              {t("aboutPage.getInTouchText")}
             </p>
             <form className="contact-form">
               <div className="contact-name-email">
@@ -97,7 +93,7 @@ export const AboutPage = () => {
                     type="text"
                     id="name"
                     name="name"
-                    placeholder="Name"
+                    placeholder={t("aboutPage.name")}
                     required
                   />
                 </div>
@@ -106,7 +102,7 @@ export const AboutPage = () => {
                     type="email"
                     id="email"
                     name="email"
-                    placeholder="Email"
+                    placeholder={t("aboutPage.email")}
                     required
                   />
                 </div>
@@ -117,7 +113,7 @@ export const AboutPage = () => {
                   type="text"
                   id="subject"
                   name="subject"
-                  placeholder="Subject"
+                  placeholder={t("aboutPage.subject")}
                   required
                 />
               </div>
@@ -126,13 +122,13 @@ export const AboutPage = () => {
                   id="message"
                   name="message"
                   rows={15}
-                  placeholder="Your Message"
+                  placeholder={t("aboutPage.yourMessage")}
                   required
                 ></textarea>
               </div>
 
               <button type="submit" className="send-button">
-                Send Message
+                {t("aboutPage.sendMessage")}
               </button>
             </form>
           </div>
