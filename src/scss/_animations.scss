@@ -1,41 +1,10 @@
-  @keyframes fill {
-    50% {
-      transform: translateX(-5%);
-    }
+@keyframes swipe {
+  0% {
+    left: 50%;
+    transform: translateX(-50%);
   }
-  
-  .button {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: var(--black);
-    background-color: var(--primaryColor);
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    transition: background-color 0.3s ease;
-  
-    &::after {
-      content: "";
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 0.75rem;
-      height: 100%;
-      width: 200%;
-      inset: 0;
-      transform: translateX(-400px);
-      background-color: hsl(12, 90%, 63%);
-    }
-  
-    &[data-anim="fill"]:not(.toggled)::after {
-      animation: fill var(--ease-spring-1) 8000ms infinite;
-    }
-  
-    &:hover {
-      background-color: var(--secondaryColor);
-    }
+  100% {
+    left: 0;
+    transform: translateX(0%);
   }
-  
+}

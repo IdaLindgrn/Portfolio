@@ -65,6 +65,23 @@ li {
     justify-content: center;
     transition: color 0.3s ease;
     position: relative;
+
+    &:hover::after {
+        content: "";
+        position: absolute;
+        display: flex;
+        bottom: -9px; 
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100%); 
+        padding: 5px 15px;
+        height: 30px; 
+        background-color: #f0f0f0; 
+        border-radius: 30px; 
+        border-bottom: 0px;  
+        transition: all 0.3s ease; 
+        animation: slideBounce 0.4s ease-in-out;
+    }
 }
 
 
@@ -91,6 +108,7 @@ li {
     background-color: #ffffff; 
     border-radius: 30px; 
     border-bottom: 0px; 
+    animation: slideBounce 0.4s ease-in-out;
 
     }
 
@@ -133,31 +151,6 @@ li {
         @include desktop {
             margin-left: -50px;
             gap: 40px;
-        }
-
-        .navLink {
-            position: relative; 
-            text-decoration: none;
-            color: $tertiaryColor;
-            display: flex;
-            justify-content: center;
-            transition: color 0.3s ease;
-            
-            &:hover::after {
-                content: "";
-                position: absolute;
-                display: flex;
-                bottom: -9px; 
-                left: 50%;
-                transform: translateX(-50%);
-                width: calc(100%); 
-                padding: 5px 15px;
-                height: 30px; 
-                background-color: #f0f0f0; 
-                border-radius: 30px; 
-                border-bottom: 0px;  
-                transition: all 0.3s ease; 
-            }
         }
     }
 }
