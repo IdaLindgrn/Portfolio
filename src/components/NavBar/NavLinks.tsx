@@ -35,7 +35,11 @@ export const NavLinks = () => {
             <div className="navText">{t("header.navGallery")}</div>
           </Link>
         </li>
-        <div id="contact" style={{ marginLeft: "auto", margin: "auto" }}>
+        <div
+          id="contact"
+          className="navLink"
+          style={{ marginLeft: "auto", margin: "auto" }}
+        >
           <li>
             <a id="footerLink" href="#footer">
               {t("header.navContact")}
