@@ -35,14 +35,10 @@ export const NavLinks = () => {
             <div className="navText">{t("header.navGallery")}</div>
           </Link>
         </li>
-        <div
-          id="contact"
-          className="navLink"
-          style={{ marginLeft: "auto", margin: "auto" }}
-        >
+        <div id="contact" style={{ marginLeft: "auto", margin: "auto" }}>
           <li>
-            <a id="footerLink" href="#footer">
-              {t("header.navContact")}
+            <a className="navLink" id="footerLink" href="#footer">
+              <div style={{ zIndex: 1 }}>{t("header.navContact")}</div>
             </a>
           </li>
         </div>
