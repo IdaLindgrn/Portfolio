@@ -55,7 +55,7 @@
         "vue": "Vue",
         "reactNative": "React Native",
         "typeScript": "TypeScript",
-        "python": "Python",
+        "reactThreeFiber": "React Three Fiber",
         "mobileApp": "Mobile Application",
         "mobileAppText": "With this app you can get cash back when you shop online from over 600 stores. The money is shared between you and an association of your choice.",
         "expo": "Expo",
@@ -67,7 +67,7 @@
         "supabase": "Supabase",
         "tictactoe": "TicTacToe",
         "tictactoeText": "A simple TicTacToe game for two players where the goal is to get three in a row.",
-        "webshop": "Webshop [Link missing]",
-        "webshopText": "A group work that was done during my education at the media institute. A wallpaper webshop."
+        "houseGenerator": "Random House Generator",
+        "houseGeneratorText": "Random House Generator creates unique house designs by randomizing shape, size, and the number of houses. Each use generates a different set, offering quick and varied architectural inspiration."
     }
 }

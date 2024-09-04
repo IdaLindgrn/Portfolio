@@ -5,7 +5,7 @@ import MobileApplication from "../assets/mobile-application.png";
 import BrowserExtension from "../assets/browser-extension.png";
 import Catbox from "../assets/catbox.png";
 import TicTacToe from "../assets/tictactoe.png";
-import Webshop from "../assets/webshop.png";
+import houseGenerator from "../assets/house-generator.png";
 import { useState } from "react";
 
 export const GalleryPage = () => {
@@ -27,7 +27,7 @@ export const GalleryPage = () => {
     t("galleryPage.vue"),
     t("galleryPage.reactNative"),
     t("galleryPage.typeScript"),
-    t("galleryPage.python"),
+    t("galleryPage.reactThreeFiber"),
   ];
   const boxes = [
     {
@@ -56,6 +56,17 @@ export const GalleryPage = () => {
     },
     {
       id: 3,
+      image: houseGenerator,
+      title: t("galleryPage.houseGenerator"),
+      text: t("galleryPage.houseGeneratorText"),
+      link: "",
+      categories: [
+        t("galleryPage.reactThreeFiber"),
+        t("galleryPage.typeScript"),
+      ],
+    },
+    {
+      id: 4,
       image: Catbox,
       title: t("galleryPage.catBox"),
       text: t("galleryPage.catBoxText"),
@@ -67,20 +78,12 @@ export const GalleryPage = () => {
       ],
     },
     {
-      id: 4,
+      id: 5,
       image: TicTacToe,
       title: t("galleryPage.tictactoe"),
       text: t("galleryPage.tictactoeText"),
       link: "https://ida-lindgren-tictactoe.netlify.app/",
       categories: [t("galleryPage.vue"), t("galleryPage.typeScript")],
-    },
-    {
-      id: 5,
-      image: Webshop,
-      title: t("galleryPage.webshop"),
-      text: t("galleryPage.webshopText"),
-      link: "",
-      categories: [t("galleryPage.typeScript"), t("galleryPage.sass")],
     },
   ];
 
