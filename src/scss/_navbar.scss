@@ -134,7 +134,36 @@ li {
             margin-left: -50px;
             gap: 40px;
         }
+
+        .navLink {         
+            
+            &:hover::after {
+                cursor: pointer;
+                content: "";
+                position: absolute;
+                display: flex;
+                bottom: -9px; 
+                left: 50%;
+                transform: translateX(-50%);
+                width: calc(100%); 
+                padding: 5px 15px;
+                height: 30px; 
+                background-color: #f0f0f0; 
+                border-radius: 30px; 
+                border-bottom: 0px;  
+      
+
+                @include desktop {
+                    bottom: -6px; 
+                    }
+                
+                    @include desktop-large {
+                        bottom: -1px; 
+                        }
+
+            }
+            
+        }
     }
 }
-} 
-
+}
