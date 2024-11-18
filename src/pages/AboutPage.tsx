@@ -14,7 +14,7 @@ export const AboutPage = () => {
       <Header />
       <div className="background-container"></div>
       <div className="gallery-wrapper">
-        <div className="gallery-container">
+        <div className="gallery-container1">
           <div className="about-container">
             <h2 className="header-title"></h2>
             <div className="about-me">
@@ -62,8 +62,8 @@ export const AboutPage = () => {
                 </p>
                 <div>
                   <a
-                    href="../../CV_2024_ENG.pdf"
-                    download="CV_2024_ENG.pdf"
+                    href="../../CV_ENG.pdf"
+                    download="CV_ENG.pdf"
                     className="download-link cv-link"
                   >
                     {t("aboutPage.downloadCV")}
@@ -84,7 +84,7 @@ export const AboutPage = () => {
         </div>
       </div>
       <div className="gallery-wrapper">
-        <div className="gallery-container">
+        <div className="gallery-container1">
           <div className="gallery-header">
             <h2 className="header-title">{t("aboutPage.getInTouch")}</h2>
             <p className="gallery-subheading">
