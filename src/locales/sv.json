@@ -55,7 +55,9 @@
         "vue": "Vue",
         "reactNative": "React Native",
         "typeScript": "TypeScript",
+        "javaScript": "JavaScript",
         "reactThreeFiber": "React Three Fiber",
+        "threejs": "Three.js",
         "mobileApp": "Mobilapplikation",
         "mobileAppText": "Med denna app kan du få återbäring när du handlar online från över 600 butiker. Pengarna delas mellan dig och en förening som du väljer.",
         "expo": "Expo",
@@ -68,6 +70,8 @@
         "tictactoe": "TicTacToe",
         "tictactoeText": "Ett enkelt TicTacToe-spel för två spelare där målet är att få tre i rad.",
         "houseGenerator": "Slumpgenerator För Hus",
-        "houseGeneratorText": "Slumpgeneratorn För Hus skapar unika husdesigner genom att randomisera form, storlek och antalet hus. Varje användning genererar en annan uppsättning som erbjuder snabb och varierad arkitektonisk inspiration."
+        "houseGeneratorText": "Ett API som genererar slumpmässiga hus med variationer i form, rotation, storlek och antal.",
+        "gameboy": "3D Gameboy Portfolio",
+        "gameboyText": "En interaktiv 3D-portfölj som visar upp mitt arbete, min expertis, mina projekt och min kreativitet."
     }
 }
