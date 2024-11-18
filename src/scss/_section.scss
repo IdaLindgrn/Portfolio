@@ -34,9 +34,9 @@ section {
     align-items: center;
     text-align: center;
     width: auto;
-    height: 90vw;
+     height: auto;
     color: $tertiaryColor;
-    padding: 0px 70px;
+    padding: 40px 50px;
 
     @include tablet {
         padding: 20px;

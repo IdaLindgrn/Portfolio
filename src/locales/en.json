@@ -25,7 +25,7 @@
         "androidDev": "Android/iOS Dev",
         "androidDevText": "Skilled in developing hybrid mobile apps and cross–platform solutions using the React Native framework.",
         "aboutMe": "Who am I?",
-        "aboutMeText": "Curious about my professional journey or establish a connection? Explore my comprehensive CV for a detailed overview of my experience and achievements. Feel free to reach out and drop me a message if you'd like to discuss potential collaborations or simply connect!",
+        "aboutMeText": "Curious about my professional journey or establish a connection? Explore my CV for a detailed overview of my experience and achievements. Feel free to reach out and drop me a message if you'd like to connect!",
         "buttonText": "Learn More",
         "myProjects": "My Projects",
         "myProjectsText": "Want to see what I have made? Take a look at some of the projects I’ve worked on. I have made counless personal projects and made huge impacts for the companies I’ve helped update there applications."
@@ -55,7 +55,9 @@
         "vue": "Vue",
         "reactNative": "React Native",
         "typeScript": "TypeScript",
+        "javaScript": "JavaScript",
         "reactThreeFiber": "React Three Fiber",
+        "threejs": "Three.js",
         "mobileApp": "Mobile Application",
         "mobileAppText": "With this app you can get cash back when you shop online from over 600 stores. The money is shared between you and an association of your choice.",
         "expo": "Expo",
@@ -68,6 +70,8 @@
         "tictactoe": "TicTacToe",
         "tictactoeText": "A simple TicTacToe game for two players where the goal is to get three in a row.",
         "houseGenerator": "Random House Generator",
-        "houseGeneratorText": "Random House Generator creates unique house designs by randomizing shape, size, and the number of houses. Each use generates a different set, offering quick and varied architectural inspiration."
+        "houseGeneratorText": "An API that generated random houses, varying in shape, rotation, size and quantity.",
+        "gameboy": "3D Gameboy Portfolio",
+        "gameboyText": "An interactive 3D portfolio showcasing my work, expertise, projects and creativity."
     }
 }

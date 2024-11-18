@@ -25,7 +25,7 @@
         "androidDev": "Mobilapputveckling",
         "androidDevText": "Skicklig i att utveckla hybridmobilappar och plattformsoberoende lösningar med hjälp av React Native-ramverket.",
         "aboutMe": "Vem är jag?",
-        "aboutMeText": "Nyfiken på min professionella resa eller att etablera en kontakt? Utforska mitt omfattande CV för en detaljerad översikt av min erfarenhet och mina prestationer. Tveka inte att höra av dig om du vill diskutera potentiella samarbeten eller bara vilja få kontakt!",
+        "aboutMeText": "Nyfiken på min professionella resa eller att etablera en kontakt? Utforska mitt CV för en detaljerad översikt av min erfarenhet och mina prestationer. Tveka inte att lämna ett meddelande till mig!",
         "buttonText": "Läs mer",
         "myProjects": "Mina projekt",
         "myProjectsText": "Vill du se vad jag har gjort? Ta en titt på några av de projekt jag har arbetat med. Jag har gjort många personliga projekt och gjort stora insatser för de företag jag har hjälpt att uppdatera deras applikationer."
@@ -55,7 +55,9 @@
         "vue": "Vue",
         "reactNative": "React Native",
         "typeScript": "TypeScript",
+        "javaScript": "JavaScript",
         "reactThreeFiber": "React Three Fiber",
+        "threejs": "Three.js",
         "mobileApp": "Mobilapplikation",
         "mobileAppText": "Med denna app kan du få återbäring när du handlar online från över 600 butiker. Pengarna delas mellan dig och en förening som du väljer.",
         "expo": "Expo",
@@ -68,6 +70,8 @@
         "tictactoe": "TicTacToe",
         "tictactoeText": "Ett enkelt TicTacToe-spel för två spelare där målet är att få tre i rad.",
         "houseGenerator": "Slumpgenerator För Hus",
-        "houseGeneratorText": "Slumpgeneratorn För Hus skapar unika husdesigner genom att randomisera form, storlek och antalet hus. Varje användning genererar en annan uppsättning som erbjuder snabb och varierad arkitektonisk inspiration."
+        "houseGeneratorText": "Ett API som genererar slumpmässiga hus med variationer i form, rotation, storlek och antal.",
+        "gameboy": "3D Gameboy Portfolio",
+        "gameboyText": "En interaktiv 3D-portfölj som visar upp mitt arbete, min expertis, mina projekt och min kreativitet."
     }
 }
